@@ -1,0 +1,546 @@
+    1  ls
+    2  rm incubating-netbeans-11.0-bin.zip 
+    3  mkdir GitHub
+    4  cd GitHub
+    5  ls
+    6  git clone https://github.com/Georges034302/CG.git
+    7  git clone https://github.com/Georges034302/ISD.git
+    8  git clone https://github.com/Georges034302/USP.git
+    9  git clone https://github.com/Georges034302/AppProg.git
+   10  git clone https://github.com/Georges034302/Processing.git
+   11  git clone https://github.com/Georges034302/ASD-Demo-app.git
+   12  git clone https://github.com/Georges034302/WSD.git
+   13  git clone https://github.com/Georges034302/ISD-Demo-MVC.git
+   14  ls
+   15  cd USP
+   16  ls
+   17  cd usp2
+   18  ls
+   19  nano grades.sh 
+   20  cd ..
+   21  ls
+   22  cd perl3
+   23  ls
+   24  nano math.pl 
+   25  exit
+   26  java -version
+   27  sudo dnf install java-1.8.0-openjdk  java-1.8.0-openjdk-devel
+   28  sudo dnf install java-11-openjdk  java-11-openjdk-devel
+   29  sudo dnf -y install wget unzip
+   30  wget https://www-us.apache.org/dist/incubator/netbeans/incubating-netbeans/incubating-11.0/incubating-netbeans-11.0-bin.zip 
+   31  unzip incubating-netbeans-11.0-bin.zip
+   32  sudo mv netbeans/ /opt/
+   33  nano ~/.bashrc
+   34  source ~/.bashrc 
+   35  netbeans
+   36  whereis netbeans
+   37  cd ..
+   38  cd Pictures/
+   39  pwd
+   40  whereis jdk.compiler.jmod
+   41  whereis jdk.compiler
+   42  whereis jdk
+   43  whereis java
+   44  whereis javaFx
+   45  ls
+   46  whereis applications
+   47  cd /usr/share/applications/
+   48  ls
+   49  nano netbeans.deskstop
+   50  sudo nano netbeans.desktop
+   51  grep netbeans.desktop 
+   52  ls
+   53  cat netbeans.desktop 
+   54  sudo mv netbeans.desktop ~/Desktop/
+   55  cd ~/Desktop/
+   56  ls
+   57  whereis netbeans
+   58  ls
+   59  cd ..
+   60  ls
+   61  cd Pictures/
+   62  ls
+   63  pwd
+   64  ls netbeans.png 
+   65  cd ..
+   66  cd Desktop/
+   67  ls
+   68  cat netbeans.desktop 
+   69  nano netbeans.desktop 
+   70  sudo nano netbeans.desktop 
+   71  ls
+   72  rm netbeans.desktop 
+   73  ls
+   74  cd /
+   75  cd
+   76  ls
+   77  sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+   78  cat <<EOF | sudo tee /etc/yum.repos.d/vscode.repo
+   79  [code]
+   80  name=Visual Studio Code
+   81  baseurl=https://packages.microsoft.com/yumrepos/vscode
+   82  enabled=1
+   83  gpgcheck=1
+   84  gpgkey=https://packages.microsoft.com/keys/microsoft.asc
+   85  EOF
+   86  dnf check-update
+   87  sudo dnf install code
+   88  rpm -qi code
+   89  code
+   90  gedit
+   91  sudo dnf install snapd
+   92  sudo ln -s /var/lib/snapd/snap /snap
+   93  sudo snap install bluej
+   94  ls
+   95  cd Downloads/
+   96  ls
+   97  java -jar BlueJ-generic-422.jar 
+   98  sudo unzip BlueJ-source-422.zip 
+   99  ls
+  100  sudo unzip BlueJ-source-422.zip /bluej
+  101  ls
+  102  rm *
+  103  ls
+  104  cd ..
+  105  ls
+  106  cd Downloads/
+  107  ls
+  108  rm -rf *
+  109  ls
+  110  sudo rm -rf *
+  111  ls
+  112  cd ..
+  113  ls
+  114  code
+  115  netbeans
+  116  ls
+  117  pwd
+  118  echo HISTFILESIZE
+  119  echo $HISTFILESIZE
+  120  echo $HISTSIZE
+  121  mkdir prac
+  122  cd prac/
+  123  man ps
+  124  touch f1 f2 fa fb f11 f22 faa fbb f2a f2b fa2 fb2
+  125  ls -l
+  126  mkdir sub1 sub2 sub3 sub4 sub5
+  127  ls -l
+  128  ls pwd
+  129  ls -l
+  130  nano f1
+  131  clear
+  132  ls
+  133  cp f? sub1
+  134  ls
+  135  ls sub1
+  136  ls f??
+  137  ls f[a-z]
+  138  clear
+  139  ls f[0-9]{2}
+  140  ls f\d
+  141  ls
+  142  cp -R ~/prac/ ~/GitHub/
+  143  ls ~/GitHub/
+  144  cd ..
+  145  cd GitHub/
+  146  ls
+  147  rm -rf prac/
+  148  ls
+  149  clear
+  150  teams
+  151  zoom
+  152  sudo dnf install wget
+  153  wget https://zoom.us/client/latest/zoom_x86_64.rpm
+  154  sudo dnf localinstall zoom_x86_64.rpm
+  155  zoom 
+  156  ls
+  157  rm zoom_x86_64.rpm 
+  158  cd Downloads/
+  159  ls
+  160  rm teams-1.3.00.5153-1.x86_64.rpm 
+  161  cd ..
+  162  ls
+  163  clear
+  164  mkdir prac
+  165  ls
+  166  cd prac/
+  167  ls
+  168  nano hello.sh
+  169  chmod u+x hello.sh 
+  170  ./hello.sh 
+  171  nano hello.sh
+  172  ./hello.sh 
+  173  nano hello.sh
+  174  ./hello.sh 
+  175  nano hello.sh
+  176  ./hello.sh 
+  177  nano hello.sh
+  178  ./hello.sh 
+  179  nano hello.sh
+  180  ls
+  181  nano list.sh
+  182  chmod u+x list.sh 
+  183  clear
+  184  ./list.sh 
+  185  nano list.sh
+  186  ./list.sh 
+  187  nano list.sh
+  188  ./list.sh 
+  189  nano list.sh
+  190  ./list.sh 
+  191  nano list.sh
+  192  ./list.sh 
+  193  clear
+  194  ./list.sh 
+  195  clear
+  196  ./list.sh 
+  197  nano list.sh
+  198  clear
+  199  ./list.sh 
+  200  nano list.sh
+  201  ./list.sh 
+  202  clear
+  203  ./list.sh 
+  204  clear
+  205  ls
+  206  cd sub2
+  207  cd ..
+  208  ls
+  209  var='ls -a'
+  210  echo $var
+  211  var=`ls -a`
+  212  echo $var
+  213  var=`ls -l`
+  214  echo $var
+  215  clear
+  216  num=2
+  217  echo num
+  218  echo $num
+  219  echo "$num"
+  220  echo '$num'
+  221  echo "num"
+  222  echo $num
+  223  echo \$num
+  224  echo \"$num\"
+  225  echo $num+2
+  226  echo ($num+2)
+  227  echo $($num+2)
+  228  echo $(($num+2))
+  229  clear
+  230  echo $(($num+2) + $(num+5))
+  231  echo $((($num+2) + $(num+5)))
+  232  echo $((($num+2) + $($num+5)))
+  233  echo $(($num+2) + $($num+5))
+  234  echo $((($num+2)+$($num+5)))
+  235  echo $((($num+2)+($num+5)))
+  236  echo $(($num+2)+($num+5))
+  237  echo $((($num+2)+($num+5)))
+  238  unset num
+  239  echo $num
+  240  unset var
+  241  echo $var
+  242  clear
+  243  ls
+  244  echo welcome.sh
+  245  nano welcome.sh
+  246  chmod u+x welcome.sh 
+  247  ./welcome.sh 
+  248  nano argwelcome.sh
+  249  chmod 744 argwelcome.sh 
+  250  ./argwelcome.sh Tony 55
+  251  wc argwelcome.sh 
+  252  wc -l argwelcome.sh 
+  253  wc -c argwelcome.sh 
+  254  wc -w argwelcome.sh 
+  255  clear
+  256  ls
+  257  nano list.sh 
+  258  ./list.sh 
+  259  clear
+  260  ./list.sh 
+  261  nano list.sh 
+  262  ./list.sh 
+  263  clear
+  264  nano hello.sh q
+  265  nano hello.sh 
+  266  ./hello.sh 
+  267  nano hello.sh 
+  268  ./hello.sh 
+  269  nano hello.sh 
+  270  echo $PATH
+  271  sot
+  272  sort
+  273  sort *
+  274  clear
+  275  ls
+  276  sort argwelcome.sh 
+  277  man sort
+  278  sort -r
+  279  sort -r argwelcome.sh 
+  280  cat hello.sh 
+  281  head hello.sh 
+  282  head -1 hello.sh 
+  283  head -3 hello.sh 
+  284  head -n hello.sh 
+  285  head -n | tail -1 hello.sh 
+  286  tail -n | head -1 hello.sh 
+  287  head -n 4 hello.sh 
+  288  clear
+  289  ls - l > out.txt
+  290  ls -l > out.txt
+  291  cat out.txt 
+  292  cat out.txt | tail -n | head -1
+  293  clear
+  294  tail -n+2
+  295  tail -n+2 out.txt 
+  296  tail -n+1 out.txt 
+  297  tail -n+2 out.txt 
+  298  clear
+  299  head -n+1 out.txt 
+  300  head -n+n out.txt 
+  301  head -n+10 out.txt 
+  302  clear
+  303  tail -n+2 out.txt 
+  304  tail -n+2 out.txt | wc -l
+  305  clear
+  306  ls
+  307  mv sub1 sub5
+  308  ls -R sub5
+  309  cp -R sub5 sub4
+  310  ls -R sub4
+  311  cp f? sub5
+  312  ls -R sub5
+  313  clear
+  314  ls
+  315  zoom &
+  316  clear
+  317  reboot
+  318  zoom &
+  319  clear
+  320  man touch
+  321  man grep
+  322  ls
+  323  mkdir USP
+  324  ls
+  325  ls -l
+  326  cd USP
+  327  pwd
+  328  clear
+  329  pwd
+  330  ls
+  331  ls -l
+  332  ls -a
+  333  ls -la
+  334  cd .
+  335  ls -a
+  336  cd ..
+  337  pwd
+  338  cd USP
+  339  pwd
+  340  ls -al
+  341  ls -l
+  342  clear
+  343  pwd
+  344  cd 
+  345  pwd
+  346  cd
+  347  cd USP
+  348  mkdir sub1
+  349  ls
+  350  cd sub1
+  351  pwd
+  352  cd
+  353  pwd
+  354  cd ~/USP/sub1/
+  355  pwd
+  356  cd ~/
+  357  pwd
+  358  cd /
+  359  pwd
+  360  ls
+  361  pwd
+  362  cd
+  363  pwd
+  364  cd /
+  365  pwd
+  366  ls
+  367  cd
+  368  pwd
+  369  clear
+  370  pwd
+  371  ls
+  372  cd ~/USP/sub1/
+  373  pwd
+  374  cd ..
+  375  pwd
+  376  ls
+  377  mkdir sub2 sub3 sub4 sub5
+  378  ls
+  379  touch f1
+  380  ls -l
+  381  touch f2 f11 f22 fa fb fa2 fb2 f2a f2b faa fbb
+  382  clear
+  383  ls -l
+  384  cp f1 sub1
+  385  ls sub1
+  386  cd sub1
+  387  ls
+  388  cd ..
+  389  ls sub1
+  390  clear
+  391  ls
+  392  cp f2 sub1
+  393  ls sub1
+  394  cp f[a-z] sub2
+  395  ls sub2
+  396  cp f[a-z][a-z] sub3
+  397  ls sub3
+  398  cp f[0-9] sub4
+  399  ls sub4
+  400  cp f[0-9][0-9] sub5
+  401  ls sub5
+  402  mkdir sub7 sub8 sub9
+  403  cp f[a-z][0-9] sub7
+  404  ls sub7
+  405  cp f[a-z0-9] sub8
+  406  ls sub8
+  407  cp f? sub9
+  408  ls sub9
+  409  clear
+  410  ls 
+  411  cp f?? sub1
+  412  ls sub1/
+  413  clear
+  414  ls
+  415  cd sub2
+  416  ls
+  417  rm f?
+  418  ls
+  419  pwd
+  420  cd ..
+  421  cp f* sub2
+  422  ls sub2
+  423  ls
+  424  mv f* sub3
+  425  ls
+  426  ls sub3
+  427  cd sub3
+  428  ls
+  429  cp f1 bb
+  430  ls
+  431  cp f2 xxxx
+  432  ls
+  433  clear
+  434  ls
+  435  mv xxxx myfile
+  436  ls
+  437  cd ..
+  438  ls
+  439  cd
+  440  ls
+  441  clear
+  442  ls
+  443  ls ~/USP/sub1
+  444  ls -R USP
+  445  clear
+  446  cd USP
+  447  touch g[0-5]
+  448  ls
+  449  rm g\[0-5\] 
+  450  num=2
+  451  echo $num;
+  452  echo $num
+  453  echo num
+  454  echo $num
+  455  echo $num+2
+  456  echo $($num+2)
+  457  echo $(($num+2))
+  458  echo $(($num+2)+($num+5))
+  459  echo $((($num+2)+($num+5)))
+  460  clear
+  461  echo $((($num+2)+($num+5)))
+  462  unset num
+  463  echo $num
+  464  list=`ls -l`
+  465  echo $list
+  466  listall=`ls -a`
+  467  echo $listall
+  468  ls -a
+  469  listall=`ls - a h`
+  470  listall=`ls -a`
+  471  echo $listall
+  472  unset listall
+  473  echo $listall
+  474  clear
+  475  nano welcome.sh
+  476  num=2
+  477  echo $num
+  478  echo "$num"
+  479  echo "this is number $num"
+  480  echo 'this is number $num'
+  481  echo '$num'
+  482  echo "$num"
+  483  echo '"$num"'
+  484  echo \
+  485  echo \$num  
+  486  echo '$num'
+  487  echo \'$num\'
+  488  ls
+  489  cd sub1
+  490  ls
+  491  clear
+  492  ls
+  493  echo f?
+  494  echo f\?
+  495  echo f*
+  496  echo f\*
+  497  cd ..
+  498  ;s
+  499  ls
+  500  nano welcome.sh 
+  501  ./welcome.sh
+  502  ls -l welcome.sh 
+  503  chmod u+x welcome.sh 
+  504  ./welcome.sh 
+  505  ls -l welcome.sh 
+  506  nano welcome.sh 
+  507  clear
+  508  ./welcome.sh 
+  509  nano welcome.sh 
+  510  ./welcome.sh 
+  511  nano welcome.sh 
+  512  whoami
+  513  who
+  514  nano welcome.sh 
+  515  clear
+  516  nano welcome.sh 
+  517  ./welcome.sh 
+  518  nano welcome.sh 
+  519  ./welcome.sh 
+  520  nano welcome.sh 
+  521  clear
+  522  ./welcome.sh 
+  523  nano welcome.sh 
+  524  clear
+  525  nano hello.sh
+  526  chmod u+x hello.sh 
+  527  ./hello.sh 
+  528  nano hello.sh 
+  529  ./hello.sh 
+  530  nano hello.sh 
+  531  ./hello.sh 
+  532  nano hello.sh 
+  533  ./hello.sh 
+  534  nano hello.sh 
+  535* 
+  536  nano hello.sh 
+  537  clear
+  538  ./hello.sh 88
+  539  nano hello.sh 
+  540  ./hello.sh 88
+  541  nano hello.sh 
+  542  ./hello.sh 88
+  543  nano hello.sh 
+  544  ./hello.sh 88 HD
+  545  ./hello.sh
+  546  history > tutorial1.txt
