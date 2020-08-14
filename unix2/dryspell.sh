@@ -1,8 +1,11 @@
 #!/bin/bash
-#Determine the longest dry spell
+#Determine the longest dry spell from rain entries until -1
+#A dry spell is the zero rain amount per entry
+#Longest dry spell isthe maximum zero rain entries
 
 echo -n "Rainfall: "
 read rain
+
 max=0
 count=0
 
@@ -21,8 +24,9 @@ do
 	echo -n "Rainfall: "
 	read rain
 done
-if [ $max -lt $count ]
+if [ $count -gt $max ]
 then
 	max=$count
 fi
 echo "Longest dry spell = $max"
+

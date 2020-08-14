@@ -1,5 +1,5 @@
 #!/bin/bash
-#Determine if an argument is a file or a directory
+#Determine if an argument is a directory or a file
 
 if [ -d $1 ]
 then
@@ -10,3 +10,4 @@ then
 else
 	echo "$1 does not exist!"
 fi
+

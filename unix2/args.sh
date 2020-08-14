@@ -1,6 +1,6 @@
 #!/bin/bash
-#determine the script arguments and count them
+#show the number of arguments passed to this script and the list or arguments
 
-echo "Running script: $0"
+echo "Running: $0"
 echo "Arguments count = $#"
-echo "The script has: $*"
+echo "Arguments list: $*"

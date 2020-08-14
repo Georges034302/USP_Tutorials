@@ -1,6 +1,6 @@
 #!/bin/bash
-#Print a student name
-#Determine the student grade based on their argument mark
+#Print the username
+#Determine the user grade based on the mark argument
 
 echo "> Student $(whoami) file: "
 
@@ -19,4 +19,5 @@ then
 else
 	grade="Z"
 fi
-echo "Student grade is: $grade"
+
+echo "$1 grade is $grade"
