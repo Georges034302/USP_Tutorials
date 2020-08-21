@@ -1,0 +1,4 @@
+cat: f1: Permission denied
+cat: f2: Permission denied
+cat: f1: Permission denied
+cat: f2: Permission denied

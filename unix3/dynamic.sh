@@ -1,14 +1,14 @@
 #!/bin/bash
-#Create a dynamic array from user input with a size n from argument
+#Create a dynamic array of size n from argument
+#Show the array
 
 n=$1
-nums=()
-
 i=0
+nums=()
 
 while [ $i -lt $n ]
 do
-	echo -n "Value: "
+	echo -n "Value = "
 	read val
 	nums[$i]=$val
 	((i++))

@@ -1,0 +1,12 @@
+-rwxrw-r--. 1 George George   119 Aug 21 12:41 command.sh
+-rw-rw-r--. 1 George George    54 Aug 21 12:24 errlog
+-rw-rw-r--. 1 George George   108 Aug 21 12:20 err.txt
+----------. 1 George George     0 Aug 21 12:11 f1
+----------. 1 George George     0 Aug 21 12:11 f2
+-rw-rw-r--. 1 George George    11 Aug 21 12:22 f3
+-rw-rw-r--. 1 George George    12 Aug 21 12:22 f4
+-rw-rw-r--. 1 George George    77 Aug 21 12:26 mergedlog
+-rw-rw-r--. 1 George George    23 Aug 21 12:24 outlog
+-rw-rw-r--. 1 George George     0 Aug 21 12:41 output.txt
+-rw-rw-r--. 1 George George   457 Aug 21 12:28 out.txt
+-rw-rw-r--. 1 George George 19765 Aug 21 12:39 unix3.txt
