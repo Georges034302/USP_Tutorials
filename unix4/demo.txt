@@ -24,7 +24,7 @@ Tutorial plan:
 ^ Manipulating a file
 
 ( ) script demo:
-01 - bash is loacated in \bin\bash$
+01 - unix bash is loacated in \bin\bash$
 02 - demo script: function.sh and calculator.sh
 03 - level: easy-advanced (learning: functions and case-in)
 
