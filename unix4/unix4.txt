@@ -1,0 +1,1000 @@
+  171  history > tutorial1.txt
+  172  clear
+  173  ls
+  174  cat tutorial1.txt 
+  175  clear
+  176  cd
+  177  ls
+  178  cd GitHub/
+  179  git clone https://github.com/Georges034302/USP_Tutorials.git
+  180  ls
+  181  cd USP_Tutorials/
+  182  mkdir unix1
+  183  cp -R ~/USP ~/GitHub/USP_Tutorials/unix1/
+  184  ls unix1/
+  185  cp -R ~/USP ~/GitHub/USP_Tutorials/
+  186  ls unix1/
+  187  ls
+  188  pwd
+  189  ls
+  190  rm USP
+  191  rm -rf USP
+  192  ls
+  193  clear
+  194  pwd
+  195  git add --all
+  196  git commit -m "unix 1"
+  197  git push
+  198  clear
+  199  cd USP 
+  200  cd 
+  201  cd USP
+  202  git clone https://github.com/Georges034302/USP_Tutorials.git
+  203  mkdir unix1
+  204  mv * unix1
+  205  mv *.sh unix1/
+  206  clear
+  207  cd USP
+  208  ls
+  209  cd
+  210  rm -rf USP
+  211  ls
+  212  cd GitHub/
+  213  ls
+  214  cd USP
+  215  ls
+  216  cd ..
+  217  ls
+  218  cd USP_Tutorials/
+  219  ls
+  220  rm -rf *
+  221  git add --all
+  222  git commit -m"reset"
+  223  git push
+  224  clear
+  225  ls
+  226  cd
+  227  clear
+  228  cd
+  229  ls
+  230  clear
+  231  man touch
+  232  man grep
+  233  mkdir USP
+  234  cd USP/
+  235  pwd
+  236  mkdir unix1
+  237  ls
+  238  ls -l
+  239  cd unix1/
+  240  pwd
+  241  cd
+  242  pwd
+  243  cd ~/USP/unix1/
+  244  pwd
+  245  cd ~/
+  246  pwd
+  247  cd /
+  248  pwd
+  249  ls
+  250  cd 
+  251  pwd
+  252  clear
+  253  pwd
+  254  cd /
+  255  cd ~/USP/unix1/
+  256  pwd
+  257  touch f1
+  258  ls
+  259  ls -l
+  260  ls -a
+  261  ls -al
+  262  touch f2 f3 fa fb faa fbb f12 f22 f2a f2b
+  263  ls -l
+  264  clear
+  265  ls
+  266  mkdir sub1
+  267  mkdir sub2 sub3 sub4 sub5 sub6 sub7 sub8 sub9
+  268  ls
+  269  cp f3 f33
+  270  ls
+  271  mv f33 f11
+  272  ls
+  273  mv f12 fa2
+  274  ls
+  275  cp f1 sub1
+  276  ls sub1
+  277  cp f[0-9] sub1
+  278  ls sub1
+  279  cp f[a-z] sub2
+  280  ls sub2*
+  281  cp f[a-z0-9] sub2
+  282  ls sub2
+  283  cp f? sub3
+  284  ls sub3
+  285  clear
+  286  ls
+  287  cp f[0-9][a-z] sub4
+  288  ls sub4
+  289  cp f[a-z][a-z] sub5
+  290  ls sub5
+  291  cp f* sub6
+  292  ls sub6
+  293  mv f? sub7
+  294  ls sub7
+  295  ls 
+  296  mv f* sub8
+  297  ls
+  298  ls sub8
+  299  ls sub9
+  300  clear
+  301  ls
+  302  ls sub1
+  303  ls -R 
+  304  clear
+  305  cd
+  306  pwd
+  307  ls -R ~/USP/unix1/
+  308  clear
+  309  ls
+  310  cd ~/USP/unix1/
+  311  ls
+  312  rmdir sub9
+  313  ls
+  314  rmdir sub8
+  315  rm sub8
+  316  rm -r sub8
+  317  ls
+  318  cd sub7
+  319  ls
+  320  clear
+  321  echo f?
+  322  echo f[0-9]
+  323  cd ..
+  324  ls
+  325  num=2
+  326  echo $num
+  327  echo "$num"
+  328  echo "number is $num"
+  329  echo 'number is $num'
+  330  echo '$num'
+  331  echo '"$num"'
+  332  echo '$num'
+  333  echo \'$num\' 
+  334  echo \"$num\" 
+  335  echo \$num
+  336  echo \\$num
+  337  echo $num
+  338  clear
+  339  echo $num+2
+  340  echo "$num+2"
+  341  echo $(($num+2))
+  342  echo $(($num+2)+($num+5))
+  343  echo $((($num+2)+($num+5)))
+  344  unset num
+  345  echo $num
+  346  ls -a
+  347  list=`ls -a`
+  348  echo $list
+  349  unset list
+  350  echo $list
+  351  clear
+  352  nano welcome.sh
+  353  ./welcome.sh
+  354  ls -l welcome.sh 
+  355  chmod u+x welcome.sh 
+  356  ls -l welcome.sh 
+  357  ./welcome.sh 
+  358  nano welcome.sh
+  359  ./welcome.sh 
+  360  nano welcome.sh
+  361  ./welcome.sh 
+  362  nano welcome.sh
+  363  ./welcome.sh 
+  364  nano welcome.sh
+  365  clear
+  366  nano list.sh
+  367  chmod u+x list.sh 
+  368  ./list.sh 
+  369  nano list.sh
+  370  ./list.sh 
+  371  nano list.sh
+  372  clear
+  373  nano grade.sh
+  374  chmod u+x grade.sh 
+  375  nano grade.sh 
+  376  ./grade.sh 
+  377  ./grade.sh 77 D
+  378  ./grade.sh 77 437653796
+  379  nano grade.sh 
+  380  ./grade.sh  88 HD
+  381  nano grade.sh 
+  382  clear
+  383  history > tutorial1.txt
+  384  ls
+  385  cat tutorial1.txt 
+  386  ls
+  387  cd
+  388  cd USP/
+  389  ls
+  390  cp -R unix1/ ~/GitHub/USP_Tutorials/
+  391  cd ~/GitHub/USP_Tutorials/
+  392  clear
+  393  ls
+  394  git add --all
+  395  git commit -m "tutorial 1"
+  396  git push
+  397  clear
+  398  cd ~/USP/
+  399  shutdown -h now
+  400  zoom
+  401  zoom &
+  402  clear
+  403  ls
+  404  cd USP
+  405  ls
+  406  mkdir unix2
+  407  cd unix2
+  408  pwd
+  409  touch f1 f2 f22 f33 fa fb fa2 fa3 faa fbb
+  410  ls
+  411  ls -l
+  412  chmod 776 f1
+  413  ls -l f1
+  414  clear
+  415  ls -l
+  416  chmod u+x,g+x,o+w f2
+  417  ls -l f2
+  418  chmod a+x f22
+  419  ls -l
+  420  clear
+  421  ls -l
+  422  chmod 444 f[a-z]
+  423  ls -l f[a-z]
+  424  chmod a-rwx f[a-z][0-9]
+  425  ls =l f[a-z][0-9]
+  426  ls -l f[a-z][0-9]
+  427  cat fa2
+  428  clear
+  429  chmod 777 f?
+  430  ls -l f?
+  431  ls -l
+  432  chmod 664 f*
+  433  clear
+  434  ls -l
+  435  clear
+  436  ls 
+  437  rm f??
+  438  ls\
+  439  ls
+  440  rm f*
+  441  ls
+  442  pwd
+  443  clear
+  444  nano args.sh
+  445  ls -l
+  446  ./args.sh
+  447  chmod u+x args.sh 
+  448  ./args.sh hi 22 jim
+  449  ls -l
+  450  mkdir sub
+  451  ls -l
+  452  nano check.sh
+  453  chmod u+x check.sh 
+  454  cleae
+  455  clear
+  456  ./check.sh hi
+  457  ls
+  458  ./check.sh sub
+  459  ./check.sh args.sh 
+  460  nano check.sh
+  461  nano grades.sh
+  462  chmod u+x grades.sh 
+  463  ./grades.sh 
+  464  nano grades.sh
+  465  ./grades.sh 
+  466  nano grades.sh
+  467  nano grades.sh 88
+  468  clear
+  469  ./grades.sh 88
+  470  nano grades.sh
+  471  ./grades.sh 88
+  472  ./grades.sh 76
+  473  nano grades.sh
+  474  ./grades.sh 76
+  475  nano grades.sh
+  476  clear
+  477  ./grades.sh 55
+  478  nano grades.sh
+  479  clear
+  480  ./grades.sh 55
+  481  ./grades.sh 40
+  482  ./grades.sh 77
+  483  ./grades.sh 66
+  484  nano grades.sh
+  485  nano pow.sh
+  486  chmod u+x pow.sh 
+  487  clear
+  488  ./pow.sh 
+  489  nano pow.sh
+  490  ./pow.sh 
+  491  nano pow.sh
+  492  clear
+  493  ./pow.sh 
+  494  nano pow.sh
+  495  ./pow.sh 
+  496  nano pow.sh
+  497  clear
+  498  ./pow.sh 
+  499  nano sum.sh
+  500  chmod u+x sum.sh 
+  501  ./sum.sh 
+  502  nano sum.sh
+  503  clear
+  504  nano sum.sh
+  505  ./sum.sh 
+  506  nano vowel.sh
+  507  chmod u+x vowel.sh 
+  508  clear
+  509  ./vowel.sh 
+  510  nano vowel.sh
+  511  ./vowel.sh 
+  512  nano vowel.sh
+  513  clear
+  514  nano dryspell.sh
+  515  chmod u+x dryspell.sh 
+  516  ./dryspell.sh 
+  517  nano dryspell.sh
+  518  ./dryspell.sh 
+  519  nano dryspell.sh
+  520  clear
+  521  cd ..
+  522  cp -R unix2 ~/GitHub/USP_Tutorials/
+  523  cd ~/GitHub/USP_Tutorials/
+  524  git add --all
+  525  git commit -m "unix2"
+  526  git push
+  527  nano dryspell.sh
+  528  clear
+  529  cd ~/USP/unix2
+  530  nano dryspell.sh 
+  531  ls
+  532  cd ..
+  533  ls
+  534  rm -r unix2
+  535  cd
+  536  clear
+  537  ls
+  538  clear
+  539  ls
+  540  cd USP
+  541  ls
+  542  mkdir unix2
+  543  cd unix2
+  544  pwd
+  545  touch f1 f2 fa fb f22 f33 fa2 fb2
+  546  ls -l
+  547  clear
+  548  ls -l
+  549  chmod u+x,g+x,o+w f1
+  550  ls-l f1
+  551  ls -l f1
+  552  chmod 776 f2
+  553  ls -l f2
+  554  clear
+  555  ls -l
+  556  chmod u-r,g-r,o-r f22
+  557  ls -l f22
+  558  chmod a-r f33
+  559  ls -l f33
+  560  chmod 220 fa
+  561  ls -l fa
+  562  chmod a+rwx f[a-z]
+  563  chmod 777 f[a-z]
+  564  ls -l f[a-z]
+  565  clear
+  566  ls -l
+  567  chmod 000 f[a-z][0-9]
+  568  ls -l f[a-z][0-9]
+  569  cat fa2
+  570  chmod 664 f??
+  571  ls -l f??
+  572  chmod 664 f*
+  573  ls -l
+  574  clear
+  575  ls 
+  576  rm f?
+  577  ls
+  578  rm f*
+  579  ls
+  580  nano args.sh
+  581  ./args.sh
+  582  ls -l args.sh 
+  583  chmod u+x args.sh 
+  584  ./args.sh 33 hello jim
+  585  nano args.sh
+  586  mkdir sub
+  587  ls -l
+  588  clear
+  589  nano check.sh
+  590  chmod u+x check.sh 
+  591  ./check.sh hello
+  592  ./check.sh args.sh 
+  593  ./check.sh sub/
+  594  ls
+  595  rmdir sub
+  596  ls
+  597  clear
+  598  nano grades.sh
+  599  chmod u+x grades.sh 
+  600  ./grades.sh 88
+  601  ./grades.sh 75
+  602  nano grades.sh
+  603  ./grades.sh 75
+  604  nano grades.sh
+  605  ./grades.sh 75
+  606  ./grades.sh 66
+  607  ./grades.sh 51
+  608  ./grades.sh 49
+  609  nano grades.sh 
+  610  clear
+  611  nano pow.sh
+  612  chmod u+x pow.sh 
+  613  ./pow.sh 
+  614  nano pow.sh
+  615  ./pow.sh 
+  616  nano pow.sh
+  617  clear
+  618  nano sum.sh
+  619  chmod u+x sum.sh 
+  620  ./sum.sh 
+  621  nano sum.sh
+  622  ./sum.sh 
+  623  clear
+  624  nano vowel.sh
+  625  chmod u+x vowel.sh 
+  626  ./vowel.sh 
+  627  nano vowel.sh
+  628  ./vowel.sh 
+  629  nano vowel.sh
+  630  clear
+  631  ./vowel.sh 
+  632  nano vowel.sh
+  633  clear
+  634  nano dryspell.sh
+  635  chmod u+x dryspell.sh 
+  636  ./dryspell.sh 
+  637  nano dryspell.sh
+  638  clear
+  639  ./dryspell.sh 
+  640  nano dryspell.sh
+  641  ls
+  642  rm '='
+  643  ls
+  644  cp *.sh ~/GitHub/USP_Tutorials/unix2/
+  645  cd ~/GitHub/USP_Tutorials/
+  646  git add --all
+  647  git commit -m "unix2"
+  648  git push
+  649  git config --global --edit
+  650  git commit --amend --reset-author
+  651  git config --global user.name Georges034302
+  652  git config --global user.email georges.boughantous@gmail.com
+  653  git pull
+  654  git commit -m "unix2"
+  655  git push
+  656  git pull
+  657  zoom &
+  658  clear
+  659  ls
+  660  clear
+  661  ls
+  662  cd USP
+  663  ls
+  664  mkdir unix3
+  665  ls
+  666  cd unix3
+  667  pwd
+  668  touch f1 f2 f3 f4
+  669  ls -l
+  670  chmod 000 f1
+  671  ls -l
+  672  clear
+  673  ls -l
+  674  ls -l | tail -n+2
+  675  ls -l | tail -n+2 | wc
+  676  ls -l | tail -n+2 | wc -c
+  677  ls -l | tail -n+2 | nl
+  678  ls -l | tail -n+2 | nl | wc
+  679  clear
+  680  ls -l | tail -n+2 
+  681  ls -l | tail -n+2 > out.txt
+  682  ls
+  683  cat out.txt 
+  684  ls -l | tail -n+2 | nl >> out.txt
+  685  cat out.txt 
+  686  clear
+  687  ls -l | tail -n+2 > out.txt
+  688  cat out.txt 
+  689  ls -l | tail -n+2 | nl >> out.txt
+  690  cat out.txt 
+  691  ls -l | tail -n+2 > out.txt
+  692  cat out.txt 
+  693  clear
+  694  ls -l
+  695  cat f1 
+  696  cat f1 > err.txt
+  697  cat err.txt 
+  698  ls -l
+  699  cat f1 2> err.txt
+  700  cat err.txt 
+  701  clear
+  702  cat f1 out.txt 
+  703  cat f1 out.txt 2> err.txt 
+  704  cat f1 out.txt 2>> err.txt 
+  705  cat err.txt 
+  706  cat f1 out.txt 2>> err.txt 
+  707  cat err.txt 
+  708  clear
+  709  cat err.txt 
+  710  cat out.txt 
+  711  cat f1 out.txt 2>1&
+  712  cat f1 out.txt 2>1 &
+  713  cat f1 out.txt 2>71
+  714  cat f1 out.txt 2>&1
+  715  clear
+  716  cat f1 out.txt 2>&1
+  717  cat f1 out.txt 2>&1 > out.txt 
+  718  cat out.txt 
+  719  clear
+  720  cat f1 out.txt 2>&1 
+  721  ls -l
+  722  rm 1
+  723  tm 71
+  724  rm 71
+  725  ls
+  726  ls -l
+  727  ls -l | tail -n+2 > out.txt 
+  728  clear
+  729  cat out.txt 
+  730  cat out.txt | cut -d " " -f 1
+  731  cat out.txt | cut -d " " -f 2
+  732  cat out.txt | cut -d " " -f 3
+  733  cat out.txt | cut -d " " -f 1,3
+  734  clear
+  735  cat out.txt 
+  736  cat out.txt | cut -d " " -f 1,3
+  737  cat out.txt | cut -d " " -f 1,3,4
+  738  cat out.txt | cut -d " " -f 1-4
+  739  clear
+  740  cat out.txt 
+  741  cat out.txt | cut -d " " -f 1-5
+  742  cat out.txt | cut -d " " -f 1-6
+  743  cat out.txt | cut -d " " -f 1-9
+  744  clear
+  745  cat out.txt 
+  746  cat out.txt | cut -d " " -f 1-5
+  747  cat out.txt | awk '{print $1 " " $5}'
+  748  cat out.txt | awk '{print $1 " " $5}'
+  749  cat out.txt | awk '{print $1 " " $5 " "$9}'
+  750  clear
+  751  cat out.txt | awk '{print $1 " " $5 " "$9}'
+  752  cat out.txt | awk '{printf "%10s %4d %8s \n",$1,$5,$9}'
+  753  cat out.txt | awk '{printf "%10s %4d %-8s \n",$1,$5,$9}'
+  754  cat out.txt | awk '{printf "%10s %-4d %-8s \n",$1,$5,$9}'
+  755  cat out.txt | awk '{printf "%10s %4d %-8s \n",$1,$5,$9}'
+  756  clear
+  757  cat out.txt | awk '{printf "%10s %4d %8s \n",$1,$5,$9}'
+  758  cat out.txt | awk '{printf "%10s %4d %-8s \n",$1,$5,$9}'
+  759  cat out.txt | awk '{printf "%10s %4d %-2s \n",$1,$5,$9}'
+  760  cat out.txt | awk '{printf "%10s %d %-2s \n",$1,$5,$9}'
+  761  cat out.txt | awk '{printf "%10s %4d %-8s \n",$1,$5,$9}'
+  762  clear
+  763  cat out.txt | awk '{printf "%10s %4d %-8s \n",$1,$5,$9}'
+  764  cat out.txt | awk '{printf "%10s %4d %8s \n",$1,$5,$9}'
+  765  cat out.txt | awk '{printf "%10s %4d %-8s \n",$1,$5,$9}'
+  766  cat out.txt | awk '{printf "%10s %-4d %-8s \n",$1,$5,$9}'
+  767  clear
+  768  nano command.sh
+  769  chmod u+x command.sh 
+  770  ./command.sh 
+  771  nano command.sh
+  772  ./command.sh 
+  773  clear
+  774  ./command.sh out.txt 
+  775  ./command.sh err.txt 
+  776  nano command.sh 
+  777  clear
+  778  nano array.sh
+  779  chmod u+x array.sh 
+  780  ./array.sh 
+  781  nano array.sh
+  782  ./array.sh 
+  783  nano array.sh
+  784  ./array.sh 
+  785  nano array.sh
+  786  ./array.sh 
+  787  nano array.sh
+  788  clear
+  789  nano sequence.sh
+  790  chmod u+x sequence.sh 
+  791  ./sequence.sh 
+  792  chmod u+x sequence.sh 
+  793  nano sequence.sh
+  794  ./sequence.sh 
+  795  nano sequence.sh
+  796  ./sequence.sh 
+  797  nano sequence.sh
+  798  ./sequence.sh 
+  799  nano sequence.sh
+  800  clear
+  801  ./sequence.sh 
+  802  nano sequence.sh
+  803  ./sequence.sh 
+  804  nano sequence.sh
+  805  ./sequence.sh 
+  806  nano sequence.sh
+  807  clear
+  808  nano dynamic.sh
+  809  chmod u+x dynamic.sh 
+  810  ./dynamic.sh 4
+  811  nano dynamic.sh
+  812  cd ~/GitHub/USP
+  813  git pull
+  814  clear
+  815  cd ~/USP/
+  816  ls
+  817  cp -R unix3 ~/GitHub/USP_Tutorials/
+  818  cd unix
+  819  cd unix3
+  820  ls
+  821  rm f?
+  822  ls
+  823  rm *.txt
+  824  history > unix3.txt
+  825  ls
+  826  cd ..
+  827  cp -R unix3 ~/GitHub/USP_Tutorials/
+  828  cd ~/GitHub/USP_Tutorials/
+  829  clear
+  830  git add --all
+  831  git commit -m "unix3"
+  832  git push
+  833  ls
+  834  cd unix3
+  835  ls
+  836  rm f?
+  837  rm *.txt
+  838  ls
+  839  cd
+  840  ls
+  841  cd USP/
+  842  ls
+  843  rm -rf unix3
+  844  ls
+  845  clear
+  846  cd
+  847  ls
+  848  clear
+  849  cd GitHub/USP_Tutorials/
+  850  cd unix3
+  851  ls
+  852  git commit -m"unix3"
+  853  git push
+  854  cd
+  855  git rm f?
+  856  cd ~/GitHub/USP_Tutorials/unix3
+  857  git rm f?
+  858  git rm *.txt
+  859  git commit -m ""
+  860  git commit -m "u3"
+  861  git push
+  862  clear
+  863  cd 
+  864  clear
+  865  ls
+  866  cd USP
+  867  mkdir unix3
+  868  cd unix3
+  869  pwd
+  870  touch f1 f2 f3 f4
+  871  ls -l
+  872  ls -l | tail -n+2
+  873  ls -l | tail -n+2 | nl
+  874  ls -l | tail -n+2 | nl | wc
+  875  ls -l | tail -n+2 | nl | wc -l
+  876  ls -l | tail -n+2 | nl | wc -lw
+  877  ls -l | tail -n+2 | nl | wc -c
+  878  clear
+  879  ls -l
+  880  chmod 000 f1 f2
+  881  ls -l
+  882  ls -l | tail -n+2 
+  883  ls -l | tail -n+2 > out.txt
+  884  ls
+  885  cat out.txt 
+  886  ls -l | tail -n+2 > out.txt
+  887  cat out.txt 
+  888  ls -l | tail -n+2 >> out.txt
+  889  cat out.txt 
+  890  clear
+  891  ls -l
+  892  cat f1
+  893  cat f1 > err.txt
+  894  ls
+  895  cat err.txt 
+  896  cat f1 2> err.txt
+  897  cat err.txt 
+  898  cat f1 f2 2> err.txt 
+  899  cat err.txt 
+  900  cat f1 f2 2>> err.txt 
+  901  cat err.txt 
+  902  clear
+  903  cat f?
+  904  cat f*
+  905  ls
+  906  nano f3
+  907  nano f4
+  908  clear
+  909  cat f?
+  910  cat f? 2>errlog 1>outlog
+  911  ls
+  912  cat errlog 
+  913  cat outlog 
+  914  cat f? >mergedlog 2>&1
+  915  ls
+  916  cat mergedlog 
+  917  clear
+  918  ls -l
+  919  ls -l | tail -n+2 > out.txt
+  920  cat out.txt 
+  921  clear
+  922  cat out.txt 
+  923  cat out.txt | cut -d " " -f 1
+  924  cat out.txt | cut -d " " -f 1,2
+  925  cat out.txt | cut -d " " -f 1,2,3
+  926  cat out.txt | cut -d " " -f 1,2,3,4
+  927  cat out.txt | cut -d " " -f 1-4
+  928  cat out.txt | cut -d " " -f 1-5
+  929  clear
+  930  cat out.txt 
+  931  cat out.txt | cut -d " " -f 1-5
+  932  cat out.txt | awk '{print $1 $5}'
+  933  cat out.txt | awk '{print $1" " $5}'
+  934  cat out.txt | awk '{print $3" " $5}'
+  935  cat out.txt | awk '{print $3" " $5" "$8 " " $9}'
+  936  clear
+  937  cat out.txt | awk '{print $3" " $5" "$8 " " $9}'
+  938  cat out.txt | awk '{printf "%8s %4d %6s %10s \n",$3,$5,$8,$9}'
+  939  cat out.txt | awk '{printf "%8s %4d %6s %-10s \n",$3,$5,$8,$9}'
+  940  cat out.txt | awk '{printf "%-8s %4d %6s %-10s \n",$3,$5,$8,$9}'
+  941  history > unix3.txt
+  942  cat unix3.txt 
+  943  clear
+  944  nano command.sh
+  945  chmod u+x command.sh 
+  946  ./command.sh 
+  947  nano command.sh
+  948  ./command.sh out.txt 
+  949  nano command.sh
+  950  clear
+  951  nano array.sh
+  952  chmod u+x array.sh 
+  953  ./array.sh 
+  954  nano array.sh
+  955  ./array.sh 
+  956  nano array.sh
+  957  ./array.sh 
+  958  nano array.sh
+  959  clear
+  960  nano sequential.sh
+  961  chmod u+x sequential.sh 
+  962  ./sequential.sh 
+  963  nano sequential.sh
+  964  ./sequential.sh 
+  965  nano sequential.sh
+  966  ./sequential.sh 
+  967  nano sequential.sh
+  968  ./sequential.sh 
+  969  nano sequential.sh
+  970  ./sequential.sh 
+  971  nano sequential.sh
+  972  clear
+  973  ./sequential.sh 2 3 20
+  974  ./sequential.sh 2 3 100
+  975  ./sequential.sh 2 8 100
+  976  clear
+  977  nano sequential.sh 
+  978  nano dynamic.sh
+  979  chmod u+x dynamic.sh 
+  980  ./dynamic.sh 4
+  981  nano dynamic.sh
+  982  ./dynamic.sh 4
+  983  clear
+  984  ls
+  985  history > unix3.txt
+  986  cat unix3.txt 
+  987  clear
+  988  ls
+  989  cp * ~/GitHub/USP_Tutorials/unix3
+  990  rm -f f1 f2
+  991  cp * ~/GitHub/USP_Tutorials/unix3
+  992  ls ~/GitHub/USP_Tutorials/unix3
+  993  cd ~/GitHub/USP_Tutorials/unix3
+  994  cd ..
+  995  git add --all
+  996  git commit -m "unix3"
+  997  git push
+  998  shutdown -h now
+  999  cd ~/GitHub/
+ 1000  ls
+ 1001  cd USP
+ 1002  git pull
+ 1003  ls
+ 1004  cd usp4
+ 1005  cd ..
+ 1006  ls
+ 1007  cd USP_Tutorials/
+ 1008  git pull
+ 1009  ls
+ 1010  cd unix4
+ 1011  ls
+ 1012  cd
+ 1013  cd USP
+ 1014  ls
+ 1015  clear
+ 1016  ls
+ 1017  cd
+ 1018  ls
+ 1019  clear
+ 1020  zoom &
+ 1021  ls
+ 1022  zoom &
+ 1023  ls
+ 1024  clear
+ 1025  ls
+ 1026  cd USP
+ 1027  ls
+ 1028  mkdir unix4
+ 1029  cp ~/GitHub/USP_Tutorials/unix4/demo.txt ~/USP/unix4
+ 1030  ls
+ 1031  cd unix4
+ 1032  ls
+ 1033  clear
+ 1034  ls
+ 1035  clear
+ 1036  grep unix demo.txt
+ 1037  grep -w unix demo.txt
+ 1038  grep '\bunix\b' demo.txt
+ 1039  grep tutor demo.txt 
+ 1040  grep -i tutor demo.txt 
+ 1041  grep -iw tutor demo.txt 
+ 1042  grep -i 'tutor\b' demo.txt 
+ 1043  grep -w unix demo.txt 
+ 1044  grep -wi unix demo.txt 
+ 1045  grep -win unix demo.txt 
+ 1046  grep -in 'unix\b' demo.txt 
+ 1047  clear
+ 1048  grep search demo.txt 
+ 1049  grep '\bear\b' demo.txt 
+ 1050  grep 'ear' demo.txt 
+ 1051  grep -n 'ear' demo.txt 
+ 1052  clear
+ 1053  grep 'Turorial' demo.txt 
+ 1054  grep 'Tutorial' demo.txt 
+ 1055  grep -n 'Tutorial' demo.txt 
+ 1056  grep -A -1 'Tutorial' demo.txt 
+ 1057  grep -A1 'Tutorial' demo.txt 
+ 1058  grep -B1 'Tutorial' demo.txt 
+ 1059  grep -B2 'Tutorial' demo.txt 
+ 1060  grep -A2 'Tutorial' demo.txt 
+ 1061  grep -C2 'Tutorial' demo.txt 
+ 1062  clear
+ 1063  grep 'Topics' demo.txt 
+ 1064  grep -n 'Tutorial' demo.txt 
+ 1065  grep -n 'Topics' demo.txt 
+ 1066  grep -n -B2 'Topics' demo.txt 
+ 1067  grep -n -A2 'Topics' demo.txt 
+ 1068  grep -n -C2 'Topics' demo.txt 
+ 1069  grep -B2 -A2 'Topics' demo.txt 
+ 1070  grep -n -B2 -A2 'Topics' demo.txt 
+ 1071  grep -A2n 'Topics' demo.txt 
+ 1072  grep -nA2 'Topics' demo.txt 
+ 1073  grep -nC2 'Topics' demo.txt 
+ 1074  grep -n -C2 'Topics' demo.txt 
+ 1075  grep -C2n 'Topics' demo.txt 
+ 1076  clear
+ 1077  var=grep
+ 1078  echo $var
+ 1079  grep $var demo.txt 
+ 1080  grep -i $var demo.txt 
+ 1081  grep -in $var demo.txt 
+ 1082  grep -win $var demo.txt 
+ 1083  clear
+ 1084  grep '[A-Z]' demo.txt 
+ 1085  grep '[A-Z]{2}' demo.txt 
+ 1086  grep -E '[A-Z]{2}' demo.txt 
+ 1087  egrep '[A-Z]{2}' demo.txt 
+ 1088  grep -E '[A-Z]{3}' demo.txt 
+ 1089  grep -E '[A-Z]{4}' demo.txt 
+ 1090  grep -E '[A-Z]{5}' demo.txt 
+ 1091  grep -E '[A-Z]{3,5}' demo.txt 
+ 1092  grep -E '[A-Z]{4,5}' demo.txt 
+ 1093  grep -E '[A-Z]{4,5}$' demo.txt 
+ 1094  grep -E '^[A-Z]{4}' demo.txt 
+ 1095  grep -E '[A-Z]{2}$' demo.txt 
+ 1096  clear
+ 1097  grep '[0-9]' demo.txt 
+ 1098  grep '[0-9]{2}' demo.txt 
+ 1099  grep -E '[0-9]{2}' demo.txt 
+ 1100  grep -E '[0-9]{4,5}' demo.txt 
+ 1101  grep -E '[0-9]{4,5}$' demo.txt 
+ 1102  grep -E '^[0-9]{2}' demo.txt 
+ 1103  grep -E '[0-9]{2}' demo.txt 
+ 1104  grep '[[0-9]{2}]' demo.txt 
+ 1105  grep -E '[[0-9]{2}]' demo.txt 
+ 1106  grep -E '\[[0-9]{2}\]' demo.txt 
+ 1107  clear
+ 1108  grep '\' demo.txt 
+ 1109  grep -E '\' demo.txt 
+ 1110  grep -E '\\' demo.txt 
+ 1111  grep -E '^\\' demo.txt 
+ 1112  grep -E '$' demo.txt 
+ 1113  clear
+ 1114  grep -E '\$' demo.txt 
+ 1115  grep -E '^\$' demo.txt 
+ 1116  grep -E '\$$' demo.txt 
+ 1117  grep -E '^' demo.txt 
+ 1118  clear
+ 1119  grep -E '\^' demo.txt 
+ 1120  grep -E '^$' demo.txt 
+ 1121  grep -En '^$' demo.txt 
+ 1122  grep -Env '^$' demo.txt 
+ 1123  grep -E '^$' demo.txt 
+ 1124  grep -En '^$' demo.txt 
+ 1125  grep -Env '^$' demo.txt clear
+ 1126  clear
+ 1127  grep '#' demo.txt 
+ 1128  grep '#' demo.txt | grep '[0-9]'
+ 1129  grep '#' demo.txt | grep '[0-9]{2}'
+ 1130  grep '#' demo.txt | grep -E '[0-9]{2}'
+ 1131  grep '#' demo.txt | grep -E '[0-9]{4}'
+ 1132  grep '#' demo.txt | grep -E '[0-9]{4}' | grep ':'
+ 1133  grep '#' demo.txt | grep -E '[0-9]{4}' | grep -n ':'
+ 1134  grep '#' demo.txt | grep -E '[0-9]{4}'
+ 1135  clear
+ 1136  grep '*' demo.txt 
+ 1137  grep -E '*' demo.txt 
+ 1138  grep -E '\*' demo.txt 
+ 1139  grep '#' demo.txt | grep -E '[0-9]{4}'
+ 1140  grep -E '#.*[0-9]{4}' demo.txt 
+ 1141  grep -E '#.*[0-9]{2}' demo.txt 
+ 1142  grep -E '( ).*:' demo.txt 
+ 1143  grep -E '\( \).*:' demo.txt 
+ 1144  grep -E '( )$' demo.txt 
+ 1145  grep -En '( )$' demo.txt 
+ 1146  grep -Env '^$' demo.txt 
+ 1147  grep -En '^$' demo.txt 
+ 1148  grep -E '( )$' demo.txt 
+ 1149  grep -En '( )$' demo.txt 
+ 1150  clear
+ 1151  grep -E '#|[0-9]' demo.txt 
+ 1152  grep -E '#|[0-9]{3}' demo.txt 
+ 1153  grep -E '#|[0-9]{4}' demo.txt 
+ 1154  grep -E '#|[0-9]{4}$' demo.txt 
+ 1155  clear
+ 1156  grep -E '#|:|[0-9]{4}$' demo.txt 
+ 1157  grep -E '[#:]' demo.txt 
+ 1158* grep -E '[#0-9]' demo.txt 
+ 1159  grep -e '#' -e ':' -e '[0-9]' demo.txt 
+ 1160  grep -e '#' -e '[0-9]' demo.txt 
+ 1161  grep -E '#|:|[0-9]' demo.txt 
+ 1162  grep -E '[#:0-9]' demo.txt 
+ 1163  grep -e '#' -e ':' -e '[0-9]' demo.txt 
+ 1164  clear
+ 1165  grep -R 'bash' ~/USP/
+ 1166  grep -Rn 'bash' ~/USP/
+ 1167  grep -Rl 'bash' ~/USP/
+ 1168  grep -R 'unix' ~/USP/
+ 1169  grep -Rl 'unix' ~/USP/
+ 1170  history > unix4.txt
