@@ -1,0 +1,39 @@
+#Friday 02/10/2020
+#Tutorial: python0102 
+#Tutor: George
+#Topics: Python\REG-EX
+
+$Reg-Ex: common patterns used in searching and filtering
+$reg-ex is used with Python, Java and Perl
+
+Tutorial plan: 
+( ) File handling:
+* opening a file
+* CRUD operations to a File
+
+( ) Reg-Ex demo:
+^ re functions: search, findAll, sub, split, restrip, sub, split, match, group
+^ searching a text
+^ meta-characters
+^ Operators precedences
+
+( ) script demo:
+01 - open/read a File
+02 - read: regex and replacement
+03 - apply replacement to all matches
+
+#Demo File: demo.txt [log: 1234]
+TYPE: text 
+SIZE: 236
+Permission: chmod 644
+
+#Coming TESTS:
+Week 06: Python programming test[01]
+- study (Week 8 to Week 11)
+
+Week 07: Python multiple choices test[02]
+- study: (week 8 to week 12)
+
+#Thank you for attending Python0102$
+
+
