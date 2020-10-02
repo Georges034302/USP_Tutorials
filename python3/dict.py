@@ -1,31 +1,45 @@
 #!/bin/env python3
-#a dictionary is a collection unordered, changeable, indexed
-#a dictionary does not allow duplicates
+#Dictionary is a collection unordered, indexed, changeable
+#Dictionary does not allow duplicates
+
+
+#create a dynamic dictionary of students names using 
+#a random sample of 3 digits key
+#names are from user input and the dictionary is key:name
+#representation
 import random as ran 
 
 names = {}
 
-print("Random sampling:")
+print(">>> 1- generate a random sample")
 keys = ran.sample(range(100,999),5)
-
-print(">>> 1 - dynamically populating a dictionary")
+print(keys)
+print(">>> 2- dynamically populating a dictionary")
 for key in keys:
     names[key] = input("Name: ")
 print(names)
 
-print(">>> 2 - sort a dictionary")
+print(">>> 3- sorting a dictionary by keys")
 for key in sorted(names.keys()):
     print("%s :: %s"%(key,names[key]))
 
-print(">>> 3 - delete an element")
-rem = int(input("Delete by key: "))
+print(">>> 4- deleting an element by key from a dictionary")
+key = int(input("Delete by key: "))
 
-if rem in keys:
-    del names[rem]
+if key in keys:
+    del names[key]
 else:
     print("Student does not exist!!!")
 
 for key in sorted(names.keys()):
     print("%s :: %s"%(key,names[key]))
+
+
+
+
+
+
+
+
 
 
