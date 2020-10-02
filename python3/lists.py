@@ -71,7 +71,8 @@ for x in mylist:
     print(x, end=",")
 print() 
 
-
+for x in enumerate(mylist):
+	print(x)
 
 
 

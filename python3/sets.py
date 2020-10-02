@@ -44,7 +44,12 @@ for x in myset:
     print(x, end=",")
 print()
 
+itset = iter(myset)
+for x in itset:
+	print(x)
 
+for x in enumerate(myset):
+	print(x)
 
 
 
