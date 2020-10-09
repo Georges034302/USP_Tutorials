@@ -1,30 +1,24 @@
 #!/bin/env python3
-#Generate a list of integers
-#calculate:
-#sum
-#average
-#min
-#max
 
-import random as r
 
-def generate(first,last,howmany):
-    return list(r.sample(range(first,last),howmany))
+def generate(first,last):
+    return range(first,last)
 
+## *argv represents variable number of arguments
 def calculate(*argv):
-    s = sum(*argv)
-    average = s/len(*argv)
+    x = sum(*argv)
+    average = x/len(*argv)
     m = min(*argv)
     z = max(*argv)
-    return s,average, m, z
+    return x, average, m, z
 
-def main():
-    nums = generate(1,40,10)
+def show():
+    nums = generate(3,10)
     print(nums)
-    x, y, m , z = calculate(nums)
-    print("Sum = "+str(x))
-    print("Average = "+str(y))
+    x, y, m, z = calculate(nums)
+    print("SUM= "+str(x))
+    print("Average= "+str(y))
     print("Min = "+str(m))
     print("Max = "+str(z))
 
-main()
+show()

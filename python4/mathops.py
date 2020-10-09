@@ -1,25 +1,20 @@
 #!/bin/env python3
+import math as m 
 
 def read_n():
     return int(input("n = "))
 
-#Square 2
-def square(n):     
-    return n**2
+#Square 2 
+def square(n):
+    return int(m.pow(n,2))
 
-#Add-Series n 
-def add(n):
-    s = 0
-    for i in range(1,n+1):
-        s+= i
-    return s
+#Add-series n 
+def add(n):   
+    return sum(range(1,n+1))
 
 #Factorial n
-def factorial(n):
-    f = 1
-    for i in range(1,n+1):
-        f *= i
-    return f
+def factorial(n):    
+    return m.factorial(n)
 
 #Main function
 def main():    
@@ -33,6 +28,3 @@ def main():
 
 #Invode the main function
 main()
-
-
-
