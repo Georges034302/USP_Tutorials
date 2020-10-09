@@ -1,48 +1,62 @@
-#!/usr/bin/env python3
-import math
-import statistics as stat
-import random as  ran
+#!/bin/env python3
+import math as m 
+import statistics as stat 
+import random as r 
 
+#general read function 
 def read(action):
     return input(action+": ")
 
-def circle(radius):
-    perimeter = 2*math.pi*float(radius)
-    area = math.pi*math.pow(float(radius),2)
-    sarea = 4*math.pi*math.pow(float(radius),2)
-    svolume = (4/3)*math.pi*math.pow(float(radius),3)
-    return perimeter, area, sarea, svolume
+#calculate area, perimeter, volume of a circle/sphere
+def calculate(radius):
+    perimeter = 2*m.pi*radius
+    area = m.pi*m.pow(radius,2)
+    volume = (4/3)*m.pi*m.pow(radius,3)
+    return perimeter, area, volume 
 
-def randomlist(first,last,howmany):   
-    return ran.sample(range(first,last),howmany)        
+def generate(first,last,howmany):
+    return r.sample(range(first,last),howmany)
 
-def liststats(list):
-    mean = stat.mean(list)
-    var = stat.variance(list)
-    stdv = stat.stdev(list)
-    s = sum(list)
-    return mean, var, stdv, s
+def liststats(*argv):
+    mean = stat.mean(*argv)
+    var = stat.variance(*argv)
+    stdv = stat.stdev(*argv)
+    s = sum(*argv)
+    return mean,var,stdv,s
 
-#Create
 def createdict():
-    names = {}
-    keys = ran.sample(range(100,1000),4)
+    names={}
+    keys = r.sample(range(100,1000),4)
     for key in keys:
         names[key] = read("Name")
     return names
 
-#Read
-def printdict(dict):
-    for key in sorted(dict.keys()):
-        print("%2s :: %s "% (key,dict[key]))
+def sort(dicts):
+    for key in dicts.keys():
+        print("%s :: %s"%(key,dicts[key]))
 
-#Update
-def update(dict, key, value):
-    dict[key] = value
+def update(dicts,key,newvalue):
+    dicts[key] = newvalue
 
-#Delete
-def delete(dict, key):
-    del dict[key]
+def delete(dicts,key):
+    del dicts[key]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -4,25 +4,20 @@
 #define a function to add-series (n): 1+2+3+...+n
 #define a function factorial (n): 1*2*3*...*n
 #define a main function to run the script 
+import math as m 
 
 def read_n():
     return int(input("N = "))
 
 def square(n):
-    return n**2
+    return int(m.pow(n,2))
 
 def add(n):
-    s = 0
-    for e in range(1,n+1):
-        s += e
-    return s
+    return sum(range(1,n+1))        
 
 def factorial(n):
-    s = 1
-    for e in range(1,n+1):
-        s *= e
-    return s
-
+    return m.factorial(n)
+        
 def main():
     n = read_n()
     while n != -1:

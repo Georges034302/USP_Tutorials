@@ -1,49 +1,47 @@
-#!/usr/bin/env python3
-import util as u
+#!/bin/env python3
+
+import util as u 
 
 def circleops():
-    r = u.read("Radius")
-    if r.isdigit():
-        p, a, sa, sv = u.circle(r)
-        print("Perimeter = %.2f "% p)
-        print("Area = %.2f"% a)
-        print("Sphere area = %.3f"% sa)
-        print("Sphere volume = %.4f"% sv)
-    else:
-        print("Input TypeError "+r)
+    r = float(u.read("Radius"))
+    p, a, v = u.calculate(r)
+    print("Perimeter = {:.2f}".format(p))
+    print("Area = {:.3f}".format(a))
+    print("Volume = {:.4f}".format(v))
 
-def listops():
-    list = u.randomlist(1,10,5)
-    mean, var, stdv, sum = u.liststats(list)  
-    print(list)
-    print("Sum = %.2f "% sum)
-    print("Mean = %.2f "% mean)
-    print("Variance = %.3f"% var)
-    print("Standard Dev = %.4f"% stdv)
+
+def liststats():
+    nums = u.generate(1,100,10)
+    m, v , stdv, s = u.liststats(nums)
+    print(nums)
+    print("Mean = "+str(m))
+    print("Variance = "+str(v))
+    print("Stdv = "+str(stdv))
+    print("Sum = "+str(s))
 
 def dictops():
     names = u.createdict()
-    u.printdict(names)
-    key = int(u.read("update by key"))
-    value = u.read("new value")
+    u.sort(names)
+    key = int(u.read("Key"))
+    value = u.read("Value")
     u.update(names,key,value)
-    u.printdict(names)
-    key = int(u.read("delete by key"))
+    u.sort(names)
+    key = int(u.read("Delete by Key"))
     u.delete(names,key)
-    u.printdict(names)
+    u.sort(names)
 
 def main():
-    print("\nRunning util functions::")
-    print("-------------------------")
-    print("\n>>>Circle Ops::")
     circleops()
-    print("\n>>>List Ops::")
-    listops()
-    print("\n>>>Dictionary Ops::")
+    liststats()
     dictops()
-    print("-------------------------\n")
 
-main() #running the main method of the project - entry point
+main()
+
+
+
+
+
+
 
 
 
