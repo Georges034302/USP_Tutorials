@@ -1,0 +1,202 @@
+    1  pwd
+    2  mkdir sub1
+    3  ls
+    4  mkdir sub2 sub3 sub4 sub5 sub6 sub7
+    5  ls
+    6  pwd
+    7  ls
+    8  rmdir sub7
+    9  rm sub6
+   10  rm -r sub6
+   11  touch f1
+   12  ls
+   13  ls -l
+   14  touch f2 f3 f11 f22 faa fbb fa1 f1a 
+   15  ls
+   16  cp f1 sub5
+   17  cd sub5
+   18  ls
+   19  cd ..
+   20  ls sub5
+   21  ls
+   22  rmdir sub5
+   23  rm -r sub5
+   24  ls
+   25  clear
+   26  pwd
+   27  ls
+   28  cd sub1
+   29  pwd
+   30  pwd
+   31  mkdir folder1
+   32  ls
+   33  cd folder1
+   34  pwd
+   35  cd ~
+   36  pwd
+   37  cd ~/sub1/folder1/
+   38  pwd
+   39  cd 
+   40  cd ~ 
+   41  cd
+   42  cd /
+   43  pwd
+   44  ls
+   45  clear
+   46  ls
+   47  cd
+   48  pwd
+   49  ls
+   50  ls -l
+   51  ls sub1
+   52  cp f1 sub1/folder1/
+   53  ls sub1
+   54  clear
+   55  ls sub1
+   56  ls sub1/folder1/
+   57  ls -R sub1
+   58  ls
+   59  cp f11 sub2
+   60  cp fa1 sub3
+   61  ls -R
+   62  clear
+   63  pwd
+   64  ls -R
+   65  ls -l
+   66  clear
+   67  ls
+   68  mkdir sub2/folder2
+   69  ls
+   70  ls sub2
+   71  ls -l
+   72  clear
+   73  ls
+   74  ls -a
+   75  ls -al
+   76  ls -a
+   77  ls -al
+   78  clear
+   79  ls
+   80  cp f11 sub3
+   81  ls sub3
+   82  cp f[0-9] sub1
+   83  ls sub1
+   84  cp f? sub2
+   85  ls sub2
+   86  ls
+   87  touch fa fa fc f33 f11 fa2 f2a f2b
+   88  ls
+   89  ls
+   90  ls sub1
+   91  rm f[0-9] /sub1
+   92  rm f[0-9] ~/sub1
+   93  cd sub1
+   94  rm f?
+   95  ls
+   96  cd ..
+   97  clear
+   98  ls
+   99  rm -r sub?
+  100  ls
+  101  mkdir sub1 sub2 sub3 sub4
+  102  ls
+  103  touch f1 f2 f3
+  104  ls
+  105  cp f[0-9] sub1
+  106  ls sub1
+  107  cp f? sub2
+  108  ls sub2
+  109  cp f[0-9][0-9] sub3
+  110  ls
+  111  ls sub3
+  112  cp f?? sub4
+  113  ls sub4
+  114  mkdir sub5
+  115  clear
+  116  ls
+  117  cp f[a-z] sub5
+  118  ls sub5
+  119  mkdir sub6
+  120  cp f[a-z][0-9] sub6
+  121  ls sub6
+  122  mkdir sub7
+  123  ls
+  124  mv f[a-z][a-z] sub7
+  125  ls
+  126  ls sub7
+  127  mkdir sub8
+  128  mv f* sub8
+  129  ls
+  130  ls sub8
+  131  cd sub8
+  132  clear
+  133  ls
+  134  pwd
+  135  cp f* ~/
+  136  cd
+  137  ls
+  138  ls sub8
+  139  cd 
+  140  ls
+  141  cp -R sub8 sub1
+  142  ls sub1
+  143  ls -R sub1
+  144  clear
+  145  echo
+  146  ls
+  147  echo f[0-9]
+  148  echo f*
+  149  echo f?
+  150  echo $HISTSIZE
+  151  export HISTSIZE=1000
+  152  export HISTFILESIZE=1000
+  153  echo $HISTSIZE
+  154  n=2
+  155  echo $n
+  156  n+2
+  157  $n+2
+  158  echo $n+2
+  159  echo n+2
+  160  clear
+  161  echo n+2
+  162  echo $n+2
+  163  echo ($n+2)
+  164  echo $($n+2)
+  165  echo $(($n+2))
+  166  echo $((($n+2)+($n-4)))
+  167  echo $n
+  168  echo $n+2
+  169  echo $(($n+2))
+  170  clear
+  171  echo $n
+  172  echo "$n"
+  173  echo '$n'
+  174  echo '$(($n+2))'
+  175  echo "$(($n+2))"
+  176  echo "the result is $n"
+  177  echo 'the result is $n'
+  178  echo "$n"
+  179  echo \"$n\"
+  180  echo \'$n\'
+  181  echo $n
+  182  echo \$n
+  183  echo \$n
+  184  echo \\$n
+  185  clear
+  186  echo $n
+  187  n=4
+  188  echo $n
+  189  unset n
+  190  echo $n
+  191  n=2
+  192  echo $n
+  193  echo \$n
+  194  echo \\$n
+  195  unset n
+  196  echo $n
+  197  clear
+  198  history > unix1.txt
+  199  ls
+  200  cat unix1.txt 
+  201  clear
+  202  history > unix1.txt
