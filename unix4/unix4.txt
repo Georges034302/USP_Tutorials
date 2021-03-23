@@ -1,0 +1,155 @@
+  525  grep unix demo.txt 
+  526  grep -i unix demo.txt 
+  527  grep -in unix demo.txt 
+  528  grep -win unix demo.txt
+  529  grep -in 'unix\b' demo.txt
+  530  grep -in '\bear\b' demo.txt
+  531  grep -Ein '\bear\b' demo.txt
+  532  grep -in 'ear\b' demo.txt
+  533  clear
+  534  grep -win unix demo.txt
+  535  grep -in unix demo.txt
+  536  grep -n tutor demo.txt
+  537  grep -in tutor demo.txt
+  538  grep -win tutor demo.txt
+  539  grep -in '\btutor\b' demo.txt
+  540  grep -Ein '\bear\b' demo.txt
+  541  grep -win '\bear\b' demo.txt
+  542  grep -win ear demo.txt
+  543  grep -in '\bear\b' demo.txt
+  544  grep -in 'ear' demo.txt
+  545  grep -winl tutor demo.txt
+  546  grep -wl tutor demo.txt
+  547  grep -wil tutor demo.txt
+  548  cp demo.txt file.txt
+  549  grep -wRil tutor 
+  550  clear
+  551  var=grep
+  552  echo $var
+  553  grep $var demo.txt 
+  554  grep -n $var demo.txt 
+  555  grep -in $var demo.txt 
+  556  unset var
+  557  echo $var
+  558  clear
+  559  grep '[A-Z]' demo.txt 
+  560  grep '[A-Z]{3}' demo.txt 
+  561  egrep '[A-Z]{3}' demo.txt 
+  562  grep -E '[A-Z]{3}' demo.txt 
+  563  clear
+  564  grep -E '[A-Z]{3}' demo.txt 
+  565  grep -E '[A-Z]{3}\b' demo.txt 
+  566  grep -E '\b[A-Z]{3}\b' demo.txt 
+  567  grep -E '\b[A-Z]{4}\b' demo.txt 
+  568  grep -E '\b[A-Z]{4}$\b' demo.txt 
+  569  clear
+  570  cat -e demo.txt 
+  571  grep -E '\s$' demo.txt 
+  572  clear
+  573  grep -E '^$' demo.txt 
+  574  grep -En '^$' demo.txt 
+  575  grep -Env '^$' demo.txt 
+  576  grep -Env '^$' demo.txt > out.txt
+  577  ls
+  578  cat out.txt 
+  579* 
+  580  cat out.txt 
+  581  cat -e out.txt 
+  582  clear
+  583  grep -E '[A-Z]{3,}' demo.txt 
+  584  grep -E '[A-Z]{3,4}' demo.txt 
+  585  grep -E '[A-Z]{3,5}' demo.txt 
+  586  clear
+  587  grep '[0-9]' demo.txt 
+  588  grep '[0-9]{2}' demo.txt 
+  589  grep -E '[0-9]{2}' demo.txt 
+  590  grep -E '^[0-9]{2}' demo.txt 
+  591  grep -E '[0-9]{2}' demo.txt 
+  592  clear
+  593  grep -E '\[[0-9]{2}\]' demo.txt 
+  594  grep -E '^' demo.txt 
+  595  clear
+  596  grep -E '^\^' demo.txt 
+  597  grep -E '\' demo.txt 
+  598  grep -E '\\' demo.txt 
+  599  grep -E '^\\' demo.txt 
+  600  grep -E '$' demo.txt 
+  601  cat -e demo.txt 
+  602  clear
+  603  grep -E '\$$' demo.txt 
+  604  grep -E '\$$' demo.txt 
+  605  grep -E '#' demo.txt 
+  606  grep -E '$' demo.txt 
+  607  clear
+  608  grep -E '#.*\$' demo.txt 
+  609  grep -Ev '#.*\$' demo.txt
+  610  grep -Ev '#' demo.txt  [NOT operation]
+  611  clear
+  612  grep -Ev '#' demo.txt
+  613  grep -E '#' demo.txt
+  614  clear
+  615  grep -Ev '#.*\$' demo.txt
+  616  grep -E '#' demo.txt | grep '\$'
+  617  clear
+  618  grep -E '#.*\$' demo.txt
+  619  grep -E '#' demo.txt | grep '\$'
+  620  grep -E '#|\$' demo.txt 
+  621  grep -E '[#$]' demo.txt 
+  622  grep -e '#' -e '\$' demo.txt 
+  623  grep -e '#' -e '\$' -e '[0-9]{4}' demo.txt 
+  624  grep -e '#' -e '\$' -e '[0-9]{2}' demo.txt 
+  625  grep -e '#' -e '\$' -Ee '[0-9]{2}' demo.txt 
+  626  grep -E '#|\$|[0-9]{2}' demo.txt 
+  627  clear
+  628  grep -E '[#:-]' demo.txt 
+  629  grep -E '#|:|-' demo.txt 
+  630  grep -e '#' -e ':' -e '-' demo.txt 
+  631  grep -e '#' -e ':' -e '-' -e '[0-9]{3,4}' demo.txt 
+  632  grep -e '#' -e ':' -e '-' -Ee '[0-9]{3,4}' demo.txt 
+  633  clear
+  634  sed 's/unix/linux' demo.txt 
+  635  sed 's/unix/linux/' demo.txt 
+  636  clear
+  637  sed 's/unix/linux/i' demo.txt 
+  638  clear
+  639  sed 's/ /-/' demo.txt 
+  640  clear
+  641  sed 's/ /-/g' demo.txt 
+  642  sed 's/ /-/' demo.txt 
+  643  sed 's/ /-/g' demo.txt 
+  644  clear
+  645  cat demo.txt 
+  646  clear
+  647  sed '4d' demo.txt 
+  648  cat demo.txt 
+  649  clear
+  650  sed '4d' demo.txt 
+  651  clear
+  652  sed '5,8d' demo.txt 
+  653  clear
+  654  cat demo.txt | tail -n+5
+  655  cat demo.txt | tail -n+2
+  656  cat demo.txt | head -n+2
+  657  clear
+  658  cat demo.txt | head -n+4
+  659  sed '5,$d' demo.txt 
+  660  sed '5i/This is a new line' demo.txt 
+  661  sed '5i This is a new line' demo.txt 
+  662  clear
+  663  sed '1c Wednesday' demo.txt 
+  664  sed '=' demo.txt 
+  665  clear
+  666  sed 's/#*/@%/g' demo.txt
+  667  clear
+  668  sed 's/#*/@%/g' demo.txt
+  669  clear
+  670  sed 's/#\*/@%/g' demo.txt
+  671  clear
+  672  sed 'y/#*/@%/' demo.txt
+  673  sed 's/#*/@%/g' demo.txt
+  674  sed 'y/#*/@%/' demo.txt
+  675  clear
+  676  sed 'y/#*^/@%-/' demo.txt
+  677  clear
+  678  nano function.sh
+  679  history > unix4.txt
