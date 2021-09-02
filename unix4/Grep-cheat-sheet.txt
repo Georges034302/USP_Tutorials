@@ -1,0 +1,151 @@
+Tutorial 4 - Grep & RegEx 
+
+Using grep command
+Syntax:
+
+grep [option] [pattern] [file name]
+
+To search for a string pattern in a file:
+
+grep ‘string’ [filename]  
+
+Example:    grep ‘start’ stopwatch.sh
+
+To search for the exact word match in a file:
+
+grep -w ‘word’ [filename]
+
+Example: grep -w ‘start’ stopwatch.sh
+
+
+
+
+To ignore case for a search pattern in a file:
+
+grep -i ‘pattern’ [filename]  
+
+Example:    grep -i ‘row’ box.sh
+
+To search for a variable value match in a file:
+
+$var = ‘word’
+grep  $var [filename]
+
+
+
+
+
+
+To inverse the search and get all none-matching lines
+
+grep -v ‘string’ [filename]  
+
+Example:    grep -v ‘start’ stopwatch.sh
+
+To get the count of matching line containing a pattern
+
+grep -c ‘word’ [filename]
+
+Example: grep -c ‘start’ stopwatch.sh
+
+
+
+
+To display the line numbers as well as matching pattern:
+
+grep -n ‘word’ [filename]
+
+Example: grep -n ‘start’ stopwatch.sh
+
+
+
+
+To print 2 lines before the matching pattern line:
+
+grep -B 2 ‘string’ [filename]  
+
+Example:    grep -B 2 ‘start’ stopwatch.sh
+
+To print 2 lines after the matching pattern line:
+
+grep -A 2 ‘word’ [filename]
+
+Example: grep -A 2 ‘start’ stopwatch.sh
+
+
+
+
+To print one line before and one line after the matching line:
+
+grep -C 1 ‘string’ [filename]  
+
+Example:    grep -C 1 ‘start’ stopwatch.sh
+
+To recursively search for a pattern (i.e. home directory)
+
+grep -r ‘word’ ~/
+
+Example: grep -r ‘start’ ~/
+
+
+
+
+To search for a string pattern and list all matching files:
+
+grep -l ‘string’ /directory  
+
+Example:    grep -l ‘row’ ~/
+
+To display all matching files and numbered matching lines:
+grep -rn ‘word’ /directory
+
+Example: grep -rn ‘start’ ~/
+
+
+
+
+To display matching lines numbers of certain file type:
+
+grep -rn ‘string’ *.extension
+
+Example:    grep -rn ‘start’ *.sh
+
+To search for the matching complex RegEx in a file:
+
+grep -E ‘EXP’ [filename] or use egrep
+
+
+
+
+
+
+Examples: grep -E   ; egrep ; RegEx
+
+grep -E ‘@whois\..{4}\..+;;$’ whois.sh
+
+
+grep ‘\$[12]’ grameoflife.sh             [OR Operation]
+
+grep -E ‘[0-9]|$echo’ randomcard.sh      [OR Operation]
+
+grep ‘\$’ towers.sh | grep ‘#’           [AND Operation]
+
+grep -E ‘#.*:’                           [AND Operation]
+
+
+
+
+Examples: grep -E   ; egrep ; RegEx
+
+grep ‘^$’ [filename]          [Finds empty lines]
+
+grep ‘^.$’ [filename]         [lines with exactly one character]
+
+grep ‘\(\)’ [filename]        [Finds () pattern in a file]                                
+
+grep ‘[A-Z]’ [filename]       [Finds word with uppercase]
+
+grep ‘\$’     [filename]      [Finds lines with $]
+
+
+
