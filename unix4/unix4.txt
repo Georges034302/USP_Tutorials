@@ -1,0 +1,154 @@
+Grep Demo:
+
+grep unix demo.txt  
+grep -i unix demo.txt
+grep -w unix demo.txt
+grep -wi unix demo.txt
+grep -win unix demo.txt
+grep -winl unix demo.txt
+
+
+var=grep
+grep $var demo.txt
+grep -i $var demo.txt
+grep -i $var$ demo.txt
+
+grep '[A-Z]' demo.txt
+grep -E '[A-Z]{3}' demo.txt
+grep -E '[A-Z]{4}' demo.txt
+grep -E '[A-Z]{4}$' demo.txt
+grep -E '^[A-Z]{4}' demo.txt
+
+grep '[0-9]' demo.txt
+grep -E '[0-9]{2}' demo.txt
+grep -E '[0-9]{3}' demo.txt
+grep -E '[0-9]{4}' demo.txt
+grep -E '[0-9]{3,4}' demo.txt
+grep -E '^[0-9]' demo.txt
+grep -E '[0-9]$' demo.txt
+
+grep '^' demo.txt
+grep '^\^' demo.txt
+grep '$' demo.txt
+grep '\$$' demo.txt
+grep '^$' demo.txt
+grep -v '^$' demo.txt         [NOT operation]
+grep -E '( )$' demo.txt       [find white space at the end of  the line]
+grep -E '\s$' demo.txt       [find white space at the end of  the line]
+
+
+grep '\' demo.txt
+grep '\\' demo.txt
+grep '^\\' demo.txt
+
+grep -E '\[[0-9]\]' demo.txt
+grep -E '\[[0-9]{2}\]' demo.txt
+
+grep '#' demo.txt
+grep '#' demo.txt | grep '[0-9]'                    [AND opreation]
+grep '#' demo.txt | grep -E '[0-9]{4}'
+grep '#' demo.txt | grep -E '[0-9]{4}$'
+grep '#' demo.txt | grep -E '[0-9]{4}' | grep ':'   [Multiple AND]
+
+grep -E '\*.*)' demo.txt                [AND operation]
+grep -E '[0-9].*\)' demo.txt
+grep -E '^[0-9].*\)' demo.txt
+grep -E '[0-9]{2}.*\)' demo.txt
+grep -E '[A-Z].*[0-9]' demo.txt
+grep -E '[A-Z]{4}.*[0-9]' demo.txt
+grep -E '^[A-Z].*[0-9]' demo.txt
+grep -E '[A-Z].*[0-9]$' demo.txt
+grep -E '[A-Z].*[0-9]{3}$' demo.txt
+
+grep -E '#|[0-9]' demo.txt                  [OR operation]
+grep -E '#|[0-9]$' demo.txt
+grep -E '^#|[0-9]$' demo.txt
+grep -E '^#|:|[0-9]$' demo.txt              [Multiple OR]
+grep -E '[#:0-9]' demo.txt                  [multiple OR]
+grep -e '#' -e ':' -e '[0-9]' demo.txt      [Multiple OR]
+  
+grep -R '[0-9]' ~/USP/
+grep -ER '[0-9]{4}' ~/USP/
+grep -R unix ~/USP/
+grep -ERi 'unix' ~/USP/
+grep -ERin 'unix' ~/USP/
+grep -ERinl 'unix' ~/USP/
+grep -ERino 'unix' ~/USP/
+
+grep -R 'for' ~/USP/
+grep -Ro 'for' ~/USP/
+grep -Ron 'for' ~/USP/
+grep -Rol 'for' ~/USP/
+
+sed '=' demo.txt                            [print line numbers] 
+
+sed 's/unix/linux/' demo.txt
+sed 's/unix/linux/gi' demo.txt
+sed 's/\( \)/\~/' demo.txt
+sed 's/\\/\~/' demo.txt
+sed 's/[#$^*()-:\\]/@/g' demo.txt           replace all characters with @
+sed 's/[#$^*()-:\\]/ /g' demo.txt
+sed 's/\bgrep\b/sed/gi' demo.txt
+
+sed '5,25d' demo.txt                        [Delete from 5 to 25]
+sed '5,$d' demo.txt                         [Delete from 5 to end of file]
+sed '5,$ !d' demo.txt                       [negate the above]
+sed '/grep/Id' demo.txt                     [Delete lines containing grep, I for ignore case]
+sed '/grep/I!d' demo.txt		    [negate the above]	
+
+
+sed '5i\>>>INSERTING FIFTH LINE' demo.txt   [insert at line 5]
+sed '5,10i\>>>A LINE' demo.txt              [insert at line 5]
+sed '3c\ Georges Bou Ghantous' demo.txt     [update line 3]
+sed '3,5c\ Georges Bou Ghantous' demo.txt   [replace 5 lines]
+sed '3,$c\ Georges Bou Ghantous' demo.txt   [replace all lines from 5 to the end]
+sed 'y/#*/@%/' demo.txt                     [Transform characters respectively]
+sed 'y/#*\\/@%!/' demo.txt
+
+
+sed -n '1,5p' demo.txt
+sed -n '$p' demo.txt                        [print last line]
+sed -n '20,$p' demo.txt                     [print from 20 to last]
+sed -n '2,+5p' demo.txt                     [print from line 2 to like 2+5]
+sed -n '2~5 p' demo.txt                     [print from line 2 and then print each line at pos +2]
+sed -n '/grep/I p' demo.txt                 [print lines with grep, I to ignore case] 
+sed -n '/grep/, /unix/ p' demo.txt
+sed -n '/[0-9]\{4\}/ p' demo.txt
+sed -n '/\b[0-9]\{4\}\b/ p' demo.txt
+sed -n '/\b[0-9]\{2,4\}\b/ p' demo.txt
+sed -n '/[0-9]\{2,4\}/ p' demo.txt
+sed -n '/\b[0-9]\{4\}\b/ !p' demo.txt       [! negate the match]
+sed -n '/^$/ p' demo.txt                    [print blank lines]
+sed -n '/^$/ !p' demo.txt                   [negate the above]
+sed -n '/\s$/ p' demo.txt                   [print the lines with empty space at the end]
+sed -n '/\s$/ !p' demo.txt                  [negate the above]
+
+sed -n 's/grep/USP/pi' demo.txt             [search and print and substitute with ignore case]
+sed -n 's/^*/@/ p' demo.txt                 [search and print and substitute * with @ at line start]
+sed -n 's/\$$/@/ p' demo.txt                [search and print and substitute $ with @ at line start]
+sed -n 's/^$/BLANK LINE/ p' demo.txt        [search and print and substitute blank lines with BLANK LINE at line start]
+sed -n 's/[A-Z]/ /g p' demo.txt             [search and print and substitute [A-Z] with empty at line start]
+sed -n 's/\s$/@/ p' demo.txt                [search and print and substitute \s with empty at line end with END]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
