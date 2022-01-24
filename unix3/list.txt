@@ -1,7 +1,0 @@
--rw-rw-r--+ 1 George None 54 Aug 27 12:50 error.txt
--rw-rw-r--+ 1 George None 15 Aug 27 12:34 f1
--rw-rw-r--+ 1 George None 16 Aug 27 12:34 f2
-----------+ 1 George None  0 Aug 27 12:32 f3
-----------+ 1 George None  0 Aug 27 12:32 f4
--rw-rw-r--+ 1 George None  0 Aug 27 13:01 list.txt
--rw-rw-r--+ 1 George None 85 Aug 27 12:51 out.txt

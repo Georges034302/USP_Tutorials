@@ -1,5 +1,0 @@
-this is file 1
-this is file 2
-
-cat: f3: Permission denied
-cat: f4: Permission denied
