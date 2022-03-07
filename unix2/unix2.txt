@@ -1,0 +1,500 @@
+   82  sed '5,$d' demo.txt 
+   83  sed '6,10d' demo.txt 
+   84  sed '6,10 !d' demo.txt 
+   85  clear
+   86  sed '/Python/Id' demo.txt 
+   87  sed '/Python/I!d' demo.txt 
+   88  sed '/Note/I!d' demo.txt 
+   89  sed '/Note/Id' demo.txt 
+   90  clear
+   91  s '/^$/Id' demo.txt 
+   92  sed '/^$/Id' demo.txt 
+   93  sed '/^$/I!d' demo.txt 
+   94  clear
+   95  sed '4i\This is a new line' demo.txt 
+   96  sed '4c\THIS IS A NEW LINE' demo.txt 
+   97  CLEAR
+   98  sed '1,3p' demo.txt 
+   99  sed -n '1,3p' demo.txt 
+  100  sed -n '$p' demo.txt 
+  101  clear
+  102  sed '=' demo.txt 
+  103  clear
+  104  sed -n '1,3p' demo.txt 
+  105  sed 's/python/java/gi' demo.txt 
+  106  sed -n 's/python/java/gip' demo.txt 
+  107  clear
+  108  ls -l
+  109  cat demo.txt 
+  110  clear
+  111  ls -l | tail -n+2
+  112  ls -l | tail -n+2 > out.txt 
+  113  cat out.txt 
+  114  cut -d " " -f 2-6 demo.txt 
+  115  clear
+  116  cut -d " " -f 2-6 out.txt 
+  117  cat out.txt 
+  118  cut -d " " -f 3,4 out.txt 
+  119  cut -d " " -f 1-4 out.txt 
+  120  clear
+  121  cut -d " " -f 4-9 out.txt 
+  122  ls -l
+  123  cat out.txt 
+  124  clear
+  125  cut -d " " -f 4-9 out.txt 
+  126  cat demo.txt 
+  127  clear
+  128  cut -d " " -f 4-9 out.txt 
+  129  cat out.txt 
+  130  awk '{print $5 " " $10}' out.txt 
+  131  awk '{print $5 " " $9}' out.txt 
+  132  clear
+  133  cut -d " " -f 4-9 out.txt 
+  134  awk '{print $5 " " $9}' out.txt 
+  135  awk '{printf "%5d %10s \n", $5,$9}' out.txt 
+  136  awk '{printf "%5d %-10s \n", $5,$9}' out.txt 
+  137  history > day4.txt
+  138  cat day4.txt 
+  139  ls
+  140  cd day4/y
+  141  cd day4/
+  142  clear
+  143  cat demo.txt 
+  144  nano demo.txt 
+  145  clear
+  146  cat demo.txt 
+  147  nano demo.txt 
+  148  clear
+  149  cat demo.txt 
+  150  cat demo.txt 
+  151  clear
+  152  cat demo.txt 
+  153  cat demo.txt 
+  154  clear
+  155  cat demo.txt 
+  156  cp create.sh test.sh
+  157  nano test.sh 
+  158  ./test.sh 4
+  159  nano test.sh 
+  160  touch f.txt
+  161  ./test.sh f
+  162  rm f
+  163  rm f.*
+  164  ls
+  165  rm test.sh 
+  166  clear
+  167  ls
+  168  ./create.sh 2
+  169  ./create.sh 2
+  170  ./create.sh 2
+  171  ls
+  172  rm G*
+  173  ls
+  174  ./create.sh 2
+  175  ./create.sh 2
+  176  ls
+  177  rm G*
+  178  ls
+  179  clear
+  180  ./create.sh 2
+  181  ls
+  182  ls George-06-03-2022/
+  183  rm -r George-06-03-2022/
+  184  clear
+  185  ls
+  186  ./create.sh 2
+  187  ls -l
+  188  ls George-06-03-2022/
+  189  rm -r George-06-03-2022/
+  190  clear
+  191  ./create.sh 2
+  192  rm G*
+  193  rm G*.txt
+  194  ls
+  195  rm -r George-06-03-2022/
+  196  clear
+  197  ./create.sh 2
+  198  rm G*
+  199  rm -r George-06-03-2022/
+  200  ls
+  201  clear
+  202  ./create.sh 2
+  203  ls
+  204  rm G*
+  205  rm -r George-06-03-2022/
+  206  clear
+  207  ./create.sh 2
+  208  ls
+  209  rm G*
+  210  clear
+  211  ./create.sh 2
+  212  ls
+  213  ./create.sh 2
+  214  ./create.sh 2
+  215  ls
+  216  clear
+  217  ./create.sh 2
+  218  ls
+  219  ls -l
+  220  rm 2
+  221  rm George-*
+  222  ls
+  223  clear
+  224  ./create.sh 2
+  225  rm 2
+  226  rm G*
+  227  ./create.sh 2
+  228  ls
+  229  rm G*
+  230  rm 2
+  231  clear
+  232  ./create.sh 2
+  233  nano test.sh
+  234  chmod u+x test.sh 
+  235  ./test.sh 
+  236  ./test.sh 
+  237  rm test.sh 
+  238  clear
+  239  ls
+  240  rm fil*
+  241  rm George-*
+  242  rm 2
+  243  clear
+  244  ls
+  245  ./create.sh 2
+  246  ./create.sh 2
+  247  ls
+  248  rm * George-*
+  249  ls
+  250  nano create.sh
+  251  ls
+  252  clear
+  253  ./create.sh 2
+  254  chmod u+x create.sh 
+  255  ./create.sh 2
+  256  ./create.sh 2
+  257  ./create.sh 2
+  258  clear
+  259  ls
+  260  rm G*
+  261  ls
+  262  ./create.sh 2
+  263  ./create.sh 2
+  264  ./create.sh 2
+  265  ./create.sh 2
+  266  rm G*
+  267  clear
+  268  ./create.sh 2
+  269  ./create.sh 2
+  270  ./create.sh 2
+  271  rm G*
+  272  clear
+  273  ./create.sh 2
+  274  ./create.sh 2
+  275  ./create.sh 2
+  276  ls
+  277  rm George.txt 
+  278  clear
+  279  ./create.sh 2
+  280  rm George.txt 
+  281  ./create.sh 2
+  282  ./create.sh 2
+  283  ./create.sh 2
+  284  ls
+  285  rm G*
+  286  clear
+  287  ./create.sh 2
+  288  ./create.sh 2
+  289  ./create.sh 2
+  290  ./create.sh 2
+  291  ls
+  292  rm George.txt 
+  293  clear
+  294  ./create.sh 2
+  295  ./create.sh 2
+  296  ls
+  297  ./create.sh 2
+  298  ./create.sh 2
+  299  clear
+  300  ./create.sh 2
+  301  ./create.sh 2
+  302  ./create.sh 2
+  303  ls
+  304  ./create.sh 2
+  305  ls
+  306  clear
+  307  ./create.sh 2
+  308  ./create.sh 2
+  309  ./create.sh 2
+  310  ./create.sh 2
+  311  ls
+  312  clear
+  313  ./create.sh 2
+  314  ./create.sh 2
+  315  rm G*
+  316  clear
+  317  ls
+  318  ./create.sh 2
+  319  ./create.sh 2
+  320  ./create.sh 2
+  321  clear
+  322  rm G*
+  323  ./create.sh 2
+  324  ./create.sh 2
+  325  ./create.sh 2
+  326  rm G*
+  327  clear
+  328  ls
+  329  chmod u+x create.sh 
+  330  ls
+  331  ./create.sh 5
+  332  ls
+  333  rm G*
+  334  ls
+  335  nano create.sh 
+  336  ./create.sh 
+  337  ls
+  338  ./create.sh 4
+  339  rm G*
+  340  clear
+  341  nano create.sh 
+  342  ./create.sh 3
+  343  ls
+  344  nano create.sh 3
+  345  ./create.sh 3
+  346  ls
+  347  rm G*
+  348  ls
+  349  clear
+  350  nano create.sh 
+  351  ./create.sh 3
+  352  nano create.sh 
+  353  ./create.sh 3
+  354  ls
+  355  nano create.sh 
+  356  ls
+  357  nano create.sh 
+  358  ls
+  359  rm day4
+  360  rm -r day?
+  361  ls
+  362  clear
+  363  nano binary.sh
+  364  nano binary.sh
+  365  ls
+  366  nano binaryIPv4.sh 
+  367  ls
+  368  ls
+  369  clear
+  370  chmod u+x binary.sh 
+  371  ./binary.sh 
+  372  ./binary.sh 
+  373  ./binary.sh 
+  374  clear
+  375  ./binary.sh 
+  376  ./binary.sh 
+  377  clear
+  378  ./binary.sh 
+  379  clear
+  380  ./binary.sh 
+  381  ./binary.sh 
+  382  ./binary.sh 
+  383  clear
+  384  ./binary.sh 
+  385  clear
+  386  ./binary.sh 
+  387  clear
+  388  ./binary.sh 
+  389  ./binary.sh 
+  390  ./binary.sh 
+  391  ./binary.sh 
+  392  clear
+  393  ./binary.sh 
+  394  ./binary.sh 
+  395  ./binary.sh 
+  396  ./binary.sh 
+  397  clear
+  398  ./binary.sh 
+  399  ./binary.sh 
+  400  ./binary.sh 
+  401  ./binary.sh 
+  402  ./binary.sh 
+  403  ./binary.sh 
+  404  ./binary.sh 
+  405  clear
+  406  ./binary.sh 
+  407  ./binary.sh 
+  408  ./binary.sh 
+  409  ./binary.sh 
+  410  ./binary.sh 
+  411  ./binary.sh 
+  412  clear
+  413  ./binary.sh 
+  414  ./binary.sh 
+  415  ./binary.sh 
+  416  ./binary.sh 
+  417  ./binary.sh 
+  418  clear
+  419  ./binary.sh 
+  420  ./binary.sh 
+  421  ./binary.sh 112.1.25.6
+  422  ./binary.sh 112.1.25.6
+  423  ./binary.sh 112.1.25.6
+  424  clear
+  425  ./binary.sh 112.1.25.6
+  426  ./binary.sh 112 26 33 55
+  427  clear
+  428  ./binary.sh 112 26 33 55
+  429  clear
+  430  ./binary.sh 112 26 33 55
+  431  ./binary.sh 112 26 33 55
+  432  ./binary.sh 112 26 33 55
+  433  ./binary.sh 112 26 33 55
+  434  clear
+  435  ./binary.sh 112 26 33 55
+  436  ./binary.sh 112 26 33 55
+  437  ./binary.sh 112 26 33 55
+  438  ./binary.sh 112 26 33 55
+  439  ./binary.sh 112 26 33 55
+  440  clear
+  441  ./binary.sh 112 26 33 55
+  442  ./binary.sh 112 26 33 55
+  443  ./binary.sh 112 26 33 55
+  444  ./binary.sh 112 26 33 55
+  445  clear
+  446  ./binary.sh 112 26 33 55
+  447  ./binary.sh 112 26 33 55
+  448  ./binary.sh 112 26 33 55
+  449  ./binary.sh 112 26 33 55
+  450  ./binary.sh 112 26 33 55
+  451  ./binary.sh 112 26 33 55
+  452  clear
+  453  ./binary.sh 112 26 33 55
+  454  ./binary.sh 112 26 33 55
+  455  ./binary.sh 112 26 33 55
+  456  ./binary.sh 112 26 33 55
+  457  ./binary.sh 112 26 33 55
+  458  ./binary.sh 112 26 33 55
+  459  ./binary.sh 112 26 33 55
+  460  clear
+  461  ./binary.sh 112 26 33 55
+  462  ./binaryIPv4.sh 112.33.2.5
+  463  ./binaryIPv4.sh 112.33.2.5
+  464  ls
+  465  chmod u+x create.sh 
+  466  ./create.sh 3
+  467  ./create.sh 3
+  468  ./create.sh 3
+  469  ls
+  470  rm Georg*
+  471  clear
+  472  ls
+  473  ./create.sh 10
+  474  ./create.sh 10
+  475  rm George*
+  476  clear
+  477  ./create.sh 3
+  478  ./create.sh 3
+  479  rm George*
+  480  clear
+  481  ./create.sh 3
+  482  ls
+  483  rm George*
+  484  ls
+  485  clear
+  486  ls
+  487  ./create.sh 4
+  488  rm -r George
+  489  rm -r George-
+  490  rm Geo*
+  491  clear
+  492  ./create.sh 3
+  493  rm -r George-07-03-2022/
+  494  rm Geo*
+  495  clear
+  496  ls
+  497  ls -l
+  498  rm 0
+  499  clear
+  500  nano create.sh
+  501  ls 
+  502  cd unix2/
+  503  ls
+  504  ls -l
+  505  chmod u+x welcome.sh 
+  506  clear
+  507  ./welcome.sh 
+  508  ./welcome.sh 
+  509  llt
+  510  cd 
+  511  ls
+  512  ls -a
+  513  nano .bashrc
+  514  llt
+  515  clear
+  516  alias ll='ls -l'
+  517  ./welcome.sh 
+  518  cd unix2/
+  519  ./welcome.sh 
+  520  ll
+  521  ./welcome.sh 
+  522  ./welcome.sh 
+  523  clear
+  524  ./welcome.sh 
+  525  clear
+  526  ls
+  527  chmod u+x hello.sh 
+  528  ./hello.sh 
+  529  ./hello.sh 
+  530  ./hello.sh 34 33 22 hello bye 99
+  531  ./hello.sh 34 33 22 hello bye 99
+  532  clear
+  533  ./hello.sh 34 33 22 hello bye 99
+  534  ./hello.sh 34 33 22 hello bye 99
+  535  ./hello.sh 25
+  536  clear
+  537  ./hello.sh 25 welcome to USP 32547
+  538  clear
+  539  chmod u+x verify.sh 
+  540  ./verify.sh 
+  541  ./verify.sh 
+  542  ls -l
+  543  clear
+  544  chmod u+x verify.sh 
+  545  ./verify.sh 
+  546  chmod u+x check.sh 
+  547  ./check.sh 
+  548  rm -r record/
+  549  rm f?
+  550  ls
+  551  clear
+  552  ls
+  553  ./check.sh 
+  554  ./check.sh 
+  555  ./check.sh 
+  556  rm -r names/
+  557  clear
+  558  chmod u+x grades.sh 
+  559  ./grades.sh 88
+  560  ./grades.sh 8
+  561  ./grades.sh 55
+  562  clear
+  563  chmod u+x create.sh 
+  564  ./create.sh 
+  565  ./create.sh 
+  566  clear
+  567  ./create.sh 
+  568  clear
+  569  ./create.sh 
+  570  clear
+  571  ./create.sh 3
+  572  ls -l
+  573  rm *.txt
+  574  clear
+  575  ./create.sh 4
+  576  rm *.txt
+  577  history > unix2.txt
+  578  ls
+  579  cd ..
+  580  ls
+  581  history > unix2.txt
