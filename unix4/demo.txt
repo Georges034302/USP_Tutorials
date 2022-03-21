@@ -1,0 +1,13 @@
+#Wednesday 03/Mar/2021
+#Tutor: George
+#Topics: Python, Bash$ 
+Course Code #1299
+
+$Reg-Ex# is used searching and filtering in this tutorial
+
+^NOTE: both grep and sed use REGEX$
+^NOTE: UNIX, Perl, Java, Python use regex
+
+Tutorial File# demo.txt$
+TYPE: ^text 
+SIZE: ^236
