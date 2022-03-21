@@ -1,0 +1,139 @@
+    8  clear
+    9  grep 'grep' demo.txt 
+   10  grep 'tutor' demo.txt 
+   11  grep -i 'tutor' demo.txt 
+   12  grep -wi 'tutor' demo.txt 
+   13  grep -i '\btutor\b' demo.txt 
+   14  grep -win 'tutor' demo.txt 
+   15  var=tutor
+   16  echo $var
+   17  clear
+   18  grep -win $var demo.txt 
+   19  grep -in $var demo.txt 
+   20  uset var
+   21  unset var
+   22  echo $var
+   23  clear
+   24  grep '[A-Z]' demo.txt 
+   25  grep -n '[A-Z]' demo.txt 
+   26  grep -n '[A-Z]{4}' demo.txt 
+   27  grep -En '[A-Z]{4}' demo.txt 
+   28  clear
+   29  grep -En '[A-Z]{4}' demo.txt 
+   30  grep -En '[A-Z]{3}' demo.txt 
+   31  grep -n '[0-9]' demo.txt 
+   32  grep -n '[0-9]{4}' demo.txt 
+   33  grep -En '[0-9]{4}' demo.txt 
+   34  grep -n '[a-z]$' demo.txt 
+   35  clear
+   36  grep -n '[a-z]$' demo.txt 
+   37  grep '\s$' demo.txt 
+   38  grep -n '\s$' demo.txt 
+   39  grep -n '\$$' demo.txt 
+   40  clear
+   41  grep -n '\$\s$' demo.txt 
+   42  grep -n '\$\s$|\$$' demo.txt 
+   43  grep -En '\$\s$|\$$' demo.txt 
+   44  grep '^' demo.txt 
+   45  grep '\^' demo.txt 
+   46  clear
+   47  grep '^' demo.txt 
+   48  grep '\^' demo.txt 
+   49  grep '^\^' demo.txt 
+   50  grep -n '^\^' demo.txt 
+   51  clear
+   52  grep '^$' demo.txt 
+   53  grep -n '^$' demo.txt 
+   54  grep -nv '^$' demo.txt 
+   55  clear
+   56  grep -En '\$\s$|\$$' demo.txt 
+   57  grep '^$' demo.txt 
+   58  grep -n '^$' demo.txt 
+   59  grep -nv '^$' demo.txt 
+   60  clear
+   61  grep -En '\$\s$|\$$' demo.txt 
+   62  grep -En '#|[0-9]{4}' demo.txt 
+   63  grep -En '#.*[0-9]{4}' demo.txt 
+   64  grep -e '#' -e '[0-9]{}' demo.txt 
+   65  grep '#' demo.txt | grep -E '[0-9]{4}' 
+   66  clear
+   67  sed 's/tutor/Teacher/' demo.txt 
+   68  sed 's/tutor/Teacher/i' demo.txt 
+   69  clear
+   70  sed -n 's/tutor/Teacher/i' demo.txt 
+   71  sed 's/[0-9]{4}/--/i' demo.txt 
+   72  sed 's/[0-9]{4}/--/gi' demo.txt 
+   73  clear
+   74  sed 's/[0-9]\{4\}/--/gi' demo.txt 
+   75  sed 's/[0-9]\{3,4\}/--/gi' demo.txt 
+   76  clear
+   77  sed -n '/[0-9]\{3,4\}/ p' demo.txt 
+   78  sed -n '/^$/ p' demo.txt 
+   79  sed -n '/^$/ !p' demo.txt 
+   80  sed -n '/\$$/ p' demo.txt 
+   81  sed -n '/\s$/ p' demo.txt 
+   82  clear
+   83  sed -n 's/\s$/SPACE/gp' demo.txt 
+   84  sed -n 's/\s$/--ENDING-SPACE/gp' demo.txt 
+   85  sed -n 's/\s$/--ENDING-SPACE/g' demo.txt 
+   86  sed 's/\s$/--ENDING-SPACE/g' demo.txt 
+   87  clear
+   88  sed -n 's/\s$/--ENDING-SPACE/gp' demo.txt 
+   89  sed -n 's/\s/-/gp' demo.txt 
+   90  sed -n 's/^$/BLANK LINE/gp' demo.txt 
+   91  sed -n 's/^$/BLANK LINE/g !p' demo.txt 
+   92  sed -n 's/^$/BLANK LINE/!p' demo.txt 
+   93  sed -n 's/^$/BLANK LINE/g !p' demo.txt 
+   94  clear
+   95  sed -n 's/^$/BLANK LINE/gp' demo.txt 
+   96  sed '=' demo.txt 
+   97  clear
+   98  sed '1d' demo.txt 
+   99  sed '1,5d' demo.txt 
+  100  sed '5,$d' demo.txt 
+  101  clear
+  102  sed '5i\A NEW LINE' demo.txt 
+  103  sed '5c\A NEW LINE' demo.txt 
+  104  clear
+  105  sed '5,$c\-------' demo.txt 
+  106  sed '5,$c\-------END OF DEMO' demo.txt 
+  107  sed 's/[,:#/]/ /g' demo.txt  
+  108  clear
+  109  sed 's/[,:#/]/@/g' demo.txt  
+  110  sed 's/[0-9a-z]/@/g' demo.txt  
+  111  clear
+  112  sed 's/helloworld/#/g' demo.txt  
+  113  sed 's/helloworld/###########/g' demo.txt  
+  114  clear
+  115  chmod u+x array.sh 
+  116  ./array.sh 
+  117  ./array.sh 
+  118  ./array.sh 
+  119  ./array.sh 
+  120  ./array.sh 
+  121  clear
+  122  ./array.sh 
+  123  chmod u+x sequential.sh 
+  124  ./sequential.sh 
+  125  ./sequential.sh 
+  126  ./sequential.sh 
+  127  ./sequential.sh 
+  128  clear
+  129  chmod u+x dynamic.sh 
+  130  ./dynamic.sh 4
+  131  ./dynamic.sh 6
+  132  clear
+  133  chmod u+x create.sh 
+  134  ./create.sh 4
+  135  rm George*
+  136  ls
+  137  clear
+  138  ls
+  139  ./create.sh 4
+  140  ./create.sh 5
+  141  ./create.sh 5
+  142  ./create.sh 5
+  143  rm George*
+  144  ls
+  145  clear
+  146  history > unix4.txt 
