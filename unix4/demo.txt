@@ -11,3 +11,4 @@ $Reg-Ex# is used searching and filtering in this tutorial
 Tutorial File# demo.txt$
 TYPE: ^text 
 SIZE: ^236
+PASSWORD: helloworld
