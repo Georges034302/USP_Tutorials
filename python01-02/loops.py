@@ -4,10 +4,12 @@
 #Print each character on a new line
 s = input("String: ")
 
+txt =""
 for e in s:
     #print(e)
-    print(e, end=", ")
-print()
+    txt += e+","
+    #print(e, end=", ")
+print(txt.strip(","))
 
 num = int(input("Number: "))
 i = 0
