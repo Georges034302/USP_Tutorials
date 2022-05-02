@@ -1,4 +1,4 @@
-#!/bin/env python3 
+#!/bin/env python3
 
 s = "...Welcome to Aut2022 - Python..."
 length = len(s) 
