@@ -1,0 +1,212 @@
+  
+  502  cd USP
+  503  ls
+  504  rm -rf uni*
+  505  ls
+  506  clear
+  507  mkdir unix1
+  508  cd unix1/
+  509  mkdir sub1
+  510  ls
+  511  mkdir sub2-5
+  512  ls
+  513  mkdir sub[2-5]
+  514  ls
+  515  rm sub\[2-5\]/
+  516  rmdir sub\[2-5\]/
+  517  clear
+  518  mkdir sub2
+  519  mkdir sub3
+  520  mkdir sub4
+  521  ls
+  522  rm sub2-5
+  523  rmdir sub2-5
+  524  ls
+  525  mkdir sub6 sub7 sub8
+  526  clear
+  527  ls
+  528  rmdir sub8
+  529  ls
+  530  mkdir sub5
+  531  ls
+  532  cd sub7
+  533  ls
+  534  pwd
+  535  cd ../../../
+  536  pwd
+  537  cd ~/USP/unix1/sub
+  538  cd ~/USP/unix1/sub7
+  539  clear
+  540  pwd
+  541  cd 
+  542  pwd
+  543  cd /
+  544  pwd
+  545  ls
+  546  cd ~
+  547  pwd
+  548  cd USP/unix1/
+  549  ls
+  550  clear
+  551  ls
+  552  touch f1
+  553  ls
+  554  ls -l
+  555  touch f2.txt
+  556  ls
+  557  ls -l
+  558  clear
+  559  ls
+  560  rm f2.txt
+  561  ls
+  562  touch f1 f2 f3 fa fb f11 f22 fa1 fa2 faa fbb f2a f2b
+  563  ls
+  564  ls -l
+  565  clear
+  566  ls
+  567  mv f1 f3
+  568  ls
+  569  cp f* sub1
+  570  ls sub1
+  571  cd sub1
+  572  rm f*
+  573  ls
+  574  cd ..
+  575  clear
+  576  cp f? sub1 
+  577  ls sub1
+  578  ls
+  579  cp f\d sub2
+  580  cp f[0-9] sub2
+  581  ls sub2
+  582  cp f[a-z] sub3
+  583  ls sub3
+  584  cp f[a-zA-Z0-9] sub4
+  585  ls sub4
+  586  clear
+  587  cp f[a-z][0-9] sub5
+  588  ls sub5
+  589  ls
+  590  cp f[a-z]? sub6
+  591  ls sub6
+  592  cp f* sub7
+  593  ls
+  594  mkdir sub8 sub9
+  595  ls
+  596  clear
+  597  ls
+  598  mv f[a-z][a-z] sub8
+  599  ls sub8
+  600  ls sub9
+  601  rmdir sub9
+  602  ls
+  603  rmdir sub8
+  604  rm sub8
+  605  rm -r sub8
+  606  ls
+  607  clear
+  608  cd sub7
+  609  ls
+  610  chmod 000 f*
+  611  ls -l
+  612  cd ..
+  613  clear
+  614  ls
+  615  rm -r sub7
+  616  rm -rf sub7
+  617  ls
+  618  cd ..
+  619  ls
+  620  mkdir temp
+  621  cd unix1/
+  622  clear
+  623  ls
+  624  cp f[0-9][0-9] ~/USP/temp/
+  625  ls ~/USP/temp/
+  626  cp -R * ~/USP/temp/
+  627  ls ~/USP/temp/
+  628  mkdir ~/USP/temp2
+  629  ls ~/USP/
+  630  mv sub1 ~/USP/temp2
+  631  ls ~/USP/temp2
+  632  clear
+  633  ls
+  634  mv f? sub5
+  635  ls sub5
+  636  mv f* sub6
+  637  ls sub6
+  638  ls
+  639  rm sub?
+  640  clear
+  641  rmdir sub?
+  642  rm -r sub?
+  643  ls
+  644  clear
+  645  ls -a
+  646  ls
+  647  ls -a
+  648  ls -al
+  649  mv ~/USP/temp? .
+  650  ls
+  651  mv ~/USP/temp .
+  652  ls
+  653  rm -r *
+  654  clear
+  655  mv ~/USP/temp* .
+  656  mkdir temp
+  657  touch f1 f2
+  658  mv f? temp
+  659  mkdir sub
+  660  mv sub temp/
+  661  touch fa fb
+  662  mv f? temp/sub/
+  663  clear
+  664  ls
+  665  ls -R
+  666  clear
+  667  ls -R ~/
+  668  ls
+  669  rm -r temp/
+  670  ls
+  671  clear
+  672  echo 2
+  673  echo 5
+  674  echo hello
+  675  echo hello world
+  676  touch f1 fa f22 fa2 faa
+  677  echo f1
+  678  echo f?
+  679  echo f[a-z][0-9]
+  680  echo f[a-z]?
+  681  clear
+  682  echo 2+3
+  683  echo $(2+3)
+  684  echo $((2+3))
+  685  echo $(4-3)
+  686  echo $((4-3))
+  687  echo 2+3+4-1
+  688  echo $((2+3)+(4-1))
+  689  clear
+  690  echo $(((2+3)+(4-1)))
+  691  echo $(((2+3)+(4-1))-6)
+  692  echo $((((2+3)+(4-1))-6))
+  693  n=5
+  694  echo n
+  695  echo $n
+  696  echo $n+3
+  697  echo $(($n+3))
+  698  clear
+  699  echo $n
+  700  echo "$n"
+  701  echo '$n'
+  702  echo '"$n"'
+  703  echo \$n
+  704  echo '$n'
+  705  echo \'$n\'
+  706  clear
+  707  echo \$n
+  708  echo \\$n
+  709  unset n
+  710  echo $n
+  711  history
+  712  history > unix1.txt
