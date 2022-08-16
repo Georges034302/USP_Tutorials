@@ -1,0 +1,432 @@
+   40  sed 's/[0-9]\{4\}/--/gi' demo.txt 
+   41  sed 's/[0-9]\{3,4\}/--/gi' demo.txt 
+   42  clear
+   43  sed -n '/[0-9]\{3,4\}/ p' demo.txt 
+   44  sed -n '/^$/ p' demo.txt 
+   45  sed -n '/^$/ !p' demo.txt 
+   46  sed -n '/\$$/ p' demo.txt 
+   47  sed -n '/\s$/ p' demo.txt 
+   48  clear
+   49  sed -n 's/\s$/SPACE/gp' demo.txt 
+   50  sed -n 's/\s$/--ENDING-SPACE/gp' demo.txt 
+   51  sed -n 's/\s$/--ENDING-SPACE/g' demo.txt 
+   52  sed 's/\s$/--ENDING-SPACE/g' demo.txt 
+   53  clear
+   54  sed -n 's/\s$/--ENDING-SPACE/gp' demo.txt 
+   55  sed -n 's/\s/-/gp' demo.txt 
+   56  sed -n 's/^$/BLANK LINE/gp' demo.txt 
+   57  sed -n 's/^$/BLANK LINE/g !p' demo.txt 
+   58  sed -n 's/^$/BLANK LINE/!p' demo.txt 
+   59  sed -n 's/^$/BLANK LINE/g !p' demo.txt 
+   60  clear
+   61  sed -n 's/^$/BLANK LINE/gp' demo.txt 
+   62  sed '=' demo.txt 
+   63  clear
+   64  sed '1d' demo.txt 
+   65  sed '1,5d' demo.txt 
+   66  sed '5,$d' demo.txt 
+   67  clear
+   68  sed '5i\A NEW LINE' demo.txt 
+   69  sed '5c\A NEW LINE' demo.txt 
+   70  clear
+   71  sed '5,$c\-------' demo.txt 
+   72  sed '5,$c\-------END OF DEMO' demo.txt 
+   73  sed 's/[,:#/]/ /g' demo.txt  
+   74  clear
+   75  sed 's/[,:#/]/@/g' demo.txt  
+   76  sed 's/[0-9a-z]/@/g' demo.txt  
+   77  clear
+   78  sed 's/helloworld/#/g' demo.txt  
+   79  sed 's/helloworld/###########/g' demo.txt  
+   80  clear
+   81  chmod u+x array.sh 
+   82  ./array.sh 
+   83  ./array.sh 
+   84  ./array.sh 
+   85  ./array.sh 
+   86  ./array.sh 
+   87  clear
+   88  ./array.sh 
+   89  chmod u+x sequential.sh 
+   90  ./sequential.sh 
+   91  ./sequential.sh 
+   92  ./sequential.sh 
+   93  ./sequential.sh 
+   94  clear
+   95  chmod u+x dynamic.sh 
+   96  ./dynamic.sh 4
+   97  ./dynamic.sh 6
+   98  clear
+   99  chmod u+x create.sh 
+  100  ./create.sh 4
+  101  rm George*
+  102  ls
+  103  clear
+  104  ls
+  105  ./create.sh 4
+  106  ./create.sh 5
+  107  ./create.sh 5
+  108  ./create.sh 5
+  109  rm George*
+  110  ls
+  111  clear
+  112  history > unix4.txt 
+  113  cat unix4.txt 
+  114  nano rdssetup.sh 
+  115  ls
+  116  chmod u+x rdssetup.sh 
+  117  ./rdssetup.sh mydemodb admin secret99
+  118  sed 's/\r$//' rdssetup.sh rdsmanager.sh
+  119  sed 's/\r$//' rdssetup.sh > rdsmanager.sh
+  120  chmod u+x rdsmanager.sh 
+  121  ./rdsmanager.sh 
+  122  rm rdssetup.sh 
+  123  clear
+  124  rm rdssetup.sh mydemodb
+  125  ./rdsmanager.sh mydemodb admin secret99
+  126  clear
+  127  ./rdsmanager.sh mydemodb admin secret99
+  128  ./rdsmanager.sh mydemodb admin secret99
+  129  clear
+  130  ./rdsmanager.sh mydemodb admin secret99
+  131  clear
+  132  ./rdsmanager.sh mydemodb admin secret99
+  133  clear
+  134  ./rdsmanager.sh mydemodb admin secret99
+  135  clear
+  136  ./rdsmanager.sh mydemodb
+  137  clear
+  138  ./rdsmanager.sh mydemodb
+  139  ./rdsmanager.sh mydemodb
+  140  ./rdsmanager.sh mydemodb
+  141  clear
+  142  ./rdsmanager.sh mytestsqldb
+  143  clear
+  144  ./rdsmanager.sh mytestsqldb
+  145  clear
+  146  ./rdsmanager.sh mytestsqldb
+  147  clear
+  148  ./rdsmanager.sh mytestsqldb
+  149  ./rdsmanager.sh mytestsqldb
+  150  ./rdsmanager.sh mytestsqldb
+  151  clear
+  152  ./rdsmanager.sh mytestsqldb
+  153  ./rdsmanager.sh mytestsqldb
+  154  ./rdsmanager.sh mytestsqldb
+  223  cd USP
+  224  ls
+  225  cd unix1/
+  226  clear
+  227  ls
+  228  chmod u+x welcome.sh 
+  229  ./welcome.sh 
+  230  ./welcome.sh 
+  231  clear
+  232  chmod u+x commands.sh 
+  233  ./commands.sh 
+  234  ./commands.sh 
+  235  clear
+  236  ./commands.sh 
+  237  ls
+  238  cd USP
+  239  ls
+  240  rm -rf uni*
+  241  ls
+  242  clear
+  243  mkdir unix1
+  244  cd unix1/
+  245  mkdir sub1
+  246  ls
+  247  mkdir sub2-5
+  248  ls
+  249  mkdir sub[2-5]
+  250  ls
+  251  rm sub\[2-5\]/
+  252  rmdir sub\[2-5\]/
+  253  clear
+  254  mkdir sub2
+  255  mkdir sub3
+  256  mkdir sub4
+  257  ls
+  258  rm sub2-5
+  259  rmdir sub2-5
+  260  ls
+  261  mkdir sub6 sub7 sub8
+  262  clear
+  263  ls
+  264  rmdir sub8
+  265  ls
+  266  mkdir sub5
+  267  ls
+  268  cd sub7
+  269  ls
+  270  pwd
+  271  cd ../../../
+  272  pwd
+  273  cd ~/USP/unix1/sub
+  274  cd ~/USP/unix1/sub7
+  275  clear
+  276  pwd
+  277  cd 
+  278  pwd
+  279  cd /
+  280  pwd
+  281  ls
+  282  cd ~
+  283  pwd
+  284  cd USP/unix1/
+  285  ls
+  286  clear
+  287  ls
+  288  touch f1
+  289  ls
+  290  ls -l
+  291  touch f2.txt
+  292  ls
+  293  ls -l
+  294  clear
+  295  ls
+  296  rm f2.txt
+  297  ls
+  298  touch f1 f2 f3 fa fb f11 f22 fa1 fa2 faa fbb f2a f2b
+  299  ls
+  300  ls -l
+  301  clear
+  302  ls
+  303  mv f1 f3
+  304  ls
+  305  cp f* sub1
+  306  ls sub1
+  307  cd sub1
+  308  rm f*
+  309  ls
+  310  cd ..
+  311  clear
+  312  cp f? sub1 
+  313  ls sub1
+  314  ls
+  315  cp f\d sub2
+  316  cp f[0-9] sub2
+  317  ls sub2
+  318  cp f[a-z] sub3
+  319  ls sub3
+  320  cp f[a-zA-Z0-9] sub4
+  321  ls sub4
+  322  clear
+  323  cp f[a-z][0-9] sub5
+  324  ls sub5
+  325  ls
+  326  cp f[a-z]? sub6
+  327  ls sub6
+  328  cp f* sub7
+  329  ls
+  330  mkdir sub8 sub9
+  331  ls
+  332  clear
+  333  ls
+  334  mv f[a-z][a-z] sub8
+  335  ls sub8
+  336  ls sub9
+  337  rmdir sub9
+  338  ls
+  339  rmdir sub8
+  340  rm sub8
+  341  rm -r sub8
+  342  ls
+  343  clear
+  344  cd sub7
+  345  ls
+  346  chmod 000 f*
+  347  ls -l
+  348  cd ..
+  349  clear
+  350  ls
+  351  rm -r sub7
+  352  rm -rf sub7
+  353  ls
+  354  cd ..
+  355  ls
+  356  mkdir temp
+  357  cd unix1/
+  358  clear
+  359  ls
+  360  cp f[0-9][0-9] ~/USP/temp/
+  361  ls ~/USP/temp/
+  362  cp -R * ~/USP/temp/
+  363  ls ~/USP/temp/
+  364  mkdir ~/USP/temp2
+  365  ls ~/USP/
+  366  mv sub1 ~/USP/temp2
+  367  ls ~/USP/temp2
+  368  clear
+  369  ls
+  370  mv f? sub5
+  371  ls sub5
+  372  mv f* sub6
+  373  ls sub6
+  374  ls
+  375  rm sub?
+  376  clear
+  377  rmdir sub?
+  378  rm -r sub?
+  379  ls
+  380  clear
+  381  ls -a
+  382  ls
+  383  ls -a
+  384  ls -al
+  385  mv ~/USP/temp? .
+  386  ls
+  387  mv ~/USP/temp .
+  388  ls
+  389  rm -r *
+  390  clear
+  391  mv ~/USP/temp* .
+  392  mkdir temp
+  393  touch f1 f2
+  394  mv f? temp
+  395  mkdir sub
+  396  mv sub temp/
+  397  touch fa fb
+  398  mv f? temp/sub/
+  399  clear
+  400  ls
+  401  ls -R
+  402  clear
+  403  ls -R ~/
+  404  ls
+  405  rm -r temp/
+  406  ls
+  407  clear
+  408  echo 2
+  409  echo 5
+  410  echo hello
+  411  echo hello world
+  412  touch f1 fa f22 fa2 faa
+  413  echo f1
+  414  echo f?
+  415  echo f[a-z][0-9]
+  416  echo f[a-z]?
+  417  clear
+  418  echo 2+3
+  419  echo $(2+3)
+  420  echo $((2+3))
+  421  echo $(4-3)
+  422  echo $((4-3))
+  423  echo 2+3+4-1
+  424  echo $((2+3)+(4-1))
+  425  clear
+  426  echo $(((2+3)+(4-1)))
+  427  echo $(((2+3)+(4-1))-6)
+  428  echo $((((2+3)+(4-1))-6))
+  429  n=5
+  430  echo n
+  431  echo $n
+  432  echo $n+3
+  433  echo $(($n+3))
+  434  clear
+  435  echo $n
+  436  echo "$n"
+  437  echo '$n'
+  438  echo '"$n"'
+  439  echo \$n
+  440  echo '$n'
+  441  echo \'$n\'
+  442  clear
+  443  echo \$n
+  444  echo \\$n
+  445  unset n
+  446  echo $n
+  447  history
+  448  history > unix1.txt
+  449  ls
+  450  clear
+  451  ls
+  452  cat unix1.txt 
+  453  clear
+  454  ls
+  455  rm f*
+  456  ls
+  457  clear
+  458  nano hello.sh
+  459  chmod u+x hello.sh 
+  460  ./hello.sh 
+  461  nano hello.sh
+  462  ./hello.sh 
+  463  nano welcome.sh
+  464  clear
+  465  nano commands.sh
+  466  ls
+  467  mvn clean
+  468  mvn package
+  469  mvn build
+  470  mvn compile
+  471  mvn deploy
+  472  mvn site:site
+  473  mvn site:site
+  474  mvn package mvn site
+  475  mvn site
+  476  mvn clean bild
+  477  mvn clean build
+  478  mvn clean install
+  479  mvn site:site
+  480  mvn site
+  481  mvn deploy
+  482  mvn site:run
+  483  mvn site:run
+  484  mvn clean site
+  485  mvn tomcat:deploy
+  486  mvn package
+  487  mvn package
+  488  mvn install package
+  489  mvn install package
+  490  mvn install package
+  491  mvn install package
+  492  mvn clean package
+  493  mvn clean
+  494  mvn site:site
+  495  mvn install package
+  496  mvn site:site
+  497  mvn site:run
+  498  mvn clean
+  499  mvn clean package
+  500  mvn clean install
+  501  ls
+  502  cd unix2
+  503  clear
+  504  ls
+  505  touch f1 f2 f3 f4 f5
+  506  ls -l
+  507  chmod u+x f1
+  508  ls -l f1
+  509  chmod g-w f1
+  510  ls -l f1
+  511  chmod o-r,o+wx f1
+  512  ls -l f1
+  513  clear
+  514  ls -l
+  515  chmod u-rw,u+x,g-rw,g+x,o-r,o+w f2
+  516  ls -l f2
+  517  chmod 112 f3
+  518  ls -l f3
+  519  chmod 111 f4
+  520  ls -l f4
+  521  chmod 724 f4
+  522  ls -l f4
+  523  clear
+  524  ls -l
+  525  chmod 000 f2
+  526  ls -l f2
+  527  chmod u-x,g-x,o-w f3
+  528  ls -l f3
+  529  chmod a-rwx f4
+  530  ls -l f4
+  531  clear
+  532  ls -l
+  533  chmod 777 f2
+  534  chmod a+rwx f3
+  535  ls -l f[23]
+  536  chmod 664 f[1-4]
+  537  ls -l
+  538  clear
+  539  history > unix2.txt
