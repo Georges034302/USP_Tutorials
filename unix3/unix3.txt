@@ -1,0 +1,500 @@
+  106  mkdir sub6 sub7 sub8
+  107  clear
+  108  ls
+  109  rmdir sub8
+  110  ls
+  111  mkdir sub5
+  112  ls
+  113  cd sub7
+  114  ls
+  115  pwd
+  116  cd ../../../
+  117  pwd
+  118  cd ~/USP/unix1/sub
+  119  cd ~/USP/unix1/sub7
+  120  clear
+  121  pwd
+  122  cd 
+  123  pwd
+  124  cd /
+  125  pwd
+  126  ls
+  127  cd ~
+  128  pwd
+  129  cd USP/unix1/
+  130  ls
+  131  clear
+  132  ls
+  133  touch f1
+  134  ls
+  135  ls -l
+  136  touch f2.txt
+  137  ls
+  138  ls -l
+  139  clear
+  140  ls
+  141  rm f2.txt
+  142  ls
+  143  touch f1 f2 f3 fa fb f11 f22 fa1 fa2 faa fbb f2a f2b
+  144  ls
+  145  ls -l
+  146  clear
+  147  ls
+  148  mv f1 f3
+  149  ls
+  150  cp f* sub1
+  151  ls sub1
+  152  cd sub1
+  153  rm f*
+  154  ls
+  155  cd ..
+  156  clear
+  157  cp f? sub1 
+  158  ls sub1
+  159  ls
+  160  cp f\d sub2
+  161  cp f[0-9] sub2
+  162  ls sub2
+  163  cp f[a-z] sub3
+  164  ls sub3
+  165  cp f[a-zA-Z0-9] sub4
+  166  ls sub4
+  167  clear
+  168  cp f[a-z][0-9] sub5
+  169  ls sub5
+  170  ls
+  171  cp f[a-z]? sub6
+  172  ls sub6
+  173  cp f* sub7
+  174  ls
+  175  mkdir sub8 sub9
+  176  ls
+  177  clear
+  178  ls
+  179  mv f[a-z][a-z] sub8
+  180  ls sub8
+  181  ls sub9
+  182  rmdir sub9
+  183  ls
+  184  rmdir sub8
+  185  rm sub8
+  186  rm -r sub8
+  187  ls
+  188  clear
+  189  cd sub7
+  190  ls
+  191  chmod 000 f*
+  192  ls -l
+  193  cd ..
+  194  clear
+  195  ls
+  196  rm -r sub7
+  197  rm -rf sub7
+  198  ls
+  199  cd ..
+  200  ls
+  201  mkdir temp
+  202  cd unix1/
+  203  clear
+  204  ls
+  205  cp f[0-9][0-9] ~/USP/temp/
+  206  ls ~/USP/temp/
+  207  cp -R * ~/USP/temp/
+  208  ls ~/USP/temp/
+  209  mkdir ~/USP/temp2
+  210  ls ~/USP/
+  211  mv sub1 ~/USP/temp2
+  212  ls ~/USP/temp2
+  213  clear
+  214  ls
+  215  mv f? sub5
+  216  ls sub5
+  217  mv f* sub6
+  218  ls sub6
+  219  ls
+  220  rm sub?
+  221  clear
+  222  rmdir sub?
+  223  rm -r sub?
+  224  ls
+  225  clear
+  226  ls -a
+  227  ls
+  228  ls -a
+  229  ls -al
+  230  mv ~/USP/temp? .
+  231  ls
+  232  mv ~/USP/temp .
+  233  ls
+  234  rm -r *
+  235  clear
+  236  mv ~/USP/temp* .
+  237  mkdir temp
+  238  touch f1 f2
+  239  mv f? temp
+  240  mkdir sub
+  241  mv sub temp/
+  242  touch fa fb
+  243  mv f? temp/sub/
+  244  clear
+  245  ls
+  246  ls -R
+  247  clear
+  248  ls -R ~/
+  249  ls
+  250  rm -r temp/
+  251  ls
+  252  clear
+  253  echo 2
+  254  echo 5
+  255  echo hello
+  256  echo hello world
+  257  touch f1 fa f22 fa2 faa
+  258  echo f1
+  259  echo f?
+  260  echo f[a-z][0-9]
+  261  echo f[a-z]?
+  262  clear
+  263  echo 2+3
+  264  echo $(2+3)
+  265  echo $((2+3))
+  266  echo $(4-3)
+  267  echo $((4-3))
+  268  echo 2+3+4-1
+  269  echo $((2+3)+(4-1))
+  270  clear
+  271  echo $(((2+3)+(4-1)))
+  272  echo $(((2+3)+(4-1))-6)
+  273  echo $((((2+3)+(4-1))-6))
+  274  n=5
+  275  echo n
+  276  echo $n
+  277  echo $n+3
+  278  echo $(($n+3))
+  279  clear
+  280  echo $n
+  281  echo "$n"
+  282  echo '$n'
+  283  echo '"$n"'
+  284  echo \$n
+  285  echo '$n'
+  286  echo \'$n\'
+  287  clear
+  288  echo \$n
+  289  echo \\$n
+  290  unset n
+  291  echo $n
+  292  history
+  293  history > unix1.txt
+  294  ls
+  295  clear
+  296  ls
+  297  cat unix1.txt 
+  298  clear
+  299  ls
+  300  rm f*
+  301  ls
+  302  clear
+  303  nano hello.sh
+  304  chmod u+x hello.sh 
+  305  ./hello.sh 
+  306  nano hello.sh
+  307  ./hello.sh 
+  308  nano welcome.sh
+  309  clear
+  310  nano commands.sh
+  311  ls
+  312  mvn clean
+  313  mvn package
+  314  mvn build
+  315  mvn compile
+  316  mvn deploy
+  317  mvn site:site
+  318  mvn site:site
+  319  mvn package mvn site
+  320  mvn site
+  321  mvn clean bild
+  322  mvn clean build
+  323  mvn clean install
+  324  mvn site:site
+  325  mvn site
+  326  mvn deploy
+  327  mvn site:run
+  328  mvn site:run
+  329  mvn clean site
+  330  mvn tomcat:deploy
+  331  mvn package
+  332  mvn package
+  333  mvn install package
+  334  mvn install package
+  335  mvn install package
+  336  mvn install package
+  337  mvn clean package
+  338  mvn clean
+  339  mvn site:site
+  340  mvn install package
+  341  mvn site:site
+  342  mvn site:run
+  343  mvn clean
+  344  mvn clean package
+  345  mvn clean install
+  346  git
+  347  clear
+  348  ls
+  349  mv unix\ 1/ unix1
+  350  ls
+  351  mkdir unix2
+  352  ls
+  353  cd unix2
+  354  clear
+  355  clear
+  356  ls
+  357  ls
+  358  chmod u+x args.sh 
+  359  ls -l args.sh 
+  360  ./args.sh 33 hello M New 111
+  361  ./args.sh 33 hello M New 111
+  362  ./args.sh my 1rst script
+  363  ./args.sh my n-1 script
+  364  clear
+  365  ./args.sh my  script
+  366  ./args.sh my \( ) script
+  367  ./args.sh my \s script
+  368  ./args.sh my \  script
+  369  ./args.sh my \ script
+  370  ./args.sh my \\ script
+  371  clear
+  372  ./args.sh my * script
+  373  ./args.sh my \* script
+  374  ./args.sh my '*' script
+  375  ./args.sh my '\*' script
+  376  clear
+  377  ./args.sh hello 22
+  378  ./args.sh hello 22 USP
+  379  ./args.sh hello 22 USP
+  380  clear
+  381  ls
+  382  chmod u+x welcome.sh 
+  383  ./welcome.sh 
+  384  ./welcome.sh 
+  385  ./welcome.sh George
+  386  ./welcome.sh George
+  387  ./welcome.sh
+  388  clear
+  389  ./welcome.sh
+  390  ./welcome.sh
+  391  clear
+  392  chmod u+x grades.sh 
+  393  ./grades.sh 77
+  394  ./grades.sh 44
+  395  ./grades.sh 90
+  396  ./grades.sh 90
+  397  clear
+  398  chmod u+x check.sh 
+  399  ls
+  400  ./check.sh 
+  401  ./check.sh 
+  402  mkdir sub
+  403  ./check.sh 
+  404  ls -l
+  405  clear
+  406  ./check.sh 
+  407  ./check.sh 
+  408  ./check.sh 
+  409  f1
+  410  ./check.sh 
+  411  ./check.sh 
+  412  clear
+  413  ./check.sh 
+  414  ./check.sh 
+  415  ./check.sh 
+  416  clear
+  417  chmod u+x numbers.sh 
+  418  ./numbers.sh 
+  419  ./numbers.sh 5
+  420  clear
+  421  ./numbers.sh 2
+  422  ./numbers.sh
+  423  clear
+  424  chmod u+x create.sh 
+  425  ./create.sh 
+  426  rm George-*
+  427  ls
+  428  clear
+  429  ./create.sh 
+  430  clear
+  431  chmod u+x sum.sh 
+  432  ./sum.sh 
+  433  ./sum.sh 
+  434  ./sum.sh 
+  435  clear
+  436  ./sum.sh 
+  437  ./sum.sh 
+  438  clear
+  439  ./sum.sh 
+  440  ls
+  441  cd unix2
+  442  clear
+  443  ls
+  444  touch f1 f2 f3 f4 f5
+  445  ls -l
+  446  chmod u+x f1
+  447  ls -l f1
+  448  chmod g-w f1
+  449  ls -l f1
+  450  chmod o-r,o+wx f1
+  451  ls -l f1
+  452  clear
+  453  ls -l
+  454  chmod u-rw,u+x,g-rw,g+x,o-r,o+w f2
+  455  ls -l f2
+  456  chmod 112 f3
+  457  ls -l f3
+  458  chmod 111 f4
+  459  ls -l f4
+  460  chmod 724 f4
+  461  ls -l f4
+  462  clear
+  463  ls -l
+  464  chmod 000 f2
+  465  ls -l f2
+  466  chmod u-x,g-x,o-w f3
+  467  ls -l f3
+  468  chmod a-rwx f4
+  469  ls -l f4
+  470  clear
+  471  ls -l
+  472  chmod 777 f2
+  473  chmod a+rwx f3
+  474  ls -l f[23]
+  475  chmod 664 f[1-4]
+  476  ls -l
+  477  clear
+  478  history > unix2.txt
+  479  ls
+  480  cat unix2.txt 
+  481  clear
+  482  ls
+  483  rm f[0-9]
+  484  ls
+  485  git add .
+  486  git commit -m"unix2"
+  487  git push
+  488  clear
+  489  ls -l
+  490  clear
+  491  nano args.sh
+  492  nano args.sh
+  493  nano welcome.sh
+  494  nano grades.sh
+  495  ls -l
+  496  nano check.sh
+  497  clear
+  498  nano numbers.sh
+  499  nano create.sh
+  500  nano sum.sh
+  501  ls
+  502  mkdir unix3
+  503  cd unix3
+  504  pwd
+  505  touch f1 f2
+  506  ls
+  507  ls -l
+  508  ls -l
+  509  clear
+  510  ls -l
+  511  ls -l | head -1
+  512  ls -l | head -2
+  513  ls -l | head -3
+  514  ls -l | head -1
+  515  touch f3 f4
+  516  clear
+  517  ls -l
+  518  ls -l | tail -1
+  519  ls -l | tail -2
+  520  ls -l | tail -n+2
+  521  ls -l | tail -n+2 | wc
+  522  ls -l | tail -n+2 | nl
+  523  clear
+  524  ls -l
+  525  ls -l | tail -n+2
+  526  ls -l | tail -n+2 | nl
+  527  ls -l;cat f1;ls
+  528  clear
+  529  ls -l | tail -n+2 > out.txt
+  530  ls
+  531* 
+  532  ls -l | tail -n+2 >> out.txt
+  533  cat out.txt 
+  534  clear
+  535  cat out.txt 
+  536  cat out.txt | tee output.txt
+  537  ls
+  538  cat output.txt 
+  539  clear
+  540  cat out.txt | tee -a output.txt 
+  541  cat output.txt 
+  542  clear
+  543  ls
+  544  ls -l
+  545  chmod 000 f[12]
+  546  ls -l
+  547  cat f1
+  548  cat f2
+  549  clear
+  550  cat f[12]
+  551  cat f?
+  552  ls
+  553  cat f[0-9]
+  554  echo "this is f3" > f3
+  555  echo "this is f4" > f4
+  556  cat f?
+  557  clear
+  558  cat f? 2> error.txt
+  559  ls
+  560  cat error.txt 
+  561  rm error.txt 
+  562  rm out.txt 
+  563  ls
+  564  clear
+  565  cat f?
+  566  cat f? >out.txt 2>error.txt
+  567  ls
+  568  cat error.txt 
+  569  cat out.txt 
+  570  rm output.txt 
+  571  clear
+  572  ls
+  573  cat f? >>out.txt 2>>error.txt
+  574  cat error.txt 
+  575  cat out.txt 
+  576  cat *.txt
+  577  clear
+  578  cat *.txt
+  579  cat *.txt | tee log.txt
+  580  ls
+  581  cat log.txt 
+  582  clear
+  583  ls -l
+  584  ls -l | tail -n+2
+  585  ls -l | tail -n+2 | cut -d " " -f 1
+  586  ls -l | tail -n+2 | cut -d " " -f 1,3
+  587  ls -l | tail -n+2 | cut -d " " -f 1,3,4
+  588  ls -l | tail -n+2 | cut -d " " -f 1-4
+  589  clear
+  590  ls -l | tail -n+2 
+  591  ls -l | tail -n+2 | cut -d " " -f 3-6
+  592  ls -l | tail -n+2 | cut -d " " -f 3-9
+  593  clear
+  594  ls -l | tail -n+2 | awk '{print $3 $4 $5 $6}'
+  595  ls -l | tail -n+2 | awk '{print $3 " " $4 " " $5 " " $6}'
+  596  ls -l | tail -n+2 | awk '{printf "%s %s \n",$3,$9}'
+  597  clear
+  598  ls -l | tail -n+2 
+  599  ls -l | tail -n+2 | awk '{printf "%d %s \n",$5,$9}'
+  600  ls -l | tail -n+2 | awk '{printf "%5d %15s \n",$5,$9}'
+  601  ls -l | tail -n+2 | awk '{printf "%5d %-15s \n",$5,$9}'
+  602  ls -l | tail -n+2 | awk '{printf "%-5d %-15s \n",$5,$9}'
+  603  nano command.sh
+  604  ps aux | awk '{printf"%-6s %-10s %-20s\n",$1,$6,$8}'
+  605  history > unix3.txt
