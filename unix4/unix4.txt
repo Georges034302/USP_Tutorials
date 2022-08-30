@@ -1,0 +1,132 @@
+    1  clear
+    2  grep tutor demo.txt 
+    3  group -w tutor demo.txt 
+    4  grep -w tutor demo.txt 
+    5  grep -wi tutor demo.txt 
+    6  grep -i tutor demo.txt 
+    7  grep -in tutor demo.txt 
+    8  grep -win tutor demo.txt 
+    9  clear
+   10  var=tutor
+   11  grep $var demo.txt 
+   12  grep -i $var demo.txt 
+   13  grep -in $var demo.txt 
+   14  grep -win $var demo.txt 
+   15  grep -in tutor demo.txt 
+   16  clear
+   17  grep -in tutor demo.txt 
+   18  grep -in "\btutor\b" demo.txt 
+   19  grep -in -A 1 "\btutor\b" demo.txt 
+   20  grep -in -A 2 "\btutor\b" demo.txt 
+   21  grep -in -B 1 "\btutor\b" demo.txt 
+   22  grep -in -C 1 "\btutor\b" demo.txt 
+   23  clear
+   24  grep '[A-Z]' demo.txt 
+   25  grep '[A-Z]{2}' demo.txt 
+   26  grep -E '[A-Z]{2}' demo.txt 
+   27  grep '[0-9]' demo.txt 
+   28  grep '[0-9]{2}' demo.txt 
+   29  clear
+   30  grep -E '[0-9]{2}' demo.txt 
+   31  grep -E '[0-9]{3}' demo.txt 
+   32  grep -E '[0-9]{4}' demo.txt 
+   33  grep -E '[0-9]{2,4}' demo.txt 
+   34  grep -E '[0-9]{3}' demo.txt 
+   35  grep -E '[0-9]{3}$' demo.txt 
+   36  clear
+   37  grep -E '$$' demo.txt
+   38  grep -E '$\$' demo.txt
+   39  grep -E '\$$' demo.txt
+   40  grep -E '( )' demo.txt
+   41  clear
+   42  grep -E '( )' demo.txt
+   43  grep -E '( )$' demo.txt
+   44  grep -En '( )$' demo.txt
+   45  clear
+   46  grep '^' demo.txt 
+   47  grep '^\^' demo.txt 
+   48  grep '^$' demo.txt 
+   49  grep -n '^$' demo.txt 
+   50  clear
+   51  grep -n '^$' demo.txt 
+   52  grep -v '^$' demo.txt 
+   53  grep '\s' demo.txt 
+   54  clear
+   55  grep '\s' demo.txt 
+   56  grep '( )' demo.txt 
+   57  grep -E '( )' demo.txt 
+   58  grep -E '\ ' demo.txt 
+   59  clear
+   60  grep '^\^' demo.txt 
+   61  grep '^\^' demo.txt | grep -E '\$$'
+   62  grep -E '^\^' demo.txt | grep -E '\$$'
+   63  grep -E '\s$' demo.txt 
+   64  grep -E '^\^' demo.txt | grep -E '\s$'
+   65  grep -E '^\^.*\s$' demo.txt 
+   66  grep -E '#.*[0-9]' demo.txt 
+   67  grep -E '^#.*[0-9]$' demo.txt 
+   68  clear
+   69  grep -E '[A-Z].*[0-9]' demo.txt 
+   70  grep -E '^[A-Z].*[0-9]' demo.txt 
+   71  grep -E '^[A-Z]' demo.txt | grep '[0-9]'
+   72  grep -E '#|[0-9]' demo.txt 
+   73  grep -E '^#|[0-9]$' demo.txt 
+   74  clear
+   75  grep -E '^#|[0-9]$' demo.txt 
+   76  grep -E '^#|[0-9]$|[A-Z]' demo.txt 
+   77  grep -e '#' -e '[0-9]' -e '[A-Z]' demo.txt 
+   78  clear
+   79  grep -E '^#|[0-9]$|[A-Z]' demo.txt 
+   80  grep -e '#' -e '[0-9]' -e '[A-Z]' demo.txt 
+   81  grep -E '[#0-9A-Z]' demo.txt 
+   82  clear
+   83  grep -E '[A-Z]+' demo.txt 
+   84  grep '\' demo.txt 
+   85  grep '\\' demo.txt 
+   86  grep '[\\,]' demo.txt 
+   87  grep '\\|,' demo.txt 
+   88  grep -E '\\|,' demo.txt 
+   89  clear
+   90  sed 's/tutor/professor' demo.txt 
+   91  sed 's/tutor/professor/' demo.txt 
+   92  sed 's/tutor/professor/i' demo.txt 
+   93  clear
+   94  sed 's/tutor/professor/i' demo.txt 
+   95  sed -n 's/tutor/professor/i' demo.txt 
+   96  clear
+   97  sed '1,4d' demo.txt 
+   98  sed '5,$d' demo.txt 
+   99  sed '/#/d' demo.txt 
+  100  sed '/#/!d' demo.txt 
+  101  clear
+  102  sed '/#/d' demo.txt 
+  103  sed '/#/!d' demo.txt 
+  104  sed '5i\<<<<>>>>>' demo.txt 
+  105  clear
+  106  sed '5,10i\<<<<>>>>>' demo.txt 
+  107  clear
+  108  sed -n '/^$/' demo.txt 
+  109  sed -n '/^$/p' demo.txt 
+  110  grep -E '^$' demo.txt 
+  111  sed -n '/^$/!p' demo.txt 
+  112  clear
+  113  sed -n 's/#/-/p' demo.txt 
+  114  sed -n 's/[#0-9]/-/p' demo.txt 
+  115  sed -n 's/[A-Z]/-/p' demo.txt 
+  116  clear
+  117  sed -n 's/tutor/prof/ip' demo.txt 
+  118  sed -n 's/[A-Z]/-/p' demo.txt 
+  119  sed -n 's/[A-Z]/-/gp' demo.txt 
+  120  clear
+  121  sed -n 's/[A-z]/@/p' demo.txt 
+  122  sed -n 's/[A-z]/@/gp' demo.txt 
+  123  sed -n 's/[A-Z]/@/gp' demo.txt 
+  124  clear
+  125  sed -n 's/[a-zA-Z]/-/p' demo.txt 
+  126  sed -n 's/[a-zA-Z]/-/gp' demo.txt 
+  127  sed -n '1,5p' demo.txt 
+  128  clear
+  129  sed 's/tutor/professor/gi' demo.txt 
+  130  sed -n 's/tutor/professor/gip' demo.txt 
+  131  clear
+  132  history > unix4.txt
