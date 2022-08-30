@@ -9,5 +9,5 @@ $Reg-Ex# is used searching and filtering in this tutorial
 ^NOTE: UNIX, Perl, Java, Python use regex
 
 Tutorial File# demo.txt$
-TYPE: ^text 
-SIZE: ^236
+TYPE: \text 
+SIZE: \236
