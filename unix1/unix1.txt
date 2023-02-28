@@ -1,0 +1,165 @@
+    1  pwd
+    2  ls
+    3  cd GitHub/USP_Tutorials/unix1/
+    4  pwd
+    5  ls
+    6  ls -a
+    7  ls -la
+    8  ls
+    9  mkdir sub1 sub2 sub3 sub4 sub5
+   10  ls
+   11  ls -l
+   12  ls -al
+   13  clear
+   14  cd ..
+   15  cd ../../..
+   16  pwd
+   17  cd /
+   18  cd ~/GitHub/USP_Tutorials/unix1/
+   19  ls -la
+   20  ls -al
+   21  clear
+   22  ls
+   23  clear
+   24  touch f1
+   25  ls
+   26  ls -l
+   27  touch f2 f22 f33 fa fb fa2 fb2 f2b f2a faa fbb
+   28  ls -1
+   29  man ls
+   30  clear
+   31  pwd
+   32  cp f1 sub1
+   33  ls sub1
+   34  cd ..
+   35  pwd
+   36  clear
+   37  ls
+   38  ls -R unix1/
+   39  cd unix1/
+   40  clear
+   41  cp f[0-9] sub1
+   42  ls sub1
+   43  cp f[a-z] sub2
+   44  ls sub2
+   45  cp f [a-z] sub2
+   46  cp f[a-z] sub2
+   47  cp f[0-9][0-9] sub3
+   48  ls sub3
+   49  cp f[a-z][a-z] sub4
+   50  ls sub4
+   51  cp f[0-9][a-z] sub5
+   52  ls sub5
+   53  clear
+   54  mkdir sub6
+   55  cp f[a-z][0-9] sub6
+   56  ls sub6
+   57  man cp
+   58  mkdir sub7
+   59  cp f? sub7
+   60  ls sub7
+   61  mkdir sub8
+   62  cp f[a-z0-9] sub8
+   63  ls sub8
+   64  clear
+   65  ls
+   66  ls sub1
+   67  cp -R sub1 ~/GitHub/USP_Tutorials/
+   68  ls ~/GitHub/USP_Tutorials/
+   69  man ls
+   70  man mv
+   71  clear
+   72  ls ~/GitHub/USP_Tutorials/
+   73  cd ..
+   74  ls
+   75  cp -R ~/GitHub/USP_Tutorials/unix1/sub2 .
+   76  ls
+   77  cp -R ~/GitHub/USP_Tutorials/sub[3-8] .
+   78  cp -R ~/GitHub/USP_Tutorials/unix1/sub[3-8] .
+   79  ls
+   80  rm -rf sub[1-8]
+   81  ls
+   82  mkdir unix11
+   83  ls
+   84  clear
+   85  ls
+   86  cp -R ~/GitHub/USP_Tutorials/unix1/* unix11
+   87  ls unix11
+   88  mkdir unix22
+   89  cd unix1
+   90  ls
+   91  cp -R * ~/GitHub/USP_Tutorials/unix22
+   92  ls ~/GitHub/USP_Tutorials/unix22
+   93  mkdir ~/GitHub/USP_Tutorials/unix33
+   94  cp -R . ~/GitHub/USP_Tutorials/unix33
+   95  ls ~/GitHub/USP_Tutorials/unix33
+   96  clear
+   97  mkdir sub9
+   98  cp f* sub9
+   99  ls sub9
+  100  ls ~/GitHub/USP_Tutorials/
+  101  mv ~/GitHub/USP_Tutorials/unix11 .
+  102  ls 
+  103  ls ~/GitHub/USP_Tutorials/
+  104  mv ~/GitHub/USP_Tutorials/unix[0-9][0-9] .
+  105  ls
+  106  ls ~/GitHub/USP_Tutorials/
+  107  ls
+  108  clear
+  109  rm -rf sub[1-8
+  110  rm -rf sub[1-8]
+  111  ls
+  112  rm sub9
+  113  rm -rf sub9
+  114  clear
+  115  ls
+  116  rm -r unix*
+  117  ls
+  118  ps aux
+  119  clear
+  120  mkdir sub1 sub2 sub3
+  121  mv f? sub1
+  122  ls sub1
+  123  ls
+  124  mv f[0-9][a-z] sub2
+  125  mv f* sub3
+  126  ls
+  127  rm -rf *
+  128  ls
+  129  echo hello
+  130  echo "welcome to USP"
+  131  echo 'Welcome to USP'
+  132  clear
+  133  echo "Hello class Autumn 2023" > welcomefile
+  134  echo "Hello class Autumn 2023" 
+  135  ls
+  136  cat welcomefile 
+  137  rm welcomefile 
+  138  n=4
+  139  echo n
+  140  echo $n
+  141  echo 4+2
+  142  echo $4+2
+  143  echo $(4+2)
+  144  echo $((4+2))
+  145  clear
+  146  echo $n+2
+  147  echo $(($n+2))
+  148  echo $[4+2]
+  149  echo $n+2*$n-2
+  150  echo $(($(($n+2))*$(($n-2))))
+  151  echo $n
+  152  echo "$n"
+  153  echo '$n'
+  154  echo \$n
+  155  echo \\$n
+  156  echo $n
+  157  unset n
+  158  echo $n
+  159  n=4
+  160  n=
+  161  echo 4n
+  162  echo $n
+  163  unset n
+  164  ls
+  165  history > unix1.txt
