@@ -6,23 +6,21 @@
 $Grep: powerful searching and filtering command in UNIX 
 $sed: utility for parsing and transforming text
 
-( ) GREP demo:
-* grep basic
+( ) GREP demo: 
 * grep vs (egrep or grep -E)
-* AND operation with GREP
-* OR operation with GREP
+* AND/OR operations with GREP$ 
 
 ( ) SED demo:
 ^ Transformation$ 
 ^ Multiple SED transformation
 
-( ) script demo:
-01 - unix bash is loacated in \bin\bash$
-03 - level: easy-advanced [learning: functions]
+( ) script demo: 
+01 - unix bash is loacated in \bin\bash$ 
+03 - [ level: easy-advanced tutorial ] 
 
 #Demo File: demo.txt [log: 1234]
 \SIZE: 236
-\Permission: chmod 644
+\Permission: chmod 644 
 
 #Thank you for attending tutorial 04$ 
 
