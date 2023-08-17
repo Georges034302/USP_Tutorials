@@ -1,0 +1,118 @@
+man ls
+man pwd
+ls
+mkdir USP
+ls
+cd USP
+pwd
+mkdir sub1 sub2 sub3
+ls
+clear
+ls
+ls -l
+ls
+touch f1
+ls
+ls -l
+ls -al
+clear
+touch f2 f3 f4
+ls
+touch f11 f22 f33 
+ls
+touch f1a f1b f1c
+ls
+touch faa fbb fcc
+ls
+touch fa1 fa2 fa3
+ls
+cp f1 sub1
+ls sub1
+ls
+mv f1 sub1
+ls
+ls sub1
+clear
+ls
+mv f[0-9] sub1
+ls
+ls sub1
+ls
+touch fa fb fc
+ls
+mv f[a-z] sub1
+ls sub1
+ls
+cp ~/USP/
+cp ~/USP/sub1/* .
+ls
+clear
+ls
+cp ~/USP/sub1/* .
+ls
+ls subb1
+ls sub1
+cd sub1
+ls
+rm f[0-9]
+ls
+rm *
+ls
+cd ..
+ls
+clear
+ls
+mv f? sub1
+ls
+ls sub1
+ls
+mv f[0-9][0-9] sub2
+ls sub2
+ls
+mv f[a-z]([0-9]|[a-z]) sub3
+mv f[a-z]*([0-9]|[a-z]) sub3
+ls sub3
+mv f[a-z]? sub3
+ls
+rm f*
+ls
+clear
+ls
+ls -R
+ls
+rmdir sub1
+rm -r sub1
+ls
+rm -rf *
+ls
+pwd
+clear
+pwd
+echo n
+n=2
+echo n
+echo $n
+echo "$n"
+echo '$n'
+echo "$n"
+echo \"$n\"
+echo \'$n\'
+echo \$n
+echo \\$n
+clear
+echo $n
+echo $n+2
+echo ($n+2)
+echo $($n+2)
+echo $(($n+2))
+echo $(($n+2)+($n*2))
+echo $((($n+2)+($n*2)))
+unset n
+echo $n
+history > week2.txt
+cat week2.txt 
+clear
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+echo $HISTSIZE
+history > week2.txt
