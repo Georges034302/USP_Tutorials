@@ -1,118 +1,150 @@
-man ls
-man pwd
-ls
-mkdir USP
-ls
-cd USP
-pwd
-mkdir sub1 sub2 sub3
-ls
-clear
-ls
-ls -l
-ls
-touch f1
-ls
-ls -l
-ls -al
-clear
-touch f2 f3 f4
-ls
-touch f11 f22 f33 
-ls
-touch f1a f1b f1c
-ls
-touch faa fbb fcc
-ls
-touch fa1 fa2 fa3
-ls
-cp f1 sub1
-ls sub1
-ls
-mv f1 sub1
-ls
-ls sub1
-clear
-ls
-mv f[0-9] sub1
-ls
-ls sub1
-ls
-touch fa fb fc
-ls
-mv f[a-z] sub1
-ls sub1
-ls
-cp ~/USP/
-cp ~/USP/sub1/* .
-ls
-clear
-ls
-cp ~/USP/sub1/* .
-ls
-ls subb1
-ls sub1
-cd sub1
-ls
-rm f[0-9]
-ls
-rm *
-ls
-cd ..
-ls
-clear
-ls
-mv f? sub1
-ls
-ls sub1
-ls
-mv f[0-9][0-9] sub2
-ls sub2
-ls
-mv f[a-z]([0-9]|[a-z]) sub3
-mv f[a-z]*([0-9]|[a-z]) sub3
-ls sub3
-mv f[a-z]? sub3
-ls
-rm f*
-ls
-clear
-ls
-ls -R
-ls
-rmdir sub1
-rm -r sub1
-ls
-rm -rf *
-ls
-pwd
-clear
-pwd
-echo n
-n=2
-echo n
-echo $n
-echo "$n"
-echo '$n'
-echo "$n"
-echo \"$n\"
-echo \'$n\'
-echo \$n
-echo \\$n
-clear
-echo $n
-echo $n+2
-echo ($n+2)
-echo $($n+2)
-echo $(($n+2))
-echo $(($n+2)+($n*2))
-echo $((($n+2)+($n*2)))
-unset n
-echo $n
-history > week2.txt
-cat week2.txt 
-clear
-export HISTSIZE=10000
-export HISTFILESIZE=10000
-echo $HISTSIZE
-history > week2.txt
+    1  clear
+    2  pwd
+    3  ls
+    4  ls -l
+    5  clear
+    6  cd GitHub/USP_Tutorials/
+    7  pwd
+    8  cd /
+    9  pwd
+   10  ls
+   11  clear
+   12  cd ~/GitHub/USP_Tutorials/
+   13  ls
+   14  mkdir unix1
+   15  cd unix1/
+   16  pwd
+   17  clear
+   18  cd
+   19  cd GitHub/USP_Tutorials/
+   20  cd unix1/
+   21  ls
+   22  ls -a
+   23  ls -al
+   24  clear
+   25  man ls
+   26  mkdir sub
+   27  ls
+   28  mkdir sub{1..7}
+   29  ls
+   30  rmdir sub
+   31  clear
+   32  ls
+   33  touch f1
+   34  ls
+   35  cp f1 sub7
+   36  ls sub7
+   37  rmdir sub7
+   38  clear
+   39  rm -r sub7
+   40  ls
+   41  touch f{1..4}
+   42  ls
+   43  touch fa fb faa fbb f22 f33 f2a fb2'ls
+   44  ls
+   45  touch fa fb faa fbb f22 f33 f2a fb2
+   46  ls
+   47  clear
+   48  ls
+   49  cp f[0-9] sub1
+   50  ls sub1
+   51  cp f[a-zA-Z] sub2
+   52  ls sub2
+   53  clear
+   54  cp f[a-z][a-z] sub3
+   55  ls sub3
+   56  ls
+   57  cp f[a-z][0-9] sub4
+   58  ls sub4
+   59  cp f[0-9][0-9] sub5
+   60  ls sub5
+   61  clear
+   62  touch f
+   63  ls
+   64  cp f? sub6
+   65  ls sub6
+   66  mkdir sub7
+   67  clear
+   68  ls
+   69  f[0-9]* sub7
+   70  cp f[0-9]* sub7
+   71  ls sub7
+   72  ls
+   73  clear
+   74  ls
+   75  ls sub7
+   76  cp sub7 ~/
+   77  cp -R sub7 ~/
+   78  ls ~/
+   79  cd 
+   80  ls
+   81  rm -rf sub7
+   82  cd GitHub/USP_Tutorials/unix1/
+   83  clear
+   84  ls
+   85  mv f[a-z][0-9] sub1
+   86  ls
+   87  ls sub1
+   88  mv f[0-9] sub2
+   89  ls
+   90  mv f[a-z] sub3
+   91  ls
+   92  clear
+   93  ls
+   94  rm f[0-9]{1,2}
+   95  rm f[0-9][0-9]
+   96  ls
+   97  echo f[a-z][a-z]
+   98  clear
+   99  ls
+  100  mv f demo.txt
+  101  ls
+  102  clear
+  103  ls
+  104  ls -R
+  105  clear
+  106  ls
+  107  rm -r *
+  108  ls
+  109  clear
+  110  n=2
+  111  echo n
+  112  echo $n
+  113  echo "$n"
+  114  echo '$n'
+  115  clear
+  116  echo '$n'
+  117  echo \'$n\'
+  118  echo $n
+  119  echo \$n
+  120  echo \\$n
+  121  clear
+  122  echo '\\$n'
+  123  echo $n
+  124  echo $n+2
+  125  echo $n+"2"
+  126  clear
+  127  echo $(($n+2))
+  128  echo $[$n + 2]
+  129  echo `expr $n + 2`
+  130  echo $n+2 * $n+3
+  131  echo $(($(($n+2))*$(($n+3))))
+  132  clear
+  133  echo $n
+  134  unset n
+  135  echo $n
+  136  listing=`ls -l`
+  137  echo $listing 
+  138  touch f{1..4}
+  139  clear
+  140  echo $listing 
+  141  ls
+  142  listing
+  143  echo $listing
+  144  listing=`ls`
+  145  echo $listing 
+  146  clear
+  147  nano command.sh
+  148  nano readin.sh
+  149  nano args.sh
+  150  history > unix1.txt

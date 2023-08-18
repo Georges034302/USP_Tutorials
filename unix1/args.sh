@@ -1,12 +1,11 @@
 #!/bin/bash
 
-echo "Script name:  $0" #$0 represents the script name
-echo $1
-echo $2
-echo $3
+# capture the first 3 arguments given to the script
 
-echo "Arguments $*" # $* shows all arguments given to script
-echo "This script has $# arguments" # $# shows the number of arguments
+echo $0 # name of the script
+echo $1 # first argument
+echo $2 # second argument
+echo $3 # third argument
 
-
-
+echo "Arguments given to $0 = $# "
+echo "Arguments list: $*"
