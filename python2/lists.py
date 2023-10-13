@@ -1,60 +1,41 @@
 #!/bin/python3
-# List is changeable
-# List is ordered
+# List is a collection of values
 # List is indexed
+# List is ordered
 # List allows duplicates
+# List is changeable
 
-mylist = ['Tom',150.25,'$',True]
+l = ['Tom', 'has', 22, '$']
 
-print(mylist)
-print(len(mylist))
-print(mylist[0])
-print(mylist[len(mylist) - 1])
-print(mylist[0:2])
+print(len(l))
+print(l[0])
+print(l[len(l)-1])
+print(l[1:3])
 
-mylist.append('balance')
-print(mylist)
-mylist.insert(1,'has')
-print(mylist)
+l.append('balance')
+print(l)
+l.insert(1,30)
+print(l)
+other = ['Oct', 13]
+total = l + other
+print(total)
 
-mylist.remove(True)
-print(mylist)
-
-mylist.pop(1)
-print(mylist)
-
-mylist.pop()
-print(mylist)
-
-mylist[1] = 'Cruise'
-print(mylist)
-
-other = [125.25,'dollars']
-total = mylist + other
+total.remove('balance')
+print(total)
+total.pop(1)
+print(total)
+total.pop()
 print(total)
 
 total.clear()
 print(total)
 
 del total
-
 try:
     print(total)
 except NameError:
-    print('total does not exist')
+    print('total does not exist anymore')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print('the program continues')
+print(l)
 

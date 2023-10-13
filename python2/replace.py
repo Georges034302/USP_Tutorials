@@ -1,14 +1,14 @@
 #!/bin/python3
-# Req: Read a string until -1
-# replace any pattern with string from STDIN
+# Req: read a string until *
+# Read in a search pattern
+# Read in a replacement 
+# Replace the pattern with the replacement
 import re 
 s = input('String: ')
 
-while s != '-1':
+while s != '*':
     pattern = input('Pattern: ')
     replacement = input('Replacement: ')
-    print(s)
     text = re.sub(pattern,replacement,s)
     print(text)
-
     s = input('String: ')

@@ -1,29 +1,40 @@
 #!/bin/python3
-# Set is unordered
-# Set is not indexed
+# Set is a collection of values
+# Set values are unique
+# Set is not ordered
+# Set is not indexed 
 # Set is changeable
-# Set does not allow duplicates
 
-set1 = {'UTS','FEIT',2023,'oct',11}
+s = {'Tom',33,'has',22.5}
 
-print(set1)
+print(s)
 
-set1.add('UTS')
-print(set1)
+s.add('balance')
+print(s)
 
-set2 = {'mark',80}
-set1.update(set2)
-# set1.union(set2)
-print(set1)
+s.add('balance') # only one balance exists
+print(s)
 
-set1.remove('UTS')
-print(set1)
-set1.discard(11)
-print(set1)
-set1.pop()
-print(set1)
+s.update({'account','CBA'})
+print(s)
 
+s.remove('CBA')
+print(s)
+s.discard('account')
+print(s)
 
+s.pop()
+print(s)
 
+s3 = s.copy()
+print(s3)
+s.add(123)
+print(s3)
 
+del s
+
+try:
+    print(s)
+except NameError:
+    print('sorry s is deleted')
 

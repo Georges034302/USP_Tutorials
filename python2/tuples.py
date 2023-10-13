@@ -1,16 +1,19 @@
 #!/bin/python3
-# Tuple is ordered
+# Tuple is a collection of values
 # Tuple is indexed
+# Tuple is ordered
 # Tuple allows duplicates
-# Tuple is immutable - once created it does not changeable
+# Tuple is immutable (unchangeable)
 
-tuple1 = ('UTS','FEIT',2023)
-
-print(len(tuple1))
-print(tuple1[1])
-
-other = ('Oct',11)
-total = tuple1+other
-
+t = ('Tom',33,'USA')
+t2 = ('North',222)
+total = t + t2
 print(total)
+
+mylist = list(total)
+print(mylist)
+
+print(t[0])
+print(t[-1])
+print(len(t))
 

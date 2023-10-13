@@ -1,30 +1,35 @@
 #!/bin/python3
-# dictionary is indexed by unique key 
-# dictionary is unordered
-# dictionary allows only duplicate values
-import pprint as pp
-data = {'name':'Tom',
-        'age':30,
-        'mark':77,
-        'grade':'D'
-    }
-print(data['grade'])
+# Dictionary is a collection of data
+# stored as: key --> value 
+# Dictionary is not ordered
+# Dictionary is not indexed
+# Dictionary keys are unique 
+# Dictionary values can be duplicates
+# Dictionary is changeable
+import pprint as pp 
+data = {
+    'name':'Lana',
+    'age': 29,
+    'role': 'HR'
+}
 
-del data['grade']
+print(data['role'])
+print(len(data))
+print(data.keys())
+print(data.values())
+
+data['salary'] = 100000
 print(data)
-pp.pprint(data,width=20)
+pp.pprint(data,indent=4,width=40)
 
-data['mark'] = 80
-pp.pprint(data,width=20)
+data['role'] = 'admin'
+pp.pprint(data,indent=4,width=40)
 
-data['role'] = 'student'
-pp.pprint(data,width=20)
+data.update({'ID':999,'Location': 'Syd'})
+pp.pprint(data,indent=4,width=40)
 
+del data['Location']
+pp.pprint(data,indent=4,width=40)
 
-other = {'age': 44,
-         'grade':'D'
-         }
-data.update(other)
-pp.pprint(data,width=20)
 
 
