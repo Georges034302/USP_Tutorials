@@ -1,0 +1,194 @@
+    1  clear
+    2  history
+    3  clear
+    4  cd ..
+    5  ls
+    6  cd USP_Tutorials/
+    7  clear
+    8  mkdir unix1
+    9  cd unix1
+   10  pwd
+   11  whoami
+   12  cd .
+   13  pwd
+   14  cd home
+   15  cd /
+   16  pwd
+   17  clear
+   18  ls
+   19  cd /
+   20  ls
+   21  cd
+   22  pwd
+   23  cd /
+   24  cd ~/
+   25  pwd
+   26  clear
+   27  cd /
+   28  cd ~/GitHub/USP_Tutorials/unix1/
+   29  cd ..
+   30  pwd
+   31  cd ../..
+   32  pwd
+   33  cd ~/GitHub/USP_Tutorials/unix1/pwd
+   34  cd ~/GitHub/USP_Tutorials/unix1/
+   35  clear
+   36  pwd
+   37  cd ../../../../
+   38  pwd
+   39  cd ~/GitHub/USP_Tutorials/unix1/
+   40  clear
+   41  mkdir sub1
+   42  ls
+   43  ls -l
+   44  ls sub1
+   45  man ls
+   46  ls -a sub1
+   47  ls -al sub1
+   48  clear
+   49  man ls
+   50  clear
+   51  ls
+   52  mkdir sub{2..7}
+   53  ls
+   54  touch f1
+   55  ls -l
+   56  cear
+   57  clear
+   58  ls
+   59  touch f{2..7}
+   60  touch f22 fa2 f2a fab
+   61  ls -l
+   62  clear
+   63  ls
+   64  cp f1 sub1
+   65  ls sub1
+   66  mv f1 sub7
+   67  ls
+   68  ls sub7
+   69  clear
+   70  ls
+   71  mv f2 out.txt
+   72  ls
+   73  clear
+   74  ls
+   75  ls sub7
+   76  cd
+   77  ls
+   78  clear
+   79  ls
+   80  cp ~/GitHub/USP_Tutorials/unix1/f22 ~/GitHub/USP_Tutorials/unix1/sub5
+   81  ls ~/GitHub/USP_Tutorials/unix1/sub5
+   82  clear
+   83  ls ~/GitHub/USP_Tutorials/unix1/
+   84  touch ~/GitHub/USP_Tutorials/unix1/fa
+   85  ls ~/GitHub/USP_Tutorials/unix1/
+   86  cp ~/GitHub/USP_Tutorials/unix1/f[0-9] ~/GitHub/USP_Tutorials/unix1/sub3
+   87  ls ~/GitHub/USP_Tutorials/unix1/sub3
+   88  cd ~/GitHub/USP_Tutorials/unix1/
+   89  ls
+   90  clear
+   91  ls
+   92  cp f[0-9][0-9] sub2
+   93  ls sub2'
+   94  ls sub2
+   95  mv f5 fAB
+   96  mv f7 faB
+   97  clear
+   98  ls
+   99  cp f[a-z][a-z] sub4
+  100  ls sub4
+  101  cp f[A-Za-z][A-Za-z] sub7
+  102  ls sub7
+  103  clear
+  104  ls -l
+  105  ls -l > out.txt
+  106  clear
+  107  cat out.txt 
+  108  grep '[0-9]{2,4}' out.txt 
+  109  grep -E '[0-9]{2,4}' out.txt 
+  110  clear
+  111  ls
+  112  grep -E '[0-9]{4}' out.txt 
+  113  clear
+  114  ls
+  115  mkdir sub8
+  116  ls
+  117  rmdir sub8
+  118  rmdir sub7
+  119  rm -r sub7
+  120  ls
+  121  clear
+  122  ls
+  123  rm f?
+  124  ls
+  125  rm f*
+  126  ls
+  127  rm *.txt
+  128  ls
+  129  clear
+  130  ls
+  131  rm -r sub6
+  132  ls
+  133  rm sub6
+  134  rm sub5
+  135  clear
+  136  ls sub4
+  137  clear
+  138  ls
+  139  mv sub5 sub4
+  140  ls sub4
+  141  ls
+  142  mv sub4 sub3
+  143  ls sub3
+  144  clear
+  145  ls -R
+  146  clear
+  147  man ls
+  148  man grep
+  149  man pwd
+  150  clear
+  151  ls -R
+  152  ls
+  153  clear
+  154  ls
+  155  rm -r sub[0-9]
+  156  ls
+  157  touch f1 fa faa fa2 f2a f33
+  158  ls -l
+  159  clear
+  160  echo george
+  161  echo "hello world"
+  162  echo f?
+  163  ls
+  164  echo f[a-z][a-z]
+  165  echo f??
+  166  clear
+  167  n=2
+  168  echo n
+  169  echo $n
+  170  echo $n+2
+  171  echo $(n+2)
+  172  echo $n+2
+  173  clear
+  174  echo $n+2
+  175  echo $(($n+2))
+  176  echo $n+2+$n+3
+  177  echo $(($(($n+2))+$(($n+3))))
+  178  clear
+  179  echo $n
+  180  echo "Hello world"
+  181  echo "$n"
+  182  echo "N = $n"
+  183  echo 'N = $n'
+  184  clear
+  185  echo '$n'
+  186  echo "$n"
+  187  echo '"$n"'
+  188  echo \'$n\'
+  189  echo \$n
+  190  unset n
+  191  echo $n
+  192  clear
+  193  history
+  194  history > unix1.txt
