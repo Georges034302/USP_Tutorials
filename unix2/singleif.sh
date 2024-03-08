@@ -1,22 +1,16 @@
 #!/bin/bash
 
-# check if the name is George
-# Welcome George
-# finish with Goodbye
+# Read name from STDIN
+# Welcome the name if george
+# then thank you
 
-#Use single-if to compelete the task:
-# if [condition]
-#then
-# 	<code>
-#fi
+read -p "Name: " name
 
-echo -n "Name: "
-read name
-
-if [ $name == "George" ]
+if [ $name == "george" ]
 then
 	echo "Welcome $name"
 fi
-echo "Goodbye"
+
+echo "Thank You!"
 
 

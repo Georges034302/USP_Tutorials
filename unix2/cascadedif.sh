@@ -1,7 +1,8 @@
 #!/bin/bash
+
 # Read student name from STDIN
-# Get student mark from argument
-# Determine student grade based on the mark
+# Get the student mark from argument
+# Determine the grade based on the mark
 
 read -p "Student name: " name
 mark=$1
@@ -9,7 +10,7 @@ mark=$1
 if [ $mark -ge 85 ]
 then
 	grade="HD"
-elif (($mark >= 75))
+elif (($mark>=75))
 then
 	grade="D"
 elif [ $mark -ge 65 ]

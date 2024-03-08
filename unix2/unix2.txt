@@ -1,91 +1,35 @@
     1  clear
-    2  cd GitHub/USP_Tutorials/
-    3  ls
-    4  mkdir unix2
-    5  cd unix2
-    6  touch f1
-    7  mkdir sub1
-    8  ls -l
-    9  clear
-   10  ls -l
-   11  rmdir sub1
-   12  clear
-   13  touch f{2..5}
-   14  ls -l
-   15  chmod u=r,g=rx,o=x f1
-   16  ls -l f1
-   17  chmod u-w,g-w,g+x,o-r,o+x f2
-   18  ls -l f2
-   19  chmod 451 f3
-   20  ls -l
-   21  clear
-   22  chmod 114 f4
-   23  ls -l f4
-   24  chmod u=rwx,g=rwx,o=rwx f5
-   25  ls -l f5
-   26  touch f6
-   27  chmod 777 f6
-   28  ls -l f6
-   29  touch f7
-   30  chmod u+x,g+x,o+wx f7
-   31  ls -l
-   32  touch f8
-   33  clear
-   34  chmod a=rwx f8
-   35  ls -l
-   36  chmod 664 f[0-9]
-   37  ls -l
-   38  rm f?
-   39  ls
-   40  clear
-   41  whoami
-   42  n=`whoami`
-   43  echo $n
-   44  touch f{1..5}
-   45  llt=`ls -l`
-   46  echo $llt
-   47  clear
-   48  ls -l
-   49  alias llt='ls -l'
-   50  llt
-   51  clear
-   52  ls -l | tail -3 | wc
-   53  alias lwc='ls -l | tail -3 | wc'
-   54  lwc
-   55  llt
-   56  clear
-   57  ls
-   58  nano f1
-   59  cat f1
-   60  nano f1
-   61  llt
-   62  clear
-   63  ls -a ~/
-   64  clear
-   65  nano ~/.bashrc 
-   66  llt
-   67  clear
-   68  echo $ENV
-   69  echo $HOME
-   70  echo $PATH
-   71  echo $Env
-   72  clear
-   73  echo "Hello $(whoami)"
-   74  lla=`ls -a`
-   75  echo "Listing hidden files $(lla)"
-   76  clear
-   77  ls
-   78  nano command.sh
-   79  clear
-   80  ls
-   81  rm -r sub1
-   82  ls
-   83  nano arithmetic.sh
-   84  nano userinput.sh
-   85  clear
-   86  nano args.sh
-   87  nano singleif.sh
-   88  nano ifelse.sh
-   89  nano nestedif.sh
-   90  nano cascadedif.sh
-   91  history > unix2.txt
+    2  touch f1
+    3  mkdir sub1
+    4  ls
+    5  ls -l
+    6  rmdir sub1/
+    7  clear
+    8  touch f{2..8}
+    9  ls -l
+   10  chmod u-w,u+r,g-rw,g+x,o-r,o+wx f1
+   11  ls -l f1
+   12  chmod 413 f3
+   13  ls -l f3
+   14  chmod u=r,g=x,o=wx f2
+   15  ls -l f2
+   16  clear
+   17  ls -l
+   18  chmod 333 f4
+   19  ls -l
+   20  chmod u=wx,g=wx,o=wx f5
+   21  ls -l f5
+   22  chmod u-r,u+x,g-r,g+x,o-r,o+wx f6
+   23  ls -l f6
+   24  chmod a=wx f7
+   25  ls -l f7
+   26  ls -l
+   27  chmod a-rwx f8
+   28  ls -l f8
+   29  clear
+   30  ls -l
+   31  chmod 664 f?
+   32  ls -l
+   33  rm f[0-9]
+   34  clear
+   35  history > unix2.txt

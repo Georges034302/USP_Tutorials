@@ -1,8 +1,10 @@
 #!/bin/bash
-#check if a number from STDIN is greater than 10
-#otherwise it is less than 10
 
-read -p "n = " n
+# enter integer from STDIN
+# check if the value is greater than 10 or not
+
+echo -n "n = "
+read n
 
 if [ $n -gt 10 ]
 then
@@ -10,6 +12,4 @@ then
 else
 	echo "$n <= 10"
 fi
-
 echo "Thank you"
-

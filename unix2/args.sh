@@ -5,5 +5,6 @@ echo $1
 echo $2
 echo $3
 
-echo "Arguments count: $#"
-echo "Argument list: $*"
+echo "How many arguments --> $#"
+echo "Arguments --> $*"
+

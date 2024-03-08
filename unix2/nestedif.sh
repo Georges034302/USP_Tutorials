@@ -1,14 +1,11 @@
 #!/bin/bash
 
-# Read integer from STDIN, and check:
-# is the integer even
-# is the integer odd
-# is the integer negative
+# Enter integer from STDIN
+# check if the value is even or odd or negative
 
-echo -n "n = "
-read n
+read -p "n = " n
 
-if [ $n -gt 0 ]
+if [ $n -ge 0 ]
 then
 	if [ $(($n%2)) == 0 ]
 	then
@@ -19,6 +16,3 @@ then
 else
 	echo "$n is negative"
 fi
-
-
-

@@ -1,17 +1,18 @@
 #!/bin/bash
 
-echo "Clean up directory ..."
-rm f?
-rm -r sub?
-
 echo "Creating 5 files ..."
 touch f{1..5}
 
 echo "Creating directory ..."
 mkdir sub1
 
-echo "Moving all files to sub1 ..."
+echo "Moving files to directory ..."
 mv f? sub1
 
-echo "Verify script output ..."
+echo "Listing directory ..."
 ls sub1
+
+echo "Clean up folder ..."
+rm -r sub1
+
+echo "Thank you "
