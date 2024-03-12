@@ -1,0 +1,110 @@
+    1  clear
+    2  ls -l
+    3  ls -l | tail -3
+    4  ls -l | tail -n+2
+    5  alias='ls -l | tail -n+2'
+    6  alias llT='ls -l | tail -n+2'
+    7  llT
+    8  clear
+    9  cat ~/.bashrc
+   10  nano ~/.bashrc
+   11  clear
+   12  llT
+   13  ls -l | tail -n+2 | ln
+   14  ls -l | tail -n+2 | nl
+   15  ls -l | tail -n+2 | nl | wc
+   16  clear
+   17  ls -l
+   18  ls -l | tail -3
+   19  ls -l | tail -n+2
+   20  ls -l | tail -n+2 | head -2
+   21  clear
+   22  ls -l;cat f?;wc f1
+   23  ls -l&&cat f?&&wc f1
+   24  clear
+   25  ls -l | tail -n+2
+   26  ls -l | tail -n+2 > out.txt
+   27  ls
+   28  cat out.txt 
+   29  ls -l | tail -n+2 >> out.txt
+   30  clear
+   31  cat out.txt 
+   32  clear
+   33  ls -l | tail -n+2 
+   34  rm out.txt 
+   35  ls
+   36  clear
+   37  ls -l | tail -n+2 | tee out.txt
+   38  ls 
+   39  cat out.txt 
+   40  man tee
+   41  ls -l | tail -n+2 | tee -a out.txt
+   42  cat out.txt 
+   43  rm out.txt 
+   44  clear
+   45  ls -l | tail -n+2 > out.txt
+   46  cat out.txt 
+   47  rm out.txt 
+   48  clear
+   49  ls -l
+   50  chmod 000 f3
+   51  ls -l
+   52  cat f3
+   53  cleat
+   54  clear
+   55  cat f?
+   56  ls -l
+   57  chmod a-rwx f2
+   58  cat f2
+   59  clear
+   60  cat f?
+   61  cat f? > success.txt 2> error.txt
+   62  ls
+   63  cat success.txt 
+   64  cat error.txt 
+   65  clear
+   66  rm f3
+   67  ls
+   68  ls -l
+   69  chmod 664 *
+   70  clear
+   71  ls -l
+   72  rm error.txt 
+   73  clear
+   74  llT > out.txt
+   75  ls -l
+   76  cat out.txt 
+   77  cleat
+   78  clear
+   79  cat out.txt 
+   80  cat out.txt | cut -d " " -f 1
+   81  clear
+   82  cat out.txt 
+   83  cat out.txt | cut -d " " -f 1
+   84  cat out.txt | cut -d " " -f 1,4
+   85  cat out.txt | cut -d " " -f 1-4
+   86  clear
+   87  cat out.txt | cut -d " " -f 1,5
+   88  cat out.txt 
+   89  cat out.txt | cut -d " " -f 1,6
+   90  cat out.txt | cut -d " " -f 5-8
+   91  clear
+   92  cat out.txt | awk 'print $1 $5\n'
+   93  cat out.txt | awk '{print $1 $5}'
+   94  clear
+   95  cat out.txt | awk '{print $1 $3 $5 $6 $7}'
+   96  cat out.txt | awk '{print $1 " " $5 " " $6 " " $7}'
+   97  cat out.txt | awk '{print $5 " " $6 " " $7 " " $9}'
+   98  clear
+   99  cat out.txt | awk '{print $5 " " $6 " " $7 " " $9}'
+  100  cat out.txt | awk '{printf "%4d %8s %15s\n",$5,$6,$9}'
+  101  cat out.txt | awk '{printf "%4d %8s %-15s\n",$5,$6,$9}'
+  102  clear
+  103  ps aux
+  104  clear
+  105  ps aux | awk '{printf "%6s %30s\n",$2,$11}'
+  106  ps aux | awk '{printf "%6s %-30s\n",$2,$11}'
+  107  clear
+  108  history 
+  109  clear
+  110  history > unix3.txt

@@ -1,0 +1,4 @@
+-rw-rw-r-- 1 george george 22 Mar 12 19:30 f1
+-rw-rw-r-- 1 george george  0 Mar 12 19:28 f2
+-rw-rw-r-- 1 george george  0 Mar 12 20:08 out.txt
+-rw-rw-r-- 1 george george 22 Mar 12 20:02 success.txt
