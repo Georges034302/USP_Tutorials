@@ -1,30 +1,32 @@
 #!/bin/bash
 
-# Read direction from STDIN
-# Select the correct freeway
+# Enter a direction
+# Select a NSW freeway
+### Use a switch
 
-PS3="Direction: "
+PS3="Direction (N/S/E/W/x): "
 
 select d in N S E W x
 do
 case $d in
 	N)
-	echo "Go North over the Harbor Bridge"
+	echo "Going north over the harbor bridge"
 	;;
 	S)
-	echo "Go to South Sydney via M5"
+	echo "Going south on the M5"
 	;;
 	E)
-	echo "Go to Eastern Suburbs via M1"
+	echo "Going to Eastern suburbs on M1"
 	;;
 	W)
-	echo "Go to Western Suburbs via M4"
+	echo "Going to west Sydney on M4"
 	;;
 	x)
 	exit
 	;;
 	*)
-	echo "Incorrect direction"
+	echo "Incorrect direction!!!"
 	;;
 esac
 done
+

@@ -1,17 +1,17 @@
 #!/bin/bash
-
-# Read integer from STDIN
-# Show all numbers from 0 to the value entered
+# Read an integer n from STDIN
+# show all values from 0 to n
 
 read -p "n = " n
 
 for((i=0;i<=$n;i++))
 do
-	echo "$i"
+	echo $i
 done
 
-# Now only show the even numbers
 echo
+# Now show only the even numbers
+#NOTE: use for-each loop
 for e in $(seq 0 $n)
 do
 	if [ $(($e%2)) == 0 ]
