@@ -1,0 +1,10 @@
+cat
+dog
+tiger
+Camel
+cat
+CAT
+DOG
+tiger
+Camel
+
