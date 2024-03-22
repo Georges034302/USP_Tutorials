@@ -1,0 +1,118 @@
+    1  history
+    2  clear
+    3  grep 'tutor' demo.txt 
+    4  grep -i 'tutor' demo.txt 
+    5  grep -wi 'tutor' demo.txt 
+    6  grep -win 'tutor' demo.txt 
+    7  grep -i 'tutor' demo.txt 
+    8  grep -i '\btutor\b' demo.txt 
+    9  grep -in '\btutor\b' demo.txt 
+   10  clear
+   11  grep -in '\btutor\b' demo.txt 
+   12  grep -in -B 1 '\btutor\b' demo.txt 
+   13  grep -in -A 3 '\btutor\b' demo.txt 
+   14  grep -in -C 1 '\btutor\b' demo.txt 
+   15  clear
+   16  grep '[0-9]' demo.txt 
+   17  grep -n '[0-9]' demo.txt 
+   18  grep '[0-9]{3}' demo.txt 
+   19  grep -E '[0-9]{3}' demo.txt 
+   20  clear
+   21  grep -E '\b[0-9]{3}\b' demo.txt 
+   22  grep -E '[0-9]{3}' demo.txt 
+   23  egrep '[0-9]{3}' demo.txt 
+   24  grep -E '[0-9]{3,4}' demo.txt 
+   25  grep -E '[0-9]{2,4}' demo.txt 
+   26  clear
+   27  grep '[A-Z]' demo.txt 
+   28  grep '[A-Z#,:]' demo.txt 
+   29  clear
+   30  grep '[#:$]' demo.txt 
+   31  grep '#|:|$' demo.txt 
+   32  grep -E '#|:|$' demo.txt 
+   33  clear
+   34  grep '[#:$]' demo.txt 
+   35  grep '[#:]' demo.txt 
+   36  clear
+   37  grep '[#:]' demo.txt 
+   38  grep '#|:' demo.txt 
+   39  grep -E '#|:' demo.txt 
+   40  clear
+   41  grep '[#:$]' demo.txt 
+   42  grep -E '#|:|$' demo.txt 
+   43  clear
+   44  grep -E '#|:|\$' demo.txt 
+   45  clear
+   46  grep '$' demo.txt 
+   47  grep '\$' demo.txt 
+   48  clear
+   49  grep '\$' demo.txt 
+   50  grep '\$$' demo.txt 
+   51  grep '\s$' demo.txt 
+   52  clear
+   53  grep '^' demo.txt 
+   54  grep '\^' demo.txt 
+   55  clear
+   56  grep '\^' demo.txt 
+   57  grep '^\^' demo.txt 
+   58  clear
+   59  grep '^$' demo.txt 
+   60  grep -n '^$' demo.txt 
+   61  clear
+   62  grep -n '^$' demo.txt 
+   63  grep -n '^*$' demo.txt 
+   64  grep -nE '^*$' demo.txt 
+   65  clear
+   66  grep -n '^$' demo.txt 
+   67  grep -v '^$' demo.txt 
+   68  clear
+   69  grep '[#:]' demo.txt 
+   70  grep '#|:' demo.txt 
+   71  grep -E '#|:' demo.txt 
+   72  clear
+   73  grep -e '#' -e ':' demo.txt 
+   74  grep -e '#' -e ':' -e '\$' demo.txt 
+   75  clear
+   76  grep '#' demo.txt | grep ':' 
+   77  grep -E '#.*:' demo.txt 
+   78  clear
+   79  pwd
+   80  ls -R ~/GitHub/USP_Tutorials/
+   81  clear
+   82  grep -R 'bash' ~/GitHub/USP_Tutorials/
+   83  grep -Rn 'bash' ~/GitHub/USP_Tutorials/
+   84  grep -Rl 'bash' ~/GitHub/USP_Tutorials/
+   85  clear
+   86  ls
+   87  sort demo.txt 
+   88  clear
+   89  sort animals.txt 
+   90  sort -u animals.txt 
+   91  sort -ui animals.txt 
+   92  clear
+   93  sort -u animals.txt 
+   94  sort -ur animals.txt 
+   95  clear
+   96  sed 's/tutor/lecturer/' demo.txt 
+   97  clear
+   98  sed 's/tutor/lecturer/i' demo.txt 
+   99  clear
+  100  sed 's/\btutor\b/lecturer/i' demo.txt 
+  101  clear
+  102  sed 's/[0-9]/-/' demo.txt 
+  103  clear
+  104  sed 's/[0-9]/-/g' demo.txt 
+  105  sed 's/[0-9a-z]/-/g' demo.txt 
+  106  clear
+  107  sed '5,$d' demo.txt 
+  108  sed '7,15d' demo.txt 
+  109  sed '3,9d' demo.txt 
+  110  clear
+  111  sed '5i\Inserted Line' demo.txt 
+  112  clear
+  113  sed '2,4c\Replaced Line' demo.txt 
+  114  clear
+  115  sed -n '/^$/ p' demo.txt 
+  116  sed -n '/^$/ !p' demo.txt 
+  117  clear
+  118  history > unix4.txt
