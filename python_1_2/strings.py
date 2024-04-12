@@ -1,15 +1,16 @@
 #!/bin/env python3
 
-s = 'Welcome to USP Python Aut 2024'
+s = 'UTS FEIT - USP Python Autumn 2024'
 
-print(len(s)) # len function returns a collection count
+print(len(s))
 
 print(s.capitalize())
 print(s.upper())
 print(s.lower())
-print(s.find('o'))
-print(s.count('o'))
-
-print(s.isalpha())
-print(s.isnumeric())
+print(s.count('U'))
 print(s.isalnum())
+
+s2 = "Python is cool"
+
+result = s + s2 
+print(result)

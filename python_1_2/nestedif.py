@@ -1,11 +1,11 @@
 #!/bin/env python3
 
 # Enter a value from STDIN
-# Check if the value is even, odd, or negative
+# check if the value is even, or negative
 
-n = int(input('N = ')) # input always gives back a string
+n = int(input('N = '))
 
-if n > 0:
+if n >=0:
     if n%2 == 0:
         print(f'{n} is even')
     else:

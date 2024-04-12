@@ -1,14 +1,14 @@
 #!/bin/env python3
 
-# Check if the username and password are correct
-# HINT: username--> superuser and password: super123
+# Enter username and password
+# check if the login is correct:
+# correct username: admin
+# correct password: superuser
 username = input('Username: ')
 password = input('Password: ')
 
-if username == 'superuser' and password == 'super123':
-    print(f'Welcome {username}')
-else:
-    print(f'Incorrect credentials!')
-
-print('Thank You')
-
+if username == 'admin' and password == 'superuser':
+    print('correct login') 
+else: 
+    print('Incorrect credentials')
+    

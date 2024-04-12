@@ -1,12 +1,13 @@
 #!/bin/env python3
-import sys
 
-# Enter a name from STDIN
-# Get a mark from argument
-# Determine and show the student grade
+# Read student name from STDIN
+# Get the student mark from argument
+# Determine and show the grade 
+import sys 
 
 name = input('Name: ')
-mark = int(sys.argv[1]) # argv values are all strings
+
+mark = int(sys.argv[1])
 
 if mark >= 85:
     grade = 'HD'
@@ -20,3 +21,5 @@ else:
     grade = 'Z'
 
 print(f'{name} mark is {mark} and grade is {grade}')
+
+

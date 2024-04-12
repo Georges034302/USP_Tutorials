@@ -1,11 +1,11 @@
 #!/bin/env python3
 import sys 
 
-# Enter data into the script from STDIN
+# Method 1: get values into script using STDIN
 name = input('Enter your name: ')
-print(f'Welcome {name}')
+print(name)
 
-# Get data into the script using arguments
+# Method 2: get values from arguments
 first = sys.argv[1]
 second = sys.argv[2]
 third = sys.argv[3]
