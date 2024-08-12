@@ -1,0 +1,210 @@
+    1  clear
+    2  man ls
+    3  man grep
+    4  pwd
+    5  cd ..
+    6  pwd
+    7  cd ..
+    8  pwd
+    9  cd ../..
+   10  pwd
+   11  cd
+   12  cd /
+   13  cd ~
+   14  pwd
+   15  cd /
+   16  pwd
+   17  clear
+   18  ls
+   19  ls etc
+   20  clear
+   21  ls
+   22  ls bin
+   23  clear
+   24  ls
+   25  ls usr
+   26  pwd
+   27  ls usr/share/
+   28  ls usr/share/zsh
+   29  ls usr/share/zsh/vendor-completions/
+   30  clear
+   31  ls
+   32  ls ~/
+   33  pwd
+   34  cd ~/GitHub/USP_Tutorials/
+   35  pwd
+   36  ls
+   37  clear
+   38  ls -l
+   39  ls -a
+   40  ls -al
+   41  clear
+   42  cd /
+   43  ls -l
+   44  clear
+   45  ls
+   46  ls ~/GitHub/USP_Tutorials/
+   47  ls ~/GitHub/USP
+   48  clear
+   49  ls -R ~/GitHub/USP
+   50  clear
+   51  cd ~/GitHub/USP_Tutorials/
+   52  ls
+   53  mkdir sub1
+   54  ls -l
+   55  mkdir sub{2..7}
+   56  ls
+   57  clear
+   58  touch f{1..4}
+   59  ls -l
+   60  clear
+   61  mkdir unix1
+   62  ls
+   63  mv f1 f44
+   64  ls
+   65  mv sub1 unix1/
+   66  ls
+   67  ls unix1/
+   68  clear
+   69  ls
+   70  mv sub[2-7] unix1
+   71  ls
+   72  ls unix1/
+   73  mv f* unix1
+   74  ls unix1/
+   75  ls
+   76  cd unix1/
+   77  clear
+   78  ls
+   79  touch fa fb fa2 fa3 f2a f2b faa fbb f55
+   80  ls
+   81  cp f2 sub1
+   82  ls sub1
+   83  ls
+   84  cp f[2-4] sub1
+   85  ls sub1
+   86  clear
+   87  ls
+   88  cp f? sub2
+   89  ls sub2
+   90  cp f[a-z0-9] sub3
+   91  ls sub3
+   92  cp f[0-9][0-9] sub4
+   93  ls sub4
+   94  cp f[a-z][a-z] sub5
+   95  ls sub5
+   96  clear
+   97  ls
+   98  cp f[a-z][0-9] sub6
+   99  ls sub6
+  100  cp f?? sub7
+  101  ls
+  102  ls sub7
+  103  ls ~/
+  104  clear
+  105  ls ~/DevA
+  106  ls -R ~/DevA
+  107  cp -R ~/DevA .
+  108  ls
+  109  cp -R ~/DevB .
+  110  cp -R ~/DevA ~/DevB/
+  111  ls ~/DevB
+  112  clear
+  113  ls
+  114  mkdir folder1
+  115  ls
+  116  rmdir folder1/
+  117  ls
+  118  rmdir DevA
+  119  rm f2
+  120  ls
+  121  clear
+  122  rm DevA
+  123  rmdir DevA
+  124  rm -r DevA
+  125  y
+  126  yclear
+  127  clear
+  128  ls
+  129  rm DevB
+  130  rm -rf DevB
+  131  clear
+  132  ls
+  133  rm -r sub[0-9]
+  134  ls
+  135  rm f[0-9]
+  136  rm f[a-z][0-9]
+  137  ls
+  138  rm f*
+  139  ls
+  140  ls ~/
+  141  clear
+  142  ls ~/
+  143  rm -r ~/DevA
+  144  y
+  145  yls ~/
+  146  ls ~/
+  147  clear
+  148  rm -rf ~/DevB
+  149  ls ~/
+  150  clear
+  151  echo George
+  152  echo 'UTS Spring 2024'
+  153  clear
+  154  echo 2+2
+  155  echo "2+2"
+  156  echo '2+2'
+  157  echo (2+2)
+  158  echo ((2+2))
+  159  echo $((2+2))
+  160  echo whoami
+  161  whoami
+  162  echo $(whoami)
+  163  clear
+  164  echo "Hello whoami"
+  165  echo "Hello $(whoami)"
+  166  hello=`ls -l`
+  167  echo $hello 
+  168  touch f{1..5}
+  169  echo $hello 
+  170  ls
+  171  echo $hello 
+  172  hello=`whoami`
+  173  echo $hello
+  174  clear
+  175  alias ll='ls -l'
+  176  ll
+  177  alias ll='ls -l | tail -3'
+  178  ll
+  179  clear
+  180  ls -a ~/
+  181  clear
+  182  nano ~/.bashrc
+  183  hello=`whoami`
+  184  echo $hello 
+  185  n=2
+  186  echo n+3
+  187  echo $((n+3))
+  188  echo n
+  189  echo $n
+  190  clear
+  191  echo $n
+  192  echo "$n"
+  193  echo '$n'
+  194  echo $n
+  195  echo \$n
+  196  echo '$n'
+  197  echo \'$n\'
+  198  echo \"$n\"
+  199  clear
+  200  echo \$n
+  201  echo '\$n'
+  202  echo \'$n\'
+  203  echo $n
+  204  echo $n+5+$n-1
+  205  echo $(($n+5))+$(($n-1))
+  206  echo $(($(($n+5))+$(($n-1))))
+  207  clear
+  208  history
+  209  clear
+  210  history > unix1.txt
