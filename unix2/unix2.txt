@@ -1,0 +1,38 @@
+    1  clear
+    2  mkdir unix2
+    3  cd unix2
+    4  pwd
+    5  touch f{1..6}
+    6  chmod 142 f1
+    7  ls -l f1
+    8  chmod u=x,g=r,o=w f2
+    9  ls -l f2
+   10  chmod u+x,u-rw,g-w,o-r,o+w f3
+   11  ls -l f3
+   12  clear
+   13  chmod a=x f4
+   14  ls -l f4
+   15  chmod 111 f5
+   16  ls -l f5
+   17  chmod u=x,g=x,o=x f6
+   18  ls -l f6
+   19  chmod 664 f?
+   20  ls -l
+   21  rm f?
+   22  ls -l
+   23  clear
+   24  nano command.sh
+   25  nano arthimetic.sh
+   26  nano welcome.sh
+   27  nano args.sh
+   28  nano singleif.sh
+   29  nano ifelse.sh
+   30  nano nestedif.sh
+   31  nano cascadedif.sh
+   32  clear
+   33  nano switch.sh
+   34  nano forloop.sh
+   35  nano foreach.sh
+   36  nano whileloop.sh
+   37  nano forloop.sh
+   38  history > unix2.txt
