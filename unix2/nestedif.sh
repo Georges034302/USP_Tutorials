@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Read an integer n from STDIN and check if n is odd, even, or negative
+# Enter an integer n from STDIN
+# check if n is even, or odd, or negative
 
 read -p "n = " n
 

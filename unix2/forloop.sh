@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# Read an integer n from STDIN
-# show all values from zero to n
-# show the power of each value
+# Enter integer n from STDIN
+# Show every value from 0 to n and its square
 
 read -p "n = " n
 

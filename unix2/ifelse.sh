@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Read username and password from STDIN
-# verify that username is admin
-# password is super123
+# Verify that username is admin and password is super123
 
 echo -n "Username: "
 read username

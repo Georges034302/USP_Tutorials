@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#Read student name from STDIN
-#Get student mark from argument
-#Determine the grade based on the mark
+# Read student name from STDIN
+# Get student mark from argument
+# Determine the grade based on the mark
 
 read -p "Student name: " name
 

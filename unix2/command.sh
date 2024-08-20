@@ -1,17 +1,17 @@
 #!/bin/bash
 
-# My first script
-echo "Creating 5 files..."
+# This is my first script
+echo "Creating files..."
 touch f{1..5}
 
-echo "Creating a directory ..."
+echo "Creating directory..."
 mkdir sub
 
-echo "Moving files to sub..."
+echo "Move all files to sub..."
 mv f? sub
 
 echo "List sub contents..."
 ls sub
 
-echo "Deleting sub..."
+echo "Delete sub..."
 rm -r sub

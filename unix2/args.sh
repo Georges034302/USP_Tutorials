@@ -6,6 +6,4 @@ echo $2
 echo $3
 
 echo "How many arguments --> $#"
-echo "Show the argument list --> $*"
-
-
+echo "List of arguments  --> $*"
