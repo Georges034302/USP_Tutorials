@@ -1,0 +1,29 @@
+#Wednesday 21/March/2023
+#Tutorial: unix4 
+#Tutor: George
+#Topics: GREP\SED\REG-EX\Bash Script$ 
+
+$Grep: powerful searching and filtering command in UNIX 
+$sed: utility for parsing and transforming text
+
+( ) GREP tutorial:
+* grep basic
+* grep vs (egrep or grep -E)
+* AND operation with GREP
+* OR operation with GREP
+
+( ) SED demo:
+^ Transformation$ 
+^ Multiple SED transformation
+
+( ) script demo:
+01 - unix bash is loacated in \bin\bash$
+03 - level: easy-advanced [learning: functions]
+
+#Demo File: demo.txt [log: 1234]
+\SIZE: 236
+\Permission: chmod 644
+
+#Thank you for attending tutorial 04$ 
+
+
