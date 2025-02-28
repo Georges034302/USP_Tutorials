@@ -1,0 +1,145 @@
+    1  clear
+    2  man ls
+    3  ls unix01/
+    4  ls -a unix01/
+    5  ls ~/
+    6  clear
+    7  ls
+    8  mkdir unix01/sub
+    9  pwd
+   10  ls /
+   11  cd /
+   12  pwd
+   13  cd
+   14  cd /
+   15  cd ~
+   16  clear
+   17  cd /
+   18  cd ~/GitHub/USP_Tutorials/unix01/sub
+   19  pwd
+   20  cd ../../../..
+   21  pwd
+   22  cd GitHub/USP_Tutorials/unix01/
+   23  ls
+   24  mkdir sub1
+   25  ls
+   26  mkdir sub{1..6}
+   27  clear
+   28  touch file
+   29  echo "USP is fun" > file 
+   30  clear
+   31  cat file 
+   32  touch f{1..4}
+   33  touch fA fa fAA fbb f2A f2a fb2 fB2 f33
+   34  cp f[0-9] sub1
+   35  ls sub1
+   36  cp f[a-zA-Z] sub2
+   37  ls sub2
+   38  cp f[a-zA-Z][a-zA-Z] sub3
+   39  ls sub3
+   40  cp f? sub4
+   41  ls sub4
+   42  clear
+   43  cp f* sub5
+   44  sub5
+   45  clear
+   46  ls sub5
+   47  cp sub sub1
+   48  man cp
+   49  cp -R sub sub1
+   50  ls sub1
+   51  clear
+   52  ls
+   53  man ls
+   54  clear
+   55  ls -R
+   56  clear
+   57  ls -R ~/websystems/
+   58  clear
+   59  man ls
+   60  ls -Sr ~/websystems/*.sh
+   61  ls -Sr ~/websystems/bash/*.sh
+   62  ls -sr ~/websystems/bash/*.sh
+   63  clear
+   64  ls -Sr ~/websystems/bash/*.sh
+   65  ls -Sr ~/websystems/bash/*.sh | head -1
+   66  clear
+   67  cp file other
+   68  ls
+   69  cp -R ~/websystems/ .
+   70  ls
+   71  mv file file.txt
+   72  ls
+   73  clear
+   74  mv f[0-9][0-9] sub6
+   75  ls sub6
+   76  ls
+   77  mv f* sub6
+   78  ls 
+   79  ls sub6
+   80  mkdir sub7
+   81  clear
+   82  ls
+   83  rm other 
+   84  cd sub6
+   85  ls
+   86  rm f[a-zA-Z][0-9]
+   87  ls
+   88  rm f*
+   89  ls
+   90  cd ..
+   91  ls
+   92  clear
+   93  rmdir sub7
+   94  rmdir sub6
+   95  rmdir sub5
+   96  rm sub5
+   97  rm -r sub5
+   98  ls
+   99  rm -r sub4
+  100  ls
+  101  rm -r sub[0-9]
+  102  ls
+  103  rm -r sub/
+  104  clear
+  105  ls
+  106  rm -r websystems/
+  107  rm -rf websystems/
+  108  ls
+  109  clear
+  110  echo George
+  111  echo "George"
+  112  whoami
+  113  echo whoami
+  114  echo $(whoami)
+  115  n=3
+  116  echo n
+  117  echo $n
+  118  echo $n+2
+  119  clear
+  120  echo $n+2
+  121  echo "$n+2"
+  122  echo $($n+2)
+  123  echo $(($n+2))
+  124  echo $(($n+2)) - $(($n-1))
+  125  echo $(($(($n+2)) - $(($n-1))))
+  126  clear
+  127  echo $n
+  128  echo "$n"
+  129  echo '$n'
+  130  echo '"$n"'
+  131  echo "'$n'"
+  132  echo $n
+  133  echo \$n
+  134  echo \\$n
+  135  clear
+  136  echo $n
+  137  echo '$n'
+  138  echo \'$n\'
+  139  clear
+  140  nano welcome.sh
+  141  clear
+  142  ls
+  143  mv welcome.sh command.sh
+  144  nano welcome.sh
+  145  history > unix1.txt
