@@ -1,0 +1,45 @@
+    1  clear
+    2  chmod u+x u-w,g-r,o-r,o+x f1
+    3  chmod u+x,u-w,g-r,o-r,o+x f1
+    4  ls -l f1
+    5  chmod u-x,g-r,o-r,o+x f1
+    6  ls -l f1
+    7  chmod u=x,g=w,o=x f2
+    8  ls -l f2
+    9  chmod 421 f3
+   10  ls -l
+   11  clear
+   12  ls -l f3
+   13  chmod ugo=x f4
+   14  ls -l f4
+   15  chmod a=x f5
+   16  ls -l f5
+   17  chmod 111 f6
+   18  ls -l f6
+   19  touch f7
+   20  chmod u-rw,u+x,g-rw,g+x,o-r,o+x f7
+   21  ls -l f7
+   22  clear
+   23  ls -l
+   24  chmod 000 f[0-9]
+   25  ls -l
+   26  cat f1
+   27  nano f1
+   28  clear
+   29  ls -l
+   30  rm f1
+   31  clear
+   32  ls -l
+   33  chmod 664 f[0-9]
+   34  rm f[0-9]
+   35  ls
+   36  clear
+   37  nano commands.sh
+   38  nano inputs.sh
+   39  nano args.sh
+   40  nano ifelse.sh
+   41  nano nestedif.sh
+   42  nano grades.sh
+   43  nano forloop.sh
+   44  nano whileloop.sh
+   45  history > unix2.txt
