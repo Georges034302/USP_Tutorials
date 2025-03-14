@@ -1,0 +1,157 @@
+    1  clear
+    2  echo Hello
+    3  echo "Hello World"
+    4  echo "Hello World" > out.txt
+    5  cat out.txt 
+    6  cat < out.txt 
+    7  cat 0< out.txt 
+    8  echo "Hello World" 1> out.txt
+    9  clear
+   10  echo "Unix is fun" > out.txt
+   11  cat out.txt 
+   12  echo "UTS FEIT" >> out.txt
+   13  cat out.txt 
+   14  echo "UTS FEIT" 1>> out.txt
+   15  cat out.txt 
+   16  clear
+   17* eco
+   18  echo "UTS FEIT" > out.txt
+   19  cat out.txt 
+   20  echo "USP 32547" > out.txt
+   21  cat out.txt 
+   22  echo "USP 32547" | tee out.txt
+   23  cat out.txt 
+   24  echo "USP is fun subject" | tee out.txt
+   25  cat out.txt 
+   26  clear
+   27  echo "UTS FEIT is modern" | tee -a out.txt
+   28  cat out.txt 
+   29  clear
+   30  cat /etc/shadow
+   31  cat /etc/shadow > error.txt
+   32  cat /etc/shadow 2> error.txt
+   33  cat error.txt 
+   34  clear
+   35  ls
+   36  echo "This is file.txt\nUSP data file" > file.txt
+   37  cat file.txt 
+   38  echo -e "This is file.txt\nUSP data file" > file.txt
+   39  cat file.txt 
+   40  ls -l
+   41  chmod a-r out.txt 
+   42  cat out.txt 
+   43  clear
+   44  ls -l
+   45  cat out.txt 
+   46  rm error.txt 
+   47  clear
+   48  ls -l
+   49  cat *
+   50  clear
+   51  cat *
+   52  cat * > out.txt 2> error.txt
+   53  ls
+   54  cat out.txt 
+   55  cat error.txt 
+   56  cat *
+   57  clear
+   58  ls
+   59  rm error.txt 
+   60  rm out.txt 
+   61  mv file.txt file1.txt
+   62  clear
+   63  cat file1.txt 
+   64  echo "This is no read permission file" > file2.txt
+   65  chmod a-r file2.txt 
+   66  clear
+   67  cat file1.txt 
+   68  cat file2
+   69  cat file2.txt 
+   70  cat f*
+   71  cat f* 1> out.txt 2> error.txt 
+   72  ls
+   73  cat out.txt 
+   74  cat error.txt 
+   75  cat f* > out.txt 2> error.txt 
+   76  cat out.txt 
+   77  clear
+   78  ls -l
+   79  ls -l | head -2
+   80  ls -l | head -4
+   81  ls -l | head -4 | tail -2
+   82  ls -l | head -4 | tail -2 | nl
+   83  ls -l | head -4 | tail -2 | nl | wc
+   84  ls -l | head -4 | tail -2 | nl | wc -l
+   85  ls -l | head -4 | tail -2 | nl | wc -c
+   86  ls -l | head -4 | tail -2 | nl | wc -w
+   87  clear
+   88  ls -l | head -4 | tailsdfs -2 | nl | wc -w
+   89  cat f*;wc file1.txt; cat file2.txt ; ls -l
+   90  cat f*;wcsdksdj file1.txt; cat file2.txt ; ls -l
+   91  clear
+   92* ls -l | head -4 | tailsdfs -2 | nl | wc -w 
+   93  cat f*;wc file1.txt; cat file2.txt ; ls -l
+   94  cat f* && wc file1.txt && cat file2.txt && ls -l
+   95  clear
+   96  cat file1.txt && wc file1.txt && cat file2.txt && ls -l
+   97  cat file1.txt && wc file1.txt && cat out.txt && ls -l
+   98  cat file1.txt && wchhh file1.txt && cat out.txt && ls -l
+   99  clear
+  100  cat file1.txt && wc file1.txt && cat file2.txt && ls -l
+  101  clear
+  102  cat file1.txt && wchhh file1.txt && cat out.txt && ls -l
+  103  clear
+  104  cat file1.txt && wc file1.txt && cat out.txt && ls -l
+  105  cat f*;wc file1.txt; cat file2.txt ; ls -l
+  106  ls -l | head -4 | tail -2 | nl | wc -w
+  107  clear
+  108  alias myfavcommand='ls -l | head -4 | tail -2 | nl | wc -w'
+  109  myfavcommand 
+  110  clear
+  111  nano ~/.bashrc
+  112  myfavcommand 
+  113  clear
+  114  ls -l
+  115  ls -l | tail -n+2
+  116  ls -l | tail -n+3
+  117  clear
+  118  ls -l | tail -n+2
+  119  touch f1
+  120  ls -l
+  121  ls -l | tail -n+2
+  122  clear
+  123  ls -l | tail -n+2
+  124  ls -l | tail -n+2 | cut -d " " -f 1
+  125  ls -l | tail -n+2 | cut -d " " -f 2
+  126  ls -l | tail -n+2 | cut -d " " -f 3
+  127  clear
+  128  ls -l | tail -n+2 | cut -d " " -f 1-4
+  129  ls -l | tail -n+2 | cut -d " " -f 1,4
+  130  ls -l | tail -n+2 | cut -d " " -f 1,5
+  131  ls -l | tail -n+2 | cut -d " " -f 1,6
+  132  clear
+  133  ls -l | tail -n+2 | cut -d " " -f 1,7
+  134  ls -l | tail -n+2 | awk 'print $1 " " $5'
+  135  ls -l | tail -n+2 | awk '{print $1 " " $5}'
+  136  ls -l | tail -n+2 | awk '{print $1 " " $5 " "$9}'
+  137  clear
+  138  ls -l | tail -n+2 | awk '{print $1 " " $5 " "$9}'
+  139  ls -l | tail -n+2 | awk '{printf"%10s %4d %15s\n",$1,$5,$9}'
+  140  ls -l | tail -n+2 | awk '{printf"%10s %4d %-15s\n",$1,$5,$9}'
+  141  clear
+  142  ps aux
+  143  clear
+  144  ps aux | awk '{printf"%6s %-30s\n"$2,$11}'
+  145  ps aux | awk '{printf"%6s %-20s\n"$2,$11}'
+  146  clear
+  147  ps aux | awk '{printf"%6s %-15s\n"$2,$11}'
+  148  ps aux | awk '{printf"%4s %-15s\n"$2,$11}'
+  149  clear
+  150  ps aux | awk '{printf"%s %s\n"$2,$11}'
+  151  ps aux | awk '{printf"%s %s\n",$2,$11}'
+  152  clear
+  153  ps aux | awk '{printf"%6s %-30s\n",$2,$11}'
+  154  clear
+  155  ps aux | awk '{printf"%6s %-30s\n",$2,$11}'
+  156  clear
+  157  history > unix03.txt
