@@ -1,0 +1,170 @@
+    1  clear
+    2  history
+    3  touch f1
+    4  ls
+    5  touch f{1..7}
+    6  ls
+    7  clear
+    8  ls -l
+    9  clear
+   10  mkdir sub1
+   11  mkdir sub{1..7}
+   12  ls
+   13  clear
+   14  touch fa fb faa fBB fb4 f4B f33
+   15  ls -l
+   16  clear
+   17  ls
+   18  cp f1 fbc
+   19  ls
+   20  cp f1 sub1
+   21  ls sub1
+   22  clear
+   23  ls
+   24  cp f[0-9] sub1
+   25  ls sub1
+   26  touch fH
+   27  ls
+   28  clear
+   29  ls
+   30  cp f[a-z] sub2
+   31  ls sub2
+   32  cp f[a-zA-Z] sub2
+   33  ls sub2
+   34  cp f? sub3
+   35  ls sub3
+   36  clear
+   37  ls
+   38  cp f[a-zA-Z][a-zA-Z] sub4
+   39  ls sub4
+   40  cp f[0-9][a-zA-Z] sub5
+   41  ls sub5
+   42  cp f?? sub6
+   43  ls sub6
+   44  clear
+   45  ls
+   46  mv f1 f22
+   47  ls
+   48  mv f[0-9] sub1
+   49  ls
+   50  clear
+   51  ls ~/
+   52  cp ~/websystems/ .
+   53  man cp
+   54  cp -R ~/websystems/ .
+   55  ls
+   56  cp -R ~/websystems/ /sub6
+   57  cp -R ~/websystems/ sub6
+   58  ls sub6
+   59  clear
+   60  ls
+   61  mv f* sub5
+   62  ls
+   63  ls sub5
+   64  ls sub6
+   65  mv sub6/websystems/ sub4
+   66  ls sub4
+   67  clear
+   68  rmdir sub7
+   69  ls
+   70  rmdir sub1
+   71  rm -r sub1
+   72  ls
+   73  rm sub[0-9]
+   74  clear
+   75  rm -r sub[0-9]
+   76  ls
+   77  ls sub4
+   78  clear
+   79  ls tree websystems/
+   80  tree websystems/
+   81  clear
+   82  ls -R
+   83  clear
+   84  ls -R websystems/
+   85  clear
+   86  ls
+   87  rm -r sub[0-9]
+   88  rm -rf sub[0-9]
+   89  ls
+   90  rm -r websystems/
+   91  rm -rf websystems/
+   92  ls
+   93  clear
+   94  ls
+   95  n=2
+   96  echo n
+   97  echo $n
+   98  whoami
+   99  echo whoami
+  100  echo $whoami
+  101  echo $(whoami)
+  102  clear
+  103  echo "hello guys my name is $(whoami)"
+  104  echo 'hello guys my name is $(whoami)'
+  105  echo $n
+  106  echo $n+2
+  107  echo ($n+2)
+  108  echo $($n+2)
+  109  echo $(($n+2))
+  110  clear
+  111  echo $n
+  112  echo "$n"
+  113  echo '$n'
+  114  echo '"$n"'
+  115  echo "'$n'"
+  116  clear
+  117  echo $n
+  118  echo \$n
+  119  echo \\$n
+  120  echo '$n'
+  121  echo \'$n\'
+  122  echo \"$n\"
+  123  clear
+  124  echo \$n
+  125  echo '\$n'
+  126  unset n
+  127  echo $n
+  128  clear
+  129  nano commands.sh
+  130  ls -l
+  131  chmod u+x commands.sh 
+  132  ls
+  133  ls -l
+  134  clear
+  135  ./commands.sh 
+  136  ls
+  137  clear
+  138  nano commands.sh 
+  139  nano test.sh
+  140  chmod u+x test.sh 
+  141  ./test.sh 
+  142  nano test.sh
+  143  ./test.sh 
+  144  nano test.sh
+  145  clear
+  146  rm test.sh 
+  147  clear
+  148  nano input.sh
+  149  chmod u+x input.sh 
+  150  ./input.sh 
+  151  nano input.sh 
+  152  clear
+  153  nano input.sh 
+  154  ./input.sh 
+  155  nano input.sh 
+  156  ./input.sh 
+  157  clear
+  158  nano args.sh
+  159  chmod u+x args.sh 
+  160  ./args.sh 
+  161  ./args.sh hi 2 bye 3.5 hello
+  162  nano args.sh 
+  163  clear
+  164  ./args.sh hi 2 bye 3.5 hello
+  165  nano args.sh 
+  166  cd ..
+  167  clear
+  168  ls
+  169  cd unix1/
+  170  history > unix1.txt
