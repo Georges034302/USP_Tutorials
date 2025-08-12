@@ -1,0 +1,91 @@
+    1  clear
+    2  cd ..
+    3  clear
+    4  cd USP_Tutorials/
+    5  clear
+    6  ls
+    7  mkdir unix2
+    8  cd unix2
+    9  clear
+   10  pwd
+   11  env
+   12  n=5
+   13  export n
+   14  env
+   15  clear
+   16  echo $PATH
+   17  ls /usr/bin
+   18  clear
+   19  touch f{1..6}
+   20  ls -l
+   21  touch f7
+   22  clear
+   23  ls -l
+   24  chmod 142 f1
+   25  ls -l f1
+   26  chmod u-rw,u+x,g-w,o-r,o+w f2
+   27  ls -l f2
+   28  chmod u=x,g=r,o=w f3
+   29  ls -l f3
+   30  clear
+   31  ls -l
+   32  chmod ugo=x f4
+   33  ls -l f4
+   34  chmod a=x f5
+   35  ls -l f5
+   36  chmod 111 f6
+   37  ls -l f6
+   38  chmod u-rw,u+x,g-rw,g+x,o-r,o+x f7
+   39  ls -l f7
+   40  clear
+   41  ls -l
+   42  chmod 664 f*
+   43  ls -l
+   44  rm f?
+   45  clear
+   46  ls
+   47  nano maths.sh
+   48  ls -l
+   49  chmod u+x maths.sh 
+   50  ./maths.sh 2 3
+   51  nano maths.sh
+   52  ./maths.sh 2 3
+   53  clear
+   54  nano maths.sh
+   55  ./maths.sh 5 2
+   56  nano maths.sh
+   57  ./maths.sh 5 2
+   58  nano maths.sh
+   59  ./maths.sh 5 2
+   60  nano maths.sh
+   61  ./maths.sh 5 2
+   62  nano maths.sh
+   63  ./maths.sh 5 2
+   64  nano maths.sh
+   65  clear
+   66  nano grades.sh
+   67  chmod u+x grades.sh 
+   68  ./grades.sh 86
+   69  ./grades.sh 42
+   70  nano grades.sh
+   71  clear
+   72  nano numbers.sh
+   73  chmod u+x numbers.sh 
+   74  clear
+   75  ./numbers.sh 
+   76  clear
+   77  ls
+   78  nano checkfile.sh
+   79  chmod u+x checkfile.sh 
+   80  ls
+   81  ./checkfile.sh 
+   82  ls
+   83  nano checkfile.sh
+   84  clear
+   85  ./checkfile.sh 
+   86  ls
+   87  ./checkfile.sh 
+   88  clear
+   89  ls
+   90  rmdir tester/
+   91  history > unix2.txt
