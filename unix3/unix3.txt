@@ -1,0 +1,258 @@
+  348  ls
+  349  mv unix\ 1/ unix1
+  350  ls
+  351  mkdir unix2
+  352  ls
+  353  cd unix2
+  354  clear
+  355  clear
+  356  ls
+  357  ls
+  358  chmod u+x args.sh 
+  359  ls -l args.sh 
+  360  ./args.sh 33 hello M New 111
+  361  ./args.sh 33 hello M New 111
+  362  ./args.sh my 1rst script
+  363  ./args.sh my n-1 script
+  364  clear
+  365  ./args.sh my  script
+  366  ./args.sh my \( ) script
+  367  ./args.sh my \s script
+  368  ./args.sh my \  script
+  369  ./args.sh my \ script
+  370  ./args.sh my \\ script
+  371  clear
+  372  ./args.sh my * script
+  373  ./args.sh my \* script
+  374  ./args.sh my '*' script
+  375  ./args.sh my '\*' script
+  376  clear
+  377  ./args.sh hello 22
+  378  ./args.sh hello 22 USP
+  379  ./args.sh hello 22 USP
+  380  clear
+  381  ls
+  382  chmod u+x welcome.sh 
+  383  ./welcome.sh 
+  384  ./welcome.sh 
+  385  ./welcome.sh George
+  386  ./welcome.sh George
+  387  ./welcome.sh
+  388  clear
+  389  ./welcome.sh
+  390  ./welcome.sh
+  391  clear
+  392  chmod u+x grades.sh 
+  393  ./grades.sh 77
+  394  ./grades.sh 44
+  395  ./grades.sh 90
+  396  ./grades.sh 90
+  397  clear
+  398  chmod u+x check.sh 
+  399  ls
+  400  ./check.sh 
+  401  ./check.sh 
+  402  mkdir sub
+  403  ./check.sh 
+  404  ls -l
+  405  clear
+  406  ./check.sh 
+  407  ./check.sh 
+  408  ./check.sh 
+  409  f1
+  410  ./check.sh 
+  411  ./check.sh 
+  412  clear
+  413  ./check.sh 
+  414  ./check.sh 
+  415  ./check.sh 
+  416  clear
+  417  chmod u+x numbers.sh 
+  418  ./numbers.sh 
+  419  ./numbers.sh 5
+  420  clear
+  421  ./numbers.sh 2
+  422  ./numbers.sh
+  423  clear
+  424  chmod u+x create.sh 
+  425  ./create.sh 
+  426  rm George-*
+  427  ls
+  428  clear
+  429  ./create.sh 
+  430  clear
+  431  chmod u+x sum.sh 
+  432  ./sum.sh 
+  433  ./sum.sh 
+  434  ./sum.sh 
+  435  clear
+  436  ./sum.sh 
+  437  ./sum.sh 
+  438  clear
+  439  ./sum.sh 
+  440  ls
+  441  cd unix2
+  442  clear
+  443  ls
+  444  touch f1 f2 f3 f4 f5
+  445  ls -l
+  446  chmod u+x f1
+  447  ls -l f1
+  448  chmod g-w f1
+  449  ls -l f1
+  450  chmod o-r,o+wx f1
+  451  ls -l f1
+  452  clear
+  453  ls -l
+  454  chmod u-rw,u+x,g-rw,g+x,o-r,o+w f2
+  455  ls -l f2
+  456  chmod 112 f3
+  457  ls -l f3
+  458  chmod 111 f4
+  459  ls -l f4
+  460  chmod 724 f4
+  461  ls -l f4
+  462  clear
+  463  ls -l
+  464  chmod 000 f2
+  465  ls -l f2
+  466  chmod u-x,g-x,o-w f3
+  467  ls -l f3
+  468  chmod a-rwx f4
+  469  ls -l f4
+  470  clear
+  471  ls -l
+  472  chmod 777 f2
+  473  chmod a+rwx f3
+  474  ls -l f[23]
+  475  chmod 664 f[1-4]
+  476  ls -l
+  477  clear
+  478  history > unix2.txt
+  479  ls
+  480  cat unix2.txt 
+  481  clear
+  482  ls
+  483  rm f[0-9]
+  484  ls
+  485  git add .
+  486  git commit -m"unix2"
+  487  git push
+  488  clear
+  489  ls -l
+  490  clear
+  491  nano args.sh
+  492  nano args.sh
+  493  nano welcome.sh
+  494  nano grades.sh
+  495  ls -l
+  496  nano check.sh
+  497  clear
+  498  nano numbers.sh
+  499  nano create.sh
+  500  nano sum.sh
+  501  ls
+  502  mkdir unix3
+  503  cd unix3
+  504  pwd
+  505  touch f1 f2
+  506  ls
+  507  ls -l
+  508  ls -l
+  509  clear
+  510  ls -l
+  511  ls -l | head -1
+  512  ls -l | head -2
+  513  ls -l | head -3
+  514  ls -l | head -1
+  515  touch f3 f4
+  516  clear
+  517  ls -l
+  518  ls -l | tail -1
+  519  ls -l | tail -2
+  520  ls -l | tail -n+2
+  521  ls -l | tail -n+2 | wc
+  522  ls -l | tail -n+2 | nl
+  523  clear
+  524  ls -l
+  525  ls -l | tail -n+2
+  526  ls -l | tail -n+2 | nl
+  527  ls -l;cat f1;ls
+  528  clear
+  529  ls -l | tail -n+2 > out.txt
+  530  ls
+  531* 
+  532  ls -l | tail -n+2 >> out.txt
+  533  cat out.txt 
+  534  clear
+  535  cat out.txt 
+  536  cat out.txt | tee output.txt
+  537  ls
+  538  cat output.txt 
+  539  clear
+  540  cat out.txt | tee -a output.txt 
+  541  cat output.txt 
+  542  clear
+  543  ls
+  544  ls -l
+  545  chmod 000 f[12]
+  546  ls -l
+  547  cat f1
+  548  cat f2
+  549  clear
+  550  cat f[12]
+  551  cat f?
+  552  ls
+  553  cat f[0-9]
+  554  echo "this is f3" > f3
+  555  echo "this is f4" > f4
+  556  cat f?
+  557  clear
+  558  cat f? 2> error.txt
+  559  ls
+  560  cat error.txt 
+  561  rm error.txt 
+  562  rm out.txt 
+  563  ls
+  564  clear
+  565  cat f?
+  566  cat f? >out.txt 2>error.txt
+  567  ls
+  568  cat error.txt 
+  569  cat out.txt 
+  570  rm output.txt 
+  571  clear
+  572  ls
+  573  cat f? >>out.txt 2>>error.txt
+  574  cat error.txt 
+  575  cat out.txt 
+  576  cat *.txt
+  577  clear
+  578  cat *.txt
+  579  cat *.txt | tee log.txt
+  580  ls
+  581  cat log.txt 
+  582  clear
+  583  ls -l
+  584  ls -l | tail -n+2
+  585  ls -l | tail -n+2 | cut -d " " -f 1
+  586  ls -l | tail -n+2 | cut -d " " -f 1,3
+  587  ls -l | tail -n+2 | cut -d " " -f 1,3,4
+  588  ls -l | tail -n+2 | cut -d " " -f 1-4
+  589  clear
+  590  ls -l | tail -n+2 
+  591  ls -l | tail -n+2 | cut -d " " -f 3-6
+  592  ls -l | tail -n+2 | cut -d " " -f 3-9
+  593  clear
+  594  ls -l | tail -n+2 | awk '{print $3 $4 $5 $6}'
+  595  ls -l | tail -n+2 | awk '{print $3 " " $4 " " $5 " " $6}'
+  596  ls -l | tail -n+2 | awk '{printf "%s %s \n",$3,$9}'
+  597  clear
+  598  ls -l | tail -n+2 
+  599  ls -l | tail -n+2 | awk '{printf "%d %s \n",$5,$9}'
+  600  ls -l | tail -n+2 | awk '{printf "%5d %15s \n",$5,$9}'
+  601  ls -l | tail -n+2 | awk '{printf "%5d %-15s \n",$5,$9}'
+  602  ls -l | tail -n+2 | awk '{printf "%-5d %-15s \n",$5,$9}'
+  603  nano command.sh
+  604  ps aux | awk '{printf"%-6s %-10s %-20s\n",$1,$6,$8}'
+  605  history > unix3.txt

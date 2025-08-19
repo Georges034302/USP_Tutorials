@@ -1,0 +1,1 @@
+cat: sorted.txt: Permission denied

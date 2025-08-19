@@ -1,0 +1,6 @@
+USA		  Poland	    France	      Austria
+USA		  Poland	    Canada	      Austria
+USA		  Poland	    Canada	      Australia
+Qatar		  France	    Canada	      Australia
+Qatar		  France	    Austria	      Australia
+Qatar
