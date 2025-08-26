@@ -1,0 +1,26 @@
+#Tutorial: unix4 
+#Tutor: George
+#Topics: GREP & SED $ 
+
+What is Grep ? 
+  - searching using regex $ 
+What is sed  ?
+  - searching and transformation
+
+Regex is composed of combination of wild cards like:
+^ caret and $ dollar
+\ escape and character class []
+* asterix (zero or many)
++ plus (one or many)
+? hook (zero or one)
+( ) grouping and single character .
+
+{m.n} represents ^quantity^ between m and n:
+[0-9]{2,4} represents two to four digits like 22, 333, 444 
+
+This is a sample text file: demo.txt 
+\Size # 1234 
+\Owner *george*
+\Permission ? default --> chmod 644
+
+#Thank you for attending tutorial 04$ 
