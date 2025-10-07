@@ -1,0 +1,5 @@
+UTS FEIT
+USP 32547
+Aut 2025
+welcome to USP
+python i sfun
