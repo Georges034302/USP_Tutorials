@@ -1,0 +1,141 @@
+    1  clear
+    2  pwd
+    3  ls /
+    4  cd ../../../..
+    5  pwd
+    6  cd ~/GitHub/USP_Tutorials/
+    7  mkdir unix1
+    8  cd unix1/
+    9  ls ~/
+   10  ls ~/GitHub/
+   11  clear
+   12  ls -R ~/GitHub/USP
+   13  ls -R ~/GitHub/USPclear
+   14  clear
+   15  tree -L 4 ~/GitHub/USP
+   16  clear
+   17  tree -L 3 ~/GitHub/USP
+   18  tree -L 2 ~/GitHub/USP
+   19  clear
+   20  tree -L 2 ~/GitHub/USP
+   21  tree -L 1 ~/GitHub/USP
+   22  tree -L 2 /
+   23  clear
+   24  pwd
+   25  mikdir dir{1..7}
+   26  mkdir dir{1..7}
+   27  clear
+   28  ls
+   29  ls -l
+   30  ls -a dir1
+   31  ls -al dir1
+   32  clear
+   33  touch fa fB f2 faa fBB f22
+   34  ls -l
+   35  ls -i f2
+   36  clear
+   37  ls
+   38  touch f1 f3
+   39  clear
+   40  ls
+   41  cp f[0-9] dir1
+   42  ls dir1
+   43  cp f[A-Z] dir2
+   44  ls dir2
+   45  cp f? dir3
+   46  ls dir3
+   47  cp f* dir4
+   48  ls dir4
+   49  chmod -R 000 dir1
+   50  chmod 000 -R dir1
+   51  chmod -r 000 dir1
+   52  chmod 000 -r dir1
+   53  chmod 000 dir1
+   54  clear
+   55  ls
+   56  ls -l
+   57  chmod 000 f??
+   58  ls -l
+   59  clear
+   60  ls
+   61  chmod 000 dir2
+   62  ls -l
+   63  rm f?
+   64  ls
+   65  clear
+   66  ls -l
+   67  rm f*
+   68  rm -f f*
+   69  ls
+   70  rm -r dir[0-9]
+   71  rm -rf dir[0-9]
+   72  ls
+   73  sudo rm -rf dir[0-9]
+   74  clear
+   75  echo george
+   76  echo "george"
+   77  echo 'george'
+   78  whoami
+   79  echo whoami
+   80  echo $(whoami)
+   81  echo "$(whoami)"
+   82  echo "hello, $(whoami)"
+   83  echo 'hello, $(whoami)'
+   84  clear
+   85  n=2
+   86  echo n
+   87  echo $n
+   88  echo $n+2
+   89  echo $((n+2))
+   90  echo $((n+2)+($n-1))
+   91  echo $(($n+2)+($n-1))
+   92  echo $($(($n+2))+$(($n-1)))
+   93  echo $(($(($n+2))+$(($n-1))))
+   94  clear
+   95  echo $n
+   96  echo "$n"
+   97  echo '$n'
+   98  echo "'$n'"
+   99  echo '"$n"'
+  100  echo $n
+  101  echo \$n
+  102  echo \\$n
+  103  echo '\\$n'
+  104  echo \'$n\'
+  105  clear
+  106  man cp
+  107  man sed
+  108  ls /bin/bash
+  109  clear
+  110  ls
+  111  touch file.txt
+  112  touch filename
+  113  ls -l
+  114  rm f*
+  115  clear
+  116  nano command.sh
+  117  ls -l
+  118  chmod u+x command.sh 
+  119  ls -l
+  120  ./command.sh 
+  121  ls
+  122  head -1 command.sh 
+  123  ./command.sh 
+  124  clear
+  125  nano args.sh
+  126  chmod u+x args.sh 
+  127  ./args.sh 
+  128  ./args.sh 123 hello
+  129  nano args.sh
+  130  ./args.sh 123 hello
+  131  clear
+  132  namo input.sh
+  133  nano input.sh
+  134  chmod u+x input.sh 
+  135  clear
+  136  ./input.sh 
+  137  chmod u+x input.sh 
+  138  nano input.sh
+  139  clear
+  140  ./input.sh 
+  141  history > unix1.txt
