@@ -7,3 +7,4 @@ HORSE
 doG
 dog
 Cat
+Tiger\nTIGER
